@@ -2,13 +2,11 @@
 from __future__ import annotations
 
 import json
-import re
 from dataclasses import dataclass
 
 import requests
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-_JSON_RE = re.compile(r"\{.*\}", re.DOTALL)
 
 SYSTEM_PROMPT = """You are the editor of a warm, friendly developer newsletter \
 about Claude Code. Rewrite raw release notes so a busy human enjoys reading them.
@@ -45,11 +43,17 @@ def _build_messages(version: str, notes: str) -> list[dict]:
 
 
 def _parse_response(content: str) -> Digest:
-    match = _JSON_RE.search(content)
-    if not match:
+    start = content.find("{")
+    if start == -1:
         raise ValueError("No JSON object found in model response")
-    data = json.loads(match.group(0))
-    return Digest(subject=data["subject"], body_markdown=data["body"])
+    try:
+        data, _ = json.JSONDecoder().raw_decode(content[start:])
+    except json.JSONDecodeError as exc:
+        raise ValueError("No JSON object found in model response") from exc
+    try:
+        return Digest(subject=data["subject"], body_markdown=data["body"])
+    except (KeyError, TypeError) as exc:
+        raise ValueError("Model response missing subject/body") from exc
 
 
 def summarize(

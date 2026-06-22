@@ -1,3 +1,5 @@
+import pytest
+
 from src.summarizer import Digest, _parse_response, summarize
 
 
@@ -7,6 +9,16 @@ def test_parse_response_extracts_json_from_fenced_text():
     assert isinstance(digest, Digest)
     assert digest.subject == "Hi 👋"
     assert "TL;DR" in digest.body_markdown
+
+
+def test_parse_response_raises_on_no_json():
+    with pytest.raises(ValueError, match="No JSON object found"):
+        _parse_response("This response has no JSON at all.")
+
+
+def test_parse_response_raises_on_missing_keys():
+    with pytest.raises(ValueError, match="missing subject/body"):
+        _parse_response('{"title": "wrong key"}')
 
 
 def test_summarize_posts_to_openrouter_and_parses():
