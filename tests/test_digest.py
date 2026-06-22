@@ -1,3 +1,5 @@
+import pytest
+
 from src.digest import (
     LATEST_END,
     LATEST_START,
@@ -39,3 +41,10 @@ def test_update_readme_replaces_only_the_block(tmp_path):
     assert "Top" in text and "Bottom" in text
     assert text.count(LATEST_START) == 1
     assert text.count(LATEST_END) == 1
+
+
+def test_update_readme_raises_when_marker_missing(tmp_path):
+    readme = tmp_path / "README.md"
+    readme.write_text("no markers here\n", encoding="utf-8")
+    with pytest.raises(ValueError, match="missing one or both"):
+        update_readme(readme, "2026-06-22", "1.2.0", "Subj", "body")

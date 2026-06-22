@@ -39,6 +39,10 @@ def update_readme(
     body_markdown: str,
 ) -> None:
     text = readme_path.read_text(encoding="utf-8")
+    if LATEST_START not in text or LATEST_END not in text:
+        raise ValueError(
+            f"README is missing one or both LATEST markers: {readme_path}"
+        )
     block = (
         f"{LATEST_START}\n\n"
         f"### {subject}\n\n"
