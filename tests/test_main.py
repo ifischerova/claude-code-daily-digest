@@ -86,6 +86,28 @@ def test_run_archives_even_if_email_fails(tmp_path, monkeypatch):
     assert (digests / "2026-06-22-v9.9.9.md").exists()
 
 
+def test_run_continues_when_readme_update_fails(tmp_path, monkeypatch):
+    digests = tmp_path / "digests"
+    readme = _readme_with_block(tmp_path)
+    monkeypatch.setattr(m, "DIGESTS_DIR", digests)
+    monkeypatch.setattr(m, "README_PATH", readme)
+    monkeypatch.setattr(m, "load_config", lambda: FAKE_CONFIG)
+    monkeypatch.setattr(m, "fetch_changelog", lambda: "raw")
+    monkeypatch.setattr(m, "parse_latest", lambda raw: Release("9.9.9", "notes"))
+    monkeypatch.setattr(m, "summarize", lambda *a, **k: Digest("Subj", "body"))
+    monkeypatch.setattr(m, "send_email", lambda *a, **k: None)
+
+    def boom(*a, **k):
+        raise ValueError("missing one or both")
+
+    monkeypatch.setattr(m, "update_readme", boom)
+
+    code = m.run(today="2026-06-22")
+
+    assert code == 1
+    assert (digests / "2026-06-22-v9.9.9.md").exists()
+
+
 def test_run_falls_back_to_raw_notes_when_summary_fails(tmp_path, monkeypatch):
     digests = tmp_path / "digests"
     readme = _readme_with_block(tmp_path)

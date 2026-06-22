@@ -65,9 +65,13 @@ def run(*, today: str | None = None) -> int:
     write_archive(
         DIGESTS_DIR, today, release.version, digest.subject, digest.body_markdown
     )
-    update_readme(
-        README_PATH, today, release.version, digest.subject, digest.body_markdown
-    )
+    try:
+        update_readme(
+            README_PATH, today, release.version, digest.subject, digest.body_markdown
+        )
+    except Exception as exc:  # noqa: BLE001
+        print(f"README update failed ({exc}); archive saved, continuing.")
+        exit_code = 1
     print(f"Archived digest for v{release.version}.")
     return exit_code
 

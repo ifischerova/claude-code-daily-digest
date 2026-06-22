@@ -49,7 +49,7 @@ def _parse_response(content: str) -> Digest:
     try:
         data, _ = json.JSONDecoder().raw_decode(content[start:])
     except json.JSONDecodeError as exc:
-        raise ValueError("No JSON object found in model response") from exc
+        raise ValueError("Malformed JSON in model response") from exc
     try:
         return Digest(subject=data["subject"], body_markdown=data["body"])
     except (KeyError, TypeError) as exc:

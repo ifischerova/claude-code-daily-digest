@@ -39,14 +39,21 @@ Browse every past edition in [`/digests`](./digests).
 3. (Optional) Add **Actions variables**: `OPENROUTER_MODEL`, `MAIL_FROM`.
 4. Enable Actions, then run **Daily Claude Code Digest → Run workflow** to test.
 
-Local run:
+Local run (to test before scheduling):
 
 ```bash
 pip install -r requirements-dev.txt
-cp .env.example .env   # fill in your keys
 pytest
+```
+
+To run the digest end-to-end locally you must set the environment variables yourself (there's no `.env` auto-loader — `.env.example` just documents what's needed):
+
+```bash
+export OPENROUTER_API_KEY=... RESEND_API_KEY=... MAIL_TO=you@example.com
 python -m src.main
 ```
+
+On Windows PowerShell: `$env:OPENROUTER_API_KEY="..."` (etc.) then `python -m src.main`.
 
 ## 🧱 Tech
 

@@ -21,6 +21,11 @@ def test_parse_response_raises_on_missing_keys():
         _parse_response('{"title": "wrong key"}')
 
 
+def test_parse_response_raises_on_malformed_json():
+    with pytest.raises(ValueError, match="Malformed JSON"):
+        _parse_response("here it is: {not valid json")
+
+
 def test_summarize_posts_to_openrouter_and_parses():
     class FakeResp:
         def raise_for_status(self):
