@@ -63,7 +63,7 @@ def test_run_skips_when_version_already_digested(tmp_path, monkeypatch):
     assert "summarize" not in called
 
 
-def test_run_archives_even_if_email_fails(tmp_path, monkeypatch):
+def test_run_skips_archive_when_email_fails(tmp_path, monkeypatch):
     digests = tmp_path / "digests"
     readme = _readme_with_block(tmp_path)
     monkeypatch.setattr(m, "DIGESTS_DIR", digests)
@@ -82,8 +82,10 @@ def test_run_archives_even_if_email_fails(tmp_path, monkeypatch):
 
     code = m.run(today="2026-06-22")
 
+    # Email failed, so nothing is archived: the next run retries instead of
+    # treating this version as already sent.
     assert code == 1
-    assert (digests / "2026-06-22-v9.9.9.md").exists()
+    assert not (digests / "2026-06-22-v9.9.9.md").exists()
 
 
 def test_run_continues_when_readme_update_fails(tmp_path, monkeypatch):

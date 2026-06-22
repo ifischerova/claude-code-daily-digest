@@ -6,6 +6,8 @@ from dataclasses import dataclass
 
 import requests
 
+from src.http_utils import raise_for_status_verbose
+
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 SYSTEM_PROMPT = """You are the editor of a warm, friendly developer newsletter \
@@ -74,6 +76,11 @@ def summarize(
         "Content-Type": "application/json",
     }
     response = http_post(OPENROUTER_URL, headers=headers, json=payload, timeout=60)
-    response.raise_for_status()
-    content = response.json()["choices"][0]["message"]["content"]
+    raise_for_status_verbose(response)
+    data = response.json()
+    try:
+        content = data["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, TypeError) as exc:
+        detail = data.get("error", data) if isinstance(data, dict) else data
+        raise ValueError(f"Unexpected OpenRouter response: {detail}") from exc
     return _parse_response(content)

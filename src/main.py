@@ -4,6 +4,7 @@ from __future__ import annotations
 import datetime
 import sys
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from src.changelog import fetch_changelog, parse_latest
 from src.config import load_config
@@ -14,10 +15,13 @@ from src.summarizer import Digest, summarize
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DIGESTS_DIR = REPO_ROOT / "digests"
 README_PATH = REPO_ROOT / "README.md"
+_PRAGUE = ZoneInfo("Europe/Prague")
 
 
 def _today() -> str:
-    return datetime.date.today().isoformat()
+    # Use Prague local date so the digest label matches the reader's day,
+    # not the CI runner's UTC clock (which can be a day behind near midnight).
+    return datetime.datetime.now(_PRAGUE).date().isoformat()
 
 
 def run(*, today: str | None = None) -> int:
@@ -48,7 +52,10 @@ def run(*, today: str | None = None) -> int:
             ),
         )
 
-    exit_code = 0
+    # Send first. The committed archive is our "already sent" marker
+    # (digest_exists checks it), so we only archive AFTER a successful send.
+    # A failed send leaves no archive, so the next run retries instead of
+    # silently dropping the email.
     try:
         send_email(
             digest.subject,
@@ -59,9 +66,10 @@ def run(*, today: str | None = None) -> int:
         )
         print("Email sent.")
     except Exception as exc:  # noqa: BLE001
-        print(f"Email failed ({exc}); archiving anyway.")
-        exit_code = 1
+        print(f"Email failed ({exc}); not archiving so the next run retries.")
+        return 1
 
+    exit_code = 0
     write_archive(
         DIGESTS_DIR, today, release.version, digest.subject, digest.body_markdown
     )

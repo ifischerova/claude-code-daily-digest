@@ -2,11 +2,15 @@ name: Daily Claude Code Digest
 
 on:
   schedule:
-    - cron: "0 5 * * *"  # ~07:00 Europe/Prague (CEST)
+    - cron: "0 5 * * *"  # 06:00 (CET) / 07:00 (CEST) Europe/Prague
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
 
 jobs:
   digest:
@@ -31,6 +35,11 @@ jobs:
         run: python -m src.main
 
       - name: Commit new digest
+        # Always run: if README update failed (non-zero exit) the archive was
+        # still written, and committing it is what prevents a duplicate email
+        # on the next run. If the send failed, nothing was archived and this is
+        # a no-op.
+        if: always()
         run: |
           git config user.name "Iva Fischerova"
           git config user.email "fischerova.ivka@gmail.com"

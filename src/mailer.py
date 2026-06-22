@@ -4,6 +4,8 @@ from __future__ import annotations
 import markdown as md
 import requests
 
+from src.http_utils import raise_for_status_verbose
+
 RESEND_URL = "https://api.resend.com/emails"
 
 
@@ -32,4 +34,4 @@ def send_email(
         "Content-Type": "application/json",
     }
     response = http_post(RESEND_URL, headers=headers, json=payload, timeout=30)
-    response.raise_for_status()
+    raise_for_status_verbose(response)

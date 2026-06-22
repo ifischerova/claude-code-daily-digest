@@ -26,6 +26,21 @@ def test_parse_response_raises_on_malformed_json():
         _parse_response("here it is: {not valid json")
 
 
+def test_summarize_raises_clearly_on_unexpected_response():
+    class FakeResp:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"error": {"message": "rate limited"}}
+
+    def fake_post(url, headers, json, timeout):
+        return FakeResp()
+
+    with pytest.raises(ValueError, match="Unexpected OpenRouter response"):
+        summarize("1.0.0", "notes", api_key="k", model="m", http_post=fake_post)
+
+
 def test_summarize_posts_to_openrouter_and_parses():
     class FakeResp:
         def raise_for_status(self):
