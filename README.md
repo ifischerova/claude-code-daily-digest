@@ -23,21 +23,23 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother sessions with Claude Code 2.1.185 🛠️
+### Smoother workflows and better SSH support in Claude Code 2.1.186 🚀
 
-_Claude Code v2.1.185 — 2026-06-22_
+_Claude Code v2.1.186 — 2026-06-23_
 
-**TL;DR** — We’ve refined how Claude Code handles connection delays to keep your workflow steady and less prone to false alarms.
+**TL;DR** — This update brings faster MCP authentication, improved background agent handling, and a host of stability fixes to keep your coding flow uninterrupted.
 
-**⭐ Highlight of the release** — The "stream stall" notifications are now more patient and descriptive, waiting 20 seconds before checking in on your API connection.
+**⭐ Highlight of the release** — You can now authenticate MCP servers directly from your terminal using `claude mcp login <name>`, including support for SSH environments via `--no-browser`.
 
 **What's new**
-* **Clearer status updates:** The connection message is now friendlier, letting you know the tool is simply waiting for a response rather than sounding like it's failing.
-* **Increased threshold:** We’ve doubled the silence buffer from 10 to 20 seconds, giving the API more room to breathe before triggering a retry.
+- **Proactive Bash:** Claude now automatically responds to your `!` bash command output (you can toggle this off in settings).
+- **Better Agent Control:** You can now filter background agents by status and enjoy improved permission prompts that surface directly in your main session.
+- **Easier Management:** The `/plugin` menu now features a dedicated "Skills" section, and we've added smarter suggestions for MCP server commands.
+- **Enhanced Reliability:** We've squashed a variety of bugs related to session wake-from-sleep, terminal UI glitches, and agent team communication.
 
-**Why you'll care** — You'll see fewer annoying "retry" interruptions during heavy workloads or minor network hiccups, keeping your focus right where it belongs: on your code.
+**Why you'll care** — These changes make Claude Code feel more like a seamless extension of your terminal, especially if you work over SSH or rely heavily on background automation.
 
-Happy coding, and see you in the next update!
+Happy coding, and let us know what you think!
 
 <!-- LATEST:END -->
 
