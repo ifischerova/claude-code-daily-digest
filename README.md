@@ -23,23 +23,27 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother workflows and better SSH support in Claude Code 2.1.186 🚀
+### Claude Code 2.1.187: Smoother, faster, and more secure 🚀
 
-_Claude Code v2.1.186 — 2026-06-23_
+_Claude Code v2.1.187 — 2026-06-24_
 
-**TL;DR** — This update brings faster MCP authentication, improved background agent handling, and a host of stability fixes to keep your coding flow uninterrupted.
+**TL;DR**
+This update brings better security controls, snappier performance, and a handful of quality-of-life fixes to your terminal workflow.
 
-**⭐ Highlight of the release** — You can now authenticate MCP servers directly from your terminal using `claude mcp login <name>`, including support for SSH environments via `--no-browser`.
+**⭐ Highlight of the release**
+We’ve added `sandbox.credentials` settings, giving you peace of mind that your sensitive credentials and secret environment variables stay safely isolated from sandboxed commands.
 
 **What's new**
-- **Proactive Bash:** Claude now automatically responds to your `!` bash command output (you can toggle this off in settings).
-- **Better Agent Control:** You can now filter background agents by status and enjoy improved permission prompts that surface directly in your main session.
-- **Easier Management:** The `/plugin` menu now features a dedicated "Skills" section, and we've added smarter suggestions for MCP server commands.
-- **Enhanced Reliability:** We've squashed a variety of bugs related to session wake-from-sleep, terminal UI glitches, and agent team communication.
+* **Better navigation:** You can now use your mouse to click through menus and use arrow keys to flip through previous `/btw` answers.
+* **Smart restrictions:** The model picker now respects your organization's specific model policies, keeping you compliant without the guesswork.
+* **Reliability boosts:** We’ve fixed several bugs that caused hanging sessions, dropped connections, and issues with structured output or subagent depth.
+* **Streamlined setup:** Installing the GitHub App is now easier, with optional workflow steps, and we’ve sped up Remote session start times.
+* **Terminal polish:** Korean/CJK character support is fixed, and keyboard shortcuts like `Esc` and `Ctrl-C` now work reliably during file uploads.
 
-**Why you'll care** — These changes make Claude Code feel more like a seamless extension of your terminal, especially if you work over SSH or rely heavily on background automation.
+**Why you'll care**
+These updates make Claude Code feel more robust and intuitive, ensuring your tools stay out of your way so you can focus on shipping code.
 
-Happy coding, and let us know what you think!
+Happy coding, and enjoy the smoother experience!
 
 <!-- LATEST:END -->
 
