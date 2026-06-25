@@ -23,27 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.187: Smoother, faster, and more secure 🚀
+### Claude Code 2.1.191: Smoother, faster, and more reliable ⚡
 
-_Claude Code v2.1.187 — 2026-06-24_
+_Claude Code v2.1.191 — 2026-06-25_
 
-**TL;DR**
-This update brings better security controls, snappier performance, and a handful of quality-of-life fixes to your terminal workflow.
+**TL;DR** — This update brings major performance boosts, smarter agent controls, and a much smoother experience for long coding sessions.
 
 **⭐ Highlight of the release**
-We’ve added `sandbox.credentials` settings, giving you peace of mind that your sensitive credentials and secret environment variables stay safely isolated from sandboxed commands.
+We’ve optimized how text is rendered during streaming, reducing CPU usage by roughly 37% and making long sessions feel significantly snappier.
 
 **What's new**
-* **Better navigation:** You can now use your mouse to click through menus and use arrow keys to flip through previous `/btw` answers.
-* **Smart restrictions:** The model picker now respects your organization's specific model policies, keeping you compliant without the guesswork.
-* **Reliability boosts:** We’ve fixed several bugs that caused hanging sessions, dropped connections, and issues with structured output or subagent depth.
-* **Streamlined setup:** Installing the GitHub App is now easier, with optional workflow steps, and we’ve sped up Remote session start times.
-* **Terminal polish:** Korean/CJK character support is fixed, and keyboard shortcuts like `Esc` and `Ctrl-C` now work reliably during file uploads.
+* **Rewind your thoughts:** Use `/rewind` to pick up your conversation right where it was before your last `/clear`.
+* **Better agent control:** Stopping a background agent now actually stops it—no more surprise resurrections.
+* **Saner sandboxing:** If you approve a network connection, Claude will remember that choice for the rest of your session.
+* **Reliable MCPs:** We’ve added retry logic for network hiccups and improved error reporting, so your MCP servers stay connected and transparent.
+* **Polished UI:** We fixed several annoying quirks, including auto-scrolling jumps, terminal layout issues, and confusing file path displays.
 
 **Why you'll care**
-These updates make Claude Code feel more robust and intuitive, ensuring your tools stay out of your way so you can focus on shipping code.
+Your terminal will feel lighter, your agents will finally listen when you tell them to stop, and those little UI frustrations you've been ignoring are finally gone.
 
-Happy coding, and enjoy the smoother experience!
+Happy coding, and enjoy the smoother ride!
 
 <!-- LATEST:END -->
 
