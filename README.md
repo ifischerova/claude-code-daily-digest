@@ -23,26 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.191: Smoother, faster, and more reliable ⚡
+### Smoother backgrounding and smarter command handling 🚀
 
-_Claude Code v2.1.191 — 2026-06-25_
+_Claude Code v2.1.193 — 2026-06-26_
 
-**TL;DR** — This update brings major performance boosts, smarter agent controls, and a much smoother experience for long coding sessions.
+**TL;DR** — Claude Code 2.1.193 brings improved background task management, smarter command routing, and a more intuitive Bash experience.
 
 **⭐ Highlight of the release**
-We’ve optimized how text is rendered during streaming, reducing CPU usage by roughly 37% and making long sessions feel significantly snappier.
+We’ve overhauled background agents so they no longer stop working mid-task, allowing Claude to keep juggling multiple workflows in the background without needing constant hand-holding.
 
 **What's new**
-* **Rewind your thoughts:** Use `/rewind` to pick up your conversation right where it was before your last `/clear`.
-* **Better agent control:** Stopping a background agent now actually stops it—no more surprise resurrections.
-* **Saner sandboxing:** If you approve a network connection, Claude will remember that choice for the rest of your session.
-* **Reliable MCPs:** We’ve added retry logic for network hiccups and improved error reporting, so your MCP servers stay connected and transparent.
-* **Polished UI:** We fixed several annoying quirks, including auto-scrolling jumps, terminal layout issues, and confusing file path displays.
+* **Smarter Bash:** Enjoy live file path autocomplete when using the `!` prefix, making navigation much faster.
+* **Enhanced Security:** You can now route all shell commands through the auto-mode classifier for extra safety, and you'll get clearer feedback if a command is denied.
+* **Better Auth:** MCP tools that require authentication now automatically reconnect if they hit an error, and we’ve added a startup notice to help you manage your MCP servers.
+* **System Stability:** Background shell commands now automatically manage memory better, and we’ve squashed several bugs that caused phantom agents or stale UI states after logging in.
+* **Observability:** Added optional OpenTelemetry logging for assistant responses (defaulting to match your existing prompt-logging settings).
 
 **Why you'll care**
-Your terminal will feel lighter, your agents will finally listen when you tell them to stop, and those little UI frustrations you've been ignoring are finally gone.
+This update removes the friction from long-running tasks and shell interactions, making your development loop feel more fluid and reliable.
 
-Happy coding, and enjoy the smoother ride!
+Happy coding, and let us know what you think!
 
 <!-- LATEST:END -->
 
