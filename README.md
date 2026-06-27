@@ -23,26 +23,25 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother backgrounding and smarter command handling 🚀
+### Smoother sessions and reliable voice dictation in Claude Code 2.1.195 🚀
 
-_Claude Code v2.1.193 — 2026-06-26_
+_Claude Code v2.1.195 — 2026-06-27_
 
-**TL;DR** — Claude Code 2.1.193 brings improved background task management, smarter command routing, and a more intuitive Bash experience.
+**TL;DR** — This update polishes background task reliability, fixes voice dictation glitches, and improves how you interact with your agents.
 
-**⭐ Highlight of the release**
-We’ve overhauled background agents so they no longer stop working mid-task, allowing Claude to keep juggling multiple workflows in the background without needing constant hand-holding.
+**⭐ Highlight of the release** — We’ve overhauled voice dictation to support non-spaced languages like Japanese, Chinese, and Thai, and fixed pesky bugs that caused audio to cut out on macOS.
 
 **What's new**
-* **Smarter Bash:** Enjoy live file path autocomplete when using the `!` prefix, making navigation much faster.
-* **Enhanced Security:** You can now route all shell commands through the auto-mode classifier for extra safety, and you'll get clearer feedback if a command is denied.
-* **Better Auth:** MCP tools that require authentication now automatically reconnect if they hit an error, and we’ve added a startup notice to help you manage your MCP servers.
-* **System Stability:** Background shell commands now automatically manage memory better, and we’ve squashed several bugs that caused phantom agents or stale UI states after logging in.
-* **Observability:** Added optional OpenTelemetry logging for assistant responses (defaulting to match your existing prompt-logging settings).
+* **Better Control:** Use `CLAUDE_CODE_DISABLE_MOUSE_CLICKS` to disable clicks in fullscreen mode while keeping scroll functionality.
+* **Task Stability:** Background agents are now more robust, preventing data loss and ensuring they restart correctly after crashes.
+* **Plugin Fixes:** Managing external plugins is now seamless, with fixes for installation consent and name-matching issues.
+* **Agent Visibility:** The `claude agents` view now adapts to your terminal height, so you can always see your live sessions.
+* **Smart Matching:** Hook matchers now use exact matching to prevent accidental overlaps with hyphenated tool names.
+* **Setup Clarity:** Remote sessions now show a helpful provisioning checklist while your container boots up.
 
-**Why you'll care**
-This update removes the friction from long-running tasks and shell interactions, making your development loop feel more fluid and reliable.
+**Why you'll care** — You can spend less time troubleshooting your environment and more time building with a faster, more reliable Claude Code.
 
-Happy coding, and let us know what you think!
+Happy coding, and enjoy the smoother workflow!
 
 <!-- LATEST:END -->
 
