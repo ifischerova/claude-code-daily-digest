@@ -23,25 +23,27 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother sessions and reliable voice dictation in Claude Code 2.1.195 🚀
+### Claude Code 2.1.196: Smoother sessions and smarter agents 🚀
 
-_Claude Code v2.1.195 — 2026-06-27_
+_Claude Code v2.1.196 — 2026-06-30_
 
-**TL;DR** — This update polishes background task reliability, fixes voice dictation glitches, and improves how you interact with your agents.
+**TL;DR** — We’ve polished background agents, improved session management, and added handy quality-of-life features to make your coding flow feel more seamless.
 
-**⭐ Highlight of the release** — We’ve overhauled voice dictation to support non-spaced languages like Japanese, Chinese, and Thai, and fixed pesky bugs that caused audio to cut out on macOS.
+**⭐ Highlight of the release**
+Background agents are now much more resilient; if your session process is interrupted or a daemon restarts, your work will automatically resume right where it left off instead of getting lost.
 
 **What's new**
-* **Better Control:** Use `CLAUDE_CODE_DISABLE_MOUSE_CLICKS` to disable clicks in fullscreen mode while keeping scroll functionality.
-* **Task Stability:** Background agents are now more robust, preventing data loss and ensuring they restart correctly after crashes.
-* **Plugin Fixes:** Managing external plugins is now seamless, with fixes for installation consent and name-matching issues.
-* **Agent Visibility:** The `claude agents` view now adapts to your terminal height, so you can always see your live sessions.
-* **Smart Matching:** Hook matchers now use exact matching to prevent accidental overlaps with hyphenated tool names.
-* **Setup Clarity:** Remote sessions now show a helpful provisioning checklist while your container boots up.
+* **Org-wide defaults:** Admins can now set default models for the whole team.
+* **Clickable files:** You can now Cmd/Ctrl-click file attachments in chat to jump straight to them in your Finder or Explorer.
+* **Organized sessions:** New sessions now get readable names automatically so you can find them later.
+* **Refined Agents:** We fixed several UI bugs in the agents panel, including better status labels so you know exactly when an agent needs your input.
+* **Smarter Code Reviews:** Your `/code-review` workflow is now 25% more token-efficient.
+* **Security:** Better handling of untrusted workspaces to keep your MCP servers safe.
 
-**Why you'll care** — You can spend less time troubleshooting your environment and more time building with a faster, more reliable Claude Code.
+**Why you'll care**
+This update removes the friction from long-running tasks and makes navigating your workspace—whether through file links or better-named sessions—significantly faster.
 
-Happy coding, and enjoy the smoother workflow!
+Happy coding, and enjoy the smoother experience!
 
 <!-- LATEST:END -->
 
