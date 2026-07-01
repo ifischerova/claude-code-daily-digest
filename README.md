@@ -23,27 +23,22 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.196: Smoother sessions and smarter agents 🚀
+### Claude Sonnet 3.5 is here! 🚀
 
-_Claude Code v2.1.196 — 2026-06-30_
+_Claude Code v2.1.197 — 2026-07-01_
 
-**TL;DR** — We’ve polished background agents, improved session management, and added handy quality-of-life features to make your coding flow feel more seamless.
+**TL;DR** — Claude Code now defaults to the powerful new Claude 3.5 Sonnet, giving you a massive 1M-token context window for all your projects.
 
-**⭐ Highlight of the release**
-Background agents are now much more resilient; if your session process is interrupted or a daemon restarts, your work will automatically resume right where it left off instead of getting lost.
+**⭐ Highlight of the release** — We've bumped the default model to Claude 3.5 Sonnet, which brings significantly improved reasoning and a massive 1-million-token context window to your coding workflow.
 
 **What's new**
-* **Org-wide defaults:** Admins can now set default models for the whole team.
-* **Clickable files:** You can now Cmd/Ctrl-click file attachments in chat to jump straight to them in your Finder or Explorer.
-* **Organized sessions:** New sessions now get readable names automatically so you can find them later.
-* **Refined Agents:** We fixed several UI bugs in the agents panel, including better status labels so you know exactly when an agent needs your input.
-* **Smarter Code Reviews:** Your `/code-review` workflow is now 25% more token-efficient.
-* **Security:** Better handling of untrusted workspaces to keep your MCP servers safe.
+* **New Default:** Claude 3.5 Sonnet is now the engine under the hood.
+* **Extended Memory:** You can now handle much larger codebases thanks to the 1M-token context limit.
+* **Special Pricing:** Enjoy promotional pricing of $2/$10 per million tokens through August 31.
 
-**Why you'll care**
-This update removes the friction from long-running tasks and makes navigating your workspace—whether through file links or better-named sessions—significantly faster.
+**Why you'll care** — You can now feed Claude much larger chunks of your project at once, meaning less context-switching and more accurate answers for complex architectural questions.
 
-Happy coding, and enjoy the smoother experience!
+Happy coding, and enjoy the extra elbow room!
 
 <!-- LATEST:END -->
 
