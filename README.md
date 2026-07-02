@@ -23,22 +23,25 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Sonnet 3.5 is here! 🚀
+### Claude Code 2.1.198: Now with background PRs and Chrome support 🚀
 
-_Claude Code v2.1.197 — 2026-07-01_
+_Claude Code v2.1.198 — 2026-07-02_
 
-**TL;DR** — Claude Code now defaults to the powerful new Claude 3.5 Sonnet, giving you a massive 1M-token context window for all your projects.
+**TL;DR** — This release brings background automation, better agent reliability, and long-awaited browser support.
 
-**⭐ Highlight of the release** — We've bumped the default model to Claude 3.5 Sonnet, which brings significantly improved reasoning and a massive 1-million-token context window to your coding workflow.
+**⭐ Highlight of the release** — Claude can now work completely autonomously in the background, finishing your code, pushing commits, and opening draft PRs without needing you to click "approve" at every step.
 
 **What's new**
-* **New Default:** Claude 3.5 Sonnet is now the engine under the hood.
-* **Extended Memory:** You can now handle much larger codebases thanks to the 1M-token context limit.
-* **Special Pricing:** Enjoy promotional pricing of $2/$10 per million tokens through August 31.
+* **Claude in Chrome:** Generally available for a more integrated web experience.
+* **Smart Data Viz:** Use the new `/dataviz` skill to design dashboards and validate your color palettes.
+* **Smarter Agents:** Background agents are better at handling network hiccups, auto-refreshing AWS credentials, and reporting back clearly if they hit a snag.
+* **Improved Context:** Subagents now inherit your specific model and "extended thinking" settings for better, more consistent results.
+* **Polished UI:** Cleaner syntax highlighting, better keyboard shortcuts for Mac users, and fixes for UI quirks in fullscreen and branch switching.
 
-**Why you'll care** — You can now feed Claude much larger chunks of your project at once, meaning less context-switching and more accurate answers for complex architectural questions.
+**Why you'll care**
+Your coding workflow just got a lot more "set it and forget it." With background PRs and more resilient agent connections, you spend less time babysitting the tool and more time reviewing the heavy lifting Claude does for you.
 
-Happy coding, and enjoy the extra elbow room!
+Happy coding!
 
 <!-- LATEST:END -->
 
