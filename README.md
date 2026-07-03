@@ -23,25 +23,25 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.198: Now with background PRs and Chrome support 🚀
+### Claude Code 2.1.199: Smoother workflows and smarter agents 🚀
 
-_Claude Code v2.1.198 — 2026-07-02_
+_Claude Code v2.1.199 — 2026-07-03_
 
-**TL;DR** — This release brings background automation, better agent reliability, and long-awaited browser support.
+**TL;DR** — This release focuses on stability, fixing pesky background agent crashes and ensuring you never lose progress during intermittent network or rate-limit hiccups.
 
-**⭐ Highlight of the release** — Claude can now work completely autonomously in the background, finishing your code, pushing commits, and opening draft PRs without needing you to click "approve" at every step.
+**⭐ Highlight of the release** — We've overhauled how Claude Code handles interruptions; instead of losing your work when a subagent hits a rate limit or a server error, you'll now receive the partial results captured so far.
 
 **What's new**
-* **Claude in Chrome:** Generally available for a more integrated web experience.
-* **Smart Data Viz:** Use the new `/dataviz` skill to design dashboards and validate your color palettes.
-* **Smarter Agents:** Background agents are better at handling network hiccups, auto-refreshing AWS credentials, and reporting back clearly if they hit a snag.
-* **Improved Context:** Subagents now inherit your specific model and "extended thinking" settings for better, more consistent results.
-* **Polished UI:** Cleaner syntax highlighting, better keyboard shortcuts for Mac users, and fixes for UI quirks in fullscreen and branch switching.
+* **Stacked Skills:** You can now chain up to 5 slash-skills in one command, and Claude will load them all at once.
+* **Better Error Handling:** SSL issues and subagent failures now provide immediate, actionable advice rather than failing silently or burning through retries.
+* **Reliable Backgrounding:** We’ve squashed the bugs causing Linux background agents to crash prematurely and fixed the SSH cold-start issues on macOS.
+* **Smarter UI:** Idle subagents now collapse into a tidy summary row, and we've added helpful notices to clarify when commands target your lead agent versus a subagent.
+* **Safety First:** If your config file gets corrupted, we now back it up automatically before attempting a reset.
 
 **Why you'll care**
-Your coding workflow just got a lot more "set it and forget it." With background PRs and more resilient agent connections, you spend less time babysitting the tool and more time reviewing the heavy lifting Claude does for you.
+These fixes make the tool feel significantly more predictable—you spend less time babysitting background processes and more time coding with a Claude that actually keeps up with your workflow.
 
-Happy coding!
+Happy coding, and enjoy the smoother experience!
 
 <!-- LATEST:END -->
 
