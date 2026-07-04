@@ -23,25 +23,21 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.199: Smoother workflows and smarter agents 🚀
+### A cleaner, smoother chat experience in Claude Code 🚀
 
-_Claude Code v2.1.199 — 2026-07-03_
+_Claude Code v2.1.201 — 2026-07-04_
 
-**TL;DR** — This release focuses on stability, fixing pesky background agent crashes and ensuring you never lose progress during intermittent network or rate-limit hiccups.
+**TL;DR** — We’ve tidied up how Claude handles session instructions for a more natural flow.
 
-**⭐ Highlight of the release** — We've overhauled how Claude Code handles interruptions; instead of losing your work when a subagent hits a rate limit or a server error, you'll now receive the partial results captured so far.
+**⭐ Highlight of the release** — Claude Sonnet 3.5 sessions no longer inject system-level harness reminders in the middle of your conversations.
 
 **What's new**
-* **Stacked Skills:** You can now chain up to 5 slash-skills in one command, and Claude will load them all at once.
-* **Better Error Handling:** SSL issues and subagent failures now provide immediate, actionable advice rather than failing silently or burning through retries.
-* **Reliable Backgrounding:** We’ve squashed the bugs causing Linux background agents to crash prematurely and fixed the SSH cold-start issues on macOS.
-* **Smarter UI:** Idle subagents now collapse into a tidy summary row, and we've added helpful notices to clarify when commands target your lead agent versus a subagent.
-* **Safety First:** If your config file gets corrupted, we now back it up automatically before attempting a reset.
+* We’ve removed the automated mid-chat reminders that were cluttering up your session logs.
+* Your interaction with Claude will now feel more like a direct, uninterrupted dialogue.
 
-**Why you'll care**
-These fixes make the tool feel significantly more predictable—you spend less time babysitting background processes and more time coding with a Claude that actually keeps up with your workflow.
+**Why you'll care** — You get a cleaner workspace and a more focused experience where the AI stays out of your way and sticks to the task at hand.
 
-Happy coding, and enjoy the smoother experience!
+Happy coding, and may your sessions be distraction-free!
 
 <!-- LATEST:END -->
 
