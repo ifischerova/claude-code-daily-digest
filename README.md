@@ -23,21 +23,28 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### A cleaner, smoother chat experience in Claude Code 🚀
+### Claude Code 2.1.202 is here with better workflows and smoother sessions 🚀
 
-_Claude Code v2.1.201 — 2026-07-04_
+_Claude Code v2.1.202 — 2026-07-07_
 
-**TL;DR** — We’ve tidied up how Claude handles session instructions for a more natural flow.
+**TL;DR**
+This update refines your workflow controls, fixes pesky session crashes, and makes remote management more reliable.
 
-**⭐ Highlight of the release** — Claude Sonnet 3.5 sessions no longer inject system-level harness reminders in the middle of your conversations.
+**⭐ Highlight of the release**
+We’ve added a new "Dynamic workflow size" setting in `/config`, giving you better control over how Claude scales agent counts for your projects.
 
 **What's new**
-* We’ve removed the automated mid-chat reminders that were cluttering up your session logs.
-* Your interaction with Claude will now feel more like a direct, uninterrupted dialogue.
+* **Workflow tuning:** You can now suggest whether Claude uses small, medium, or large agent counts for dynamic tasks.
+* **Better visibility:** `/workflows` now features a cleaner, more readable list layout.
+* **Remote control fixes:** Images without captions no longer vanish, and commands sent from the mobile/web app are processed correctly.
+* **Efficiency boost:** Opening sessions in large repositories is now significantly faster and uses less memory.
+* **Polished UX:** Login links are now easier to click in SSH, and we’ve squashed a variety of crashes related to history search, voice dictation, and background agents.
+* **Workflow improvements:** Parsing errors are now much more descriptive, helping you find exactly what went wrong in your scripts.
 
-**Why you'll care** — You get a cleaner workspace and a more focused experience where the AI stays out of your way and sticks to the task at hand.
+**Why you'll care**
+These tweaks make Claude Code feel more stable and responsive, especially if you’re using remote access or working in complex, multi-branch environments.
 
-Happy coding, and may your sessions be distraction-free!
+Happy coding, and let us know what you think!
 
 <!-- LATEST:END -->
 
