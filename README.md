@@ -23,28 +23,21 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.202 is here with better workflows and smoother sessions 🚀
+### Smoother sessions for remote workflows 🚀
 
-_Claude Code v2.1.202 — 2026-07-07_
+_Claude Code v2.1.204 — 2026-07-08_
 
-**TL;DR**
-This update refines your workflow controls, fixes pesky session crashes, and makes remote management more reliable.
+**TL;DR** — We’ve fixed a bug that caused remote sessions to cut out prematurely during startup.
 
-**⭐ Highlight of the release**
-We’ve added a new "Dynamic workflow size" setting in `/config`, giving you better control over how Claude scales agent counts for your projects.
+**⭐ Highlight of the release** — Improved reliability for headless sessions, ensuring your environment stays active while critical startup hooks are running.
 
 **What's new**
-* **Workflow tuning:** You can now suggest whether Claude uses small, medium, or large agent counts for dynamic tasks.
-* **Better visibility:** `/workflows` now features a cleaner, more readable list layout.
-* **Remote control fixes:** Images without captions no longer vanish, and commands sent from the mobile/web app are processed correctly.
-* **Efficiency boost:** Opening sessions in large repositories is now significantly faster and uses less memory.
-* **Polished UX:** Login links are now easier to click in SSH, and we’ve squashed a variety of crashes related to history search, voice dictation, and background agents.
-* **Workflow improvements:** Parsing errors are now much more descriptive, helping you find exactly what went wrong in your scripts.
+* Fixed an issue where hook events wouldn't stream properly during the initial session launch.
+* Prevented remote workers from being accidentally "reaped" or closed while they were still busy setting up.
 
-**Why you'll care**
-These tweaks make Claude Code feel more stable and responsive, especially if you’re using remote access or working in complex, multi-branch environments.
+**Why you'll care** — You won't have to worry about your remote dev environment timing out or closing unexpectedly right as you're getting started.
 
-Happy coding, and let us know what you think!
+Happy coding, and thanks for being part of our community!
 
 <!-- LATEST:END -->
 
