@@ -23,21 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother sessions for remote workflows 🚀
+### Claude Code 2.1.205 is here with a smarter, smoother experience 🚀
 
-_Claude Code v2.1.204 — 2026-07-08_
+_Claude Code v2.1.205 — 2026-07-09_
 
-**TL;DR** — We’ve fixed a bug that caused remote sessions to cut out prematurely during startup.
+**TL;DR** — This update brings major stability improvements, a more helpful `/doctor` command, and a much cleaner dashboard for managing your background agents.
 
-**⭐ Highlight of the release** — Improved reliability for headless sessions, ensuring your environment stays active while critical startup hooks are running.
+**⭐ Highlight of the release**
+We’ve overhauled the agent dashboard: instead of reading raw technical logs, you’ll now see clear, color-coded status labels and human-readable headlines for every task, making it instantly obvious what your agents are working on.
 
 **What's new**
-* Fixed an issue where hook events wouldn't stream properly during the initial session launch.
-* Prevented remote workers from being accidentally "reaped" or closed while they were still busy setting up.
+*   **Health Checks:** The new `/doctor` command now acts as a full diagnostic tool that can identify and automatically fix common setup issues.
+*   **Safer Automation:** Claude is now more cautious, asking for your permission before running risky commands like `rm -rf` on unclear file paths.
+*   **Better Reliability:** We’ve squashed a variety of bugs, including Windows-specific crashes, file-handling errors, and issues where background tasks would get stuck in the wrong status.
+*   **Efficiency:** The auto-updater is now much lighter on your system, reducing peak memory usage by 400 MB by streaming downloads directly to disk.
+*   **Clearer Communication:** Background task notifications now explicitly flag when no human input has occurred, so you never have to worry about accidental approvals.
 
-**Why you'll care** — You won't have to worry about your remote dev environment timing out or closing unexpectedly right as you're getting started.
+**Why you'll care**
+These refinements make Claude Code feel less like a collection of scripts and more like a reliable teammate that knows when to ask for help and when to get out of your way.
 
-Happy coding, and thanks for being part of our community!
+Happy coding, and let us know what you think!
 
 <!-- LATEST:END -->
 
