@@ -23,26 +23,27 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.205 is here with a smarter, smoother experience 🚀
+### Claude Code 2.1.206: Smarter checkups and smoother workflows 🚀
 
-_Claude Code v2.1.205 — 2026-07-09_
+_Claude Code v2.1.206 — 2026-07-10_
 
-**TL;DR** — This update brings major stability improvements, a more helpful `/doctor` command, and a much cleaner dashboard for managing your background agents.
+**TL;DR** — We’ve polished the agent experience, streamlined git workflows, and introduced a new `/doctor` check to keep your codebase lean.
 
 **⭐ Highlight of the release**
-We’ve overhauled the agent dashboard: instead of reading raw technical logs, you’ll now see clear, color-coded status labels and human-readable headlines for every task, making it instantly obvious what your agents are working on.
+Your `CLAUDE.md` just got a spring cleaning! The new `/doctor` check now scans your documentation and suggests trimming redundant info that Claude can already figure out on its own, keeping your context window clear and efficient.
 
 **What's new**
-*   **Health Checks:** The new `/doctor` command now acts as a full diagnostic tool that can identify and automatically fix common setup issues.
-*   **Safer Automation:** Claude is now more cautious, asking for your permission before running risky commands like `rm -rf` on unclear file paths.
-*   **Better Reliability:** We’ve squashed a variety of bugs, including Windows-specific crashes, file-handling errors, and issues where background tasks would get stuck in the wrong status.
-*   **Efficiency:** The auto-updater is now much lighter on your system, reducing peak memory usage by 400 MB by streaming downloads directly to disk.
-*   **Clearer Communication:** Background task notifications now explicitly flag when no human input has occurred, so you never have to worry about accidental approvals.
+*   **Navigation:** `/cd` now suggests directory paths just like `/add-dir`.
+*   **Git convenience:** `/commit-push-pr` now respects your custom push remotes, not just `origin`.
+*   **Security:** You'll get a confirmation prompt before diving into git worktrees outside your standard project folders.
+*   **Under the hood:** Background agents now update silently in the background, so you don't have to wait for them when you start a new session.
+*   **Better feedback:** We fixed a bunch of misleading error messages, including clearer prompts if your login expires or if you try to use remote controls while signed out.
+*   **Polished UI:** The agents view is now wider and handles deletions more reliably, and keyboard input issues on startup have been squashed.
 
 **Why you'll care**
-These refinements make Claude Code feel less like a collection of scripts and more like a reliable teammate that knows when to ask for help and when to get out of your way.
+This update is all about removing friction—whether it's fixing the way background agents handle updates or making sure your tools and git remotes just work the way you expect them to.
 
-Happy coding, and let us know what you think!
+Happy coding, and thanks for being part of the community!
 
 <!-- LATEST:END -->
 
