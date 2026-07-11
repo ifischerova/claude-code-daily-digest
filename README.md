@@ -23,27 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.206: Smarter checkups and smoother workflows 🚀
+### Claude Code 2.1.207: Smoother, faster, and smarter 🚀
 
-_Claude Code v2.1.206 — 2026-07-10_
+_Claude Code v2.1.207 — 2026-07-11_
 
-**TL;DR** — We’ve polished the agent experience, streamlined git workflows, and introduced a new `/doctor` check to keep your codebase lean.
+**TL;DR** — We’ve squashed a mountain of bugs, improved session stability, and made Auto mode easier to access.
 
-**⭐ Highlight of the release**
-Your `CLAUDE.md` just got a spring cleaning! The new `/doctor` check now scans your documentation and suggests trimming redundant info that Claude can already figure out on its own, keeping your context window clear and efficient.
+**⭐ Highlight of the release** — Auto mode is now enabled by default on Bedrock, Vertex AI, and Foundry, so you can dive straight into your workflow without extra configuration.
 
 **What's new**
-*   **Navigation:** `/cd` now suggests directory paths just like `/add-dir`.
-*   **Git convenience:** `/commit-push-pr` now respects your custom push remotes, not just `origin`.
-*   **Security:** You'll get a confirmation prompt before diving into git worktrees outside your standard project folders.
-*   **Under the hood:** Background agents now update silently in the background, so you don't have to wait for them when you start a new session.
-*   **Better feedback:** We fixed a bunch of misleading error messages, including clearer prompts if your login expires or if you try to use remote controls while signed out.
-*   **Polished UI:** The agents view is now wider and handles deletions more reliably, and keyboard input issues on startup have been squashed.
+* **Performance boost:** Fixed annoying terminal freezes and input lag during long responses.
+* **Smarter defaults:** Claude Opus 4.8 is now the default model for AWS and Vertex AI users.
+* **Better reliability:** Fixed an indefinite hang on Windows during credential checks and improved stability for Remote Control sessions.
+* **Cleaner Git:** No more broken `go-git` tools caused by lingering worktree configurations.
+* **Polished UI:** The agent view is now much easier to read, with clearer status updates and smarter text handling.
+* **Security & Control:** Improved handling of plugin configurations and added guardrails for high-value usage credit adjustments.
 
 **Why you'll care**
-This update is all about removing friction—whether it's fixing the way background agents handle updates or making sure your tools and git remotes just work the way you expect them to.
+This update focuses on making the tool feel more responsive and dependable, ensuring your terminal stays snappy and your sessions don't drop unexpectedly. 
 
-Happy coding, and thanks for being part of the community!
+Happy coding!
 
 <!-- LATEST:END -->
 
