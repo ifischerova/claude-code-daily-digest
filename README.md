@@ -23,24 +23,24 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.207: Smoother, faster, and smarter 🚀
+### Claude Code 2.1.208: Better performance, accessibility, and reliability 🚀
 
-_Claude Code v2.1.207 — 2026-07-11_
+_Claude Code v2.1.208 — 2026-07-14_
 
-**TL;DR** — We’ve squashed a mountain of bugs, improved session stability, and made Auto mode easier to access.
+**TL;DR** — This release is packed with major performance optimizations, better memory management, and a suite of quality-of-life fixes for your daily workflow.
 
-**⭐ Highlight of the release** — Auto mode is now enabled by default on Bedrock, Vertex AI, and Foundry, so you can dive straight into your workflow without extra configuration.
+**⭐ Highlight of the release**
+We’ve significantly boosted performance for power users: tool-call overhead is up to 7x faster, and session transcripts are now up to 79x more efficient, keeping your long-running sessions snappy and lightweight.
 
 **What's new**
-* **Performance boost:** Fixed annoying terminal freezes and input lag during long responses.
-* **Smarter defaults:** Claude Opus 4.8 is now the default model for AWS and Vertex AI users.
-* **Better reliability:** Fixed an indefinite hang on Windows during credential checks and improved stability for Remote Control sessions.
-* **Cleaner Git:** No more broken `go-git` tools caused by lingering worktree configurations.
-* **Polished UI:** The agent view is now much easier to read, with clearer status updates and smarter text handling.
-* **Security & Control:** Improved handling of plugin configurations and added guardrails for high-value usage credit adjustments.
+* **Accessibility:** Added a dedicated screen reader mode for a better text-based experience.
+* **Vim Enhancements:** You can now map custom key sequences (like `jj`) to Escape in Insert mode.
+* **Better Resource Control:** Large markdown tables now truncate gracefully, and file-edit caching is optimized to prevent memory bloat.
+* **Improved Stability:** Fixed dozens of edge cases, including background agent crashes, hanging sessions, and misleading error messages.
+* **Smarter Defaults:** Improved safety for dangerous commands and better automatic handling of file-history backups.
 
 **Why you'll care**
-This update focuses on making the tool feel more responsive and dependable, ensuring your terminal stays snappy and your sessions don't drop unexpectedly. 
+Your sessions will feel much more responsive, especially when working on large projects, and you’ll spend less time fighting with configuration errors or memory-related hiccups.
 
 Happy coding!
 
