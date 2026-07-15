@@ -23,26 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.208: Better performance, accessibility, and reliability 🚀
+### Claude Code 2.1.210: Smoother sessions and smarter agents 🚀
 
-_Claude Code v2.1.208 — 2026-07-14_
+_Claude Code v2.1.210 — 2026-07-15_
 
-**TL;DR** — This release is packed with major performance optimizations, better memory management, and a suite of quality-of-life fixes for your daily workflow.
+**TL;DR** — This update polishes the agent experience with better reliability, clearer UI feedback, and a handful of important bug fixes.
 
 **⭐ Highlight of the release**
-We’ve significantly boosted performance for power users: tool-call overhead is up to 7x faster, and session transcripts are now up to 79x more efficient, keeping your long-running sessions snappy and lightweight.
+Long-running tool calls now feature a live elapsed-time counter, so you’ll always know your tasks are actively running instead of wondering if Claude has hit a wall.
 
 **What's new**
-* **Accessibility:** Added a dedicated screen reader mode for a better text-based experience.
-* **Vim Enhancements:** You can now map custom key sequences (like `jj`) to Escape in Insert mode.
-* **Better Resource Control:** Large markdown tables now truncate gracefully, and file-edit caching is optimized to prevent memory bloat.
-* **Improved Stability:** Fixed dozens of edge cases, including background agent crashes, hanging sessions, and misleading error messages.
-* **Smarter Defaults:** Improved safety for dangerous commands and better automatic handling of file-history backups.
+* **Agent Visibility:** The footer now clearly displays how many background agents need your attention, with a subtle color nudge when something changes.
+* **Smarter Permissions:** Auto-mode now uses Claude 3.5 Sonnet for more reliable permission classification, and we've added helpful warnings to guide you toward using the correct file access commands.
+* **Reliability Fixes:** We’ve squashed bugs related to session crashes, `git worktree` lockups, and intermittent "job not found" errors during attachment.
+* **UI Cleanup:** Fixed several "ghost" artifacts, stray characters from copy-pasting, and improved the way the agent dashboard tracks your active tasks.
+* **Safety First:** Hardened the Agent tool against prompt injection and added explicit errors if your memory file exceeds read limits.
 
 **Why you'll care**
-Your sessions will feel much more responsive, especially when working on large projects, and you’ll spend less time fighting with configuration errors or memory-related hiccups.
+This release focuses on "quality of life," making Claude Code feel more responsive, transparent, and less prone to those frustrating little glitches that interrupt your flow.
 
-Happy coding!
+Happy coding, and may your terminal always stay snappy!
 
 <!-- LATEST:END -->
 
