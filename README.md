@@ -23,26 +23,27 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.210: Smoother sessions and smarter agents 🚀
+### Claude Code 2.1.211 is here with big stability wins 🚀
 
-_Claude Code v2.1.210 — 2026-07-15_
+_Claude Code v2.1.211 — 2026-07-16_
 
-**TL;DR** — This update polishes the agent experience with better reliability, clearer UI feedback, and a handful of important bug fixes.
+**TL;DR** — This release is packed with dozens of fixes and performance tweaks to make your coding workflow faster and more reliable.
 
 **⭐ Highlight of the release**
-Long-running tool calls now feature a live elapsed-time counter, so you’ll always know your tasks are actively running instead of wondering if Claude has hit a wall.
+We’ve squashed a bug that caused prompt-caching to incorrectly bill system context blocks as fresh tokens on Bedrock, Vertex, and other platforms—keeping your costs exactly where they should be.
 
 **What's new**
-* **Agent Visibility:** The footer now clearly displays how many background agents need your attention, with a subtle color nudge when something changes.
-* **Smarter Permissions:** Auto-mode now uses Claude 3.5 Sonnet for more reliable permission classification, and we've added helpful warnings to guide you toward using the correct file access commands.
-* **Reliability Fixes:** We’ve squashed bugs related to session crashes, `git worktree` lockups, and intermittent "job not found" errors during attachment.
-* **UI Cleanup:** Fixed several "ghost" artifacts, stray characters from copy-pasting, and improved the way the agent dashboard tracks your active tasks.
-* **Safety First:** Hardened the Agent tool against prompt injection and added explicit errors if your memory file exceeds read limits.
+*   **Better Background Agents:** Agents now accurately report their status and wait for real completion instead of guessing.
+*   **Smoother Performance:** We’ve cut down the 300ms delay on loading UI elements like diff views and settings, and improved overall terminal rendering.
+*   **Vim Improvements:** `s` and `S` commands now behave exactly as you’d expect from standard Vim.
+*   **Smart Permissions:** "Always allow" rules now persist across your entire repository, even if you’re working in different git worktrees.
+*   **Easier Config:** You can now use scientific notation (like `1e6`) or underscores (like `64_000`) for numeric environment variables.
+*   **Reliability:** Fixed a wide range of session management issues, including background tasks respawning unexpectedly and credential stores getting out of sync after sleep.
 
 **Why you'll care**
-This release focuses on "quality of life," making Claude Code feel more responsive, transparent, and less prone to those frustrating little glitches that interrupt your flow.
+Everything from terminal responsiveness to cost tracking has been tightened up, making your daily coding sessions feel snappier and less prone to those "why is this happening?" moments.
 
-Happy coding, and may your terminal always stay snappy!
+Happy coding, and thanks for being part of the community!
 
 <!-- LATEST:END -->
 
