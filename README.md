@@ -23,27 +23,27 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.211 is here with big stability wins 🚀
+### Claude Code 2.1.212: Better branching and more control 🚀
 
-_Claude Code v2.1.211 — 2026-07-16_
+_Claude Code v2.1.212 — 2026-07-17_
 
-**TL;DR** — This release is packed with dozens of fixes and performance tweaks to make your coding workflow faster and more reliable.
+**TL;DR** — This release brings smoother background branching, guardrails for runaway agents, and a massive list of reliability fixes.
 
 **⭐ Highlight of the release**
-We’ve squashed a bug that caused prompt-caching to incorrectly bill system context blocks as fresh tokens on Bedrock, Vertex, and other platforms—keeping your costs exactly where they should be.
+We’ve revamped how you branch off your current work. The new `/fork` command now creates a dedicated background session for your experiments while leaving your current workspace untouched. Need to spawn a sub-task? Use the new `/subtask` command to keep things organized.
 
 **What's new**
-*   **Better Background Agents:** Agents now accurately report their status and wait for real completion instead of guessing.
-*   **Smoother Performance:** We’ve cut down the 300ms delay on loading UI elements like diff views and settings, and improved overall terminal rendering.
-*   **Vim Improvements:** `s` and `S` commands now behave exactly as you’d expect from standard Vim.
-*   **Smart Permissions:** "Always allow" rules now persist across your entire repository, even if you’re working in different git worktrees.
-*   **Easier Config:** You can now use scientific notation (like `1e6`) or underscores (like `64_000`) for numeric environment variables.
-*   **Reliability:** Fixed a wide range of session management issues, including background tasks respawning unexpectedly and credential stores getting out of sync after sleep.
+*   **Runaway protection:** We’ve added session-wide caps on WebSearch and subagent spawns to prevent infinite loops (both default to 200).
+*   **Backgrounding:** Long-running MCP tools now automatically move to the background so your session doesn't freeze.
+*   **Resume anything:** Typing `/resume` now opens a picker for all past sessions, even those you previously cleared.
+*   **Better Bash safety:** Fixed an issue where Plan mode could inadvertently trigger file-modifying commands without your explicit approval.
+*   **Windows reliability:** Resolved a persistent error that blocked background sessions on systems where Group Policy restricts PowerShell scripts.
+*   **Enhanced UX:** Improved the agent view, fixed various terminal rendering glitches, and made the `←` footer hint pulse when a background task finishes.
 
 **Why you'll care**
-Everything from terminal responsiveness to cost tracking has been tightened up, making your daily coding sessions feel snappier and less prone to those "why is this happening?" moments.
+This update is all about peace of mind. By adding guardrails against runaway loops and making backgrounding more automatic, Claude Code is now much harder to break and significantly easier to manage when you're juggling multiple tasks.
 
-Happy coding, and thanks for being part of the community!
+Happy coding, and enjoy the smoother workflow!
 
 <!-- LATEST:END -->
 
