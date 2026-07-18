@@ -23,27 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.212: Better branching and more control 🚀
+### Claude Code 2.1.214: Security, stability, and Windows polish 🛠️
 
-_Claude Code v2.1.212 — 2026-07-17_
+_Claude Code v2.1.214 — 2026-07-18_
 
-**TL;DR** — This release brings smoother background branching, guardrails for runaway agents, and a massive list of reliability fixes.
+**TL;DR** — This release brings a massive wave of security hardening, critical Windows stability fixes, and smarter background session management.
 
 **⭐ Highlight of the release**
-We’ve revamped how you branch off your current work. The new `/fork` command now creates a dedicated background session for your experiments while leaving your current workspace untouched. Need to spawn a sub-task? Use the new `/subtask` command to keep things organized.
+We’ve significantly tightened our permission model across the board. From Bash command sanitization to stricter Docker daemon checks and path-matching logic, we’ve closed several edge cases to ensure Claude stays exactly where you want it to.
 
 **What's new**
-*   **Runaway protection:** We’ve added session-wide caps on WebSearch and subagent spawns to prevent infinite loops (both default to 200).
-*   **Backgrounding:** Long-running MCP tools now automatically move to the background so your session doesn't freeze.
-*   **Resume anything:** Typing `/resume` now opens a picker for all past sessions, even those you previously cleared.
-*   **Better Bash safety:** Fixed an issue where Plan mode could inadvertently trigger file-modifying commands without your explicit approval.
-*   **Windows reliability:** Resolved a persistent error that blocked background sessions on systems where Group Policy restricts PowerShell scripts.
-*   **Enhanced UX:** Improved the agent view, fixed various terminal rendering glitches, and made the `←` footer hint pulse when a background task finishes.
+*   **Enhanced Safety:** Added the `EndConversation` tool so Claude can gracefully handle abusive inputs or potential jailbreak attempts.
+*   **Windows Reliability:** Squashed persistent bugs with PowerShell 5.1, fixed Unicode encoding crashes, and resolved issues with corporate proxy socket timeouts.
+*   **Background Session Smarts:** Fixed issues where background sessions would hang around indefinitely or become impossible to delete.
+*   **Better Feedback:** Claude now provides a periodic "heartbeat" during long-running tasks, so you’ll know it’s still working instead of staring at a silent cursor.
+*   **Permission Precision:** Improved how `dir/**` rules work—they now default to your current directory for added safety, while giving you the option to use `**/dir/**` for global matching.
 
 **Why you'll care**
-This update is all about peace of mind. By adding guardrails against runaway loops and making backgrounding more automatic, Claude Code is now much harder to break and significantly easier to manage when you're juggling multiple tasks.
+Whether you’re on Windows, Linux, or macOS, this update makes Claude Code feel more robust and predictable, especially for complex tasks and background operations. It's the most stable version yet.
 
-Happy coding, and enjoy the smoother workflow!
+Happy coding, and let us know what you think of the new heartbeat feature!
 
 <!-- LATEST:END -->
 
