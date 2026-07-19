@@ -23,26 +23,23 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.214: Security, stability, and Windows polish 🛠️
+### You're back in the driver's seat with Claude Code 🚀
 
-_Claude Code v2.1.214 — 2026-07-18_
+_Claude Code v2.1.215 — 2026-07-19_
 
-**TL;DR** — This release brings a massive wave of security hardening, critical Windows stability fixes, and smarter background session management.
+**TL;DR** — Claude Code now gives you full control over when to trigger verification and code reviews.
 
 **⭐ Highlight of the release**
-We’ve significantly tightened our permission model across the board. From Bash command sanitization to stricter Docker daemon checks and path-matching logic, we’ve closed several edge cases to ensure Claude stays exactly where you want it to.
+We’ve updated the agent’s behavior so it no longer runs `/verify` and `/code-review` automatically; these powerful tools now wait for your explicit command.
 
 **What's new**
-*   **Enhanced Safety:** Added the `EndConversation` tool so Claude can gracefully handle abusive inputs or potential jailbreak attempts.
-*   **Windows Reliability:** Squashed persistent bugs with PowerShell 5.1, fixed Unicode encoding crashes, and resolved issues with corporate proxy socket timeouts.
-*   **Background Session Smarts:** Fixed issues where background sessions would hang around indefinitely or become impossible to delete.
-*   **Better Feedback:** Claude now provides a periodic "heartbeat" during long-running tasks, so you’ll know it’s still working instead of staring at a silent cursor.
-*   **Permission Precision:** Improved how `dir/**` rules work—they now default to your current directory for added safety, while giving you the option to use `**/dir/**` for global matching.
+* **Manual triggers:** You now decide exactly when to kick off a verification scan or a code review.
+* **Less noise:** By removing the automatic execution, your terminal stays cleaner and focused only on the tasks you’ve requested.
 
 **Why you'll care**
-Whether you’re on Windows, Linux, or macOS, this update makes Claude Code feel more robust and predictable, especially for complex tasks and background operations. It's the most stable version yet.
+This change puts you in total command of your workflow, preventing unexpected interruptions and saving you tokens on tasks you aren't ready to run yet.
 
-Happy coding, and let us know what you think of the new heartbeat feature!
+Happy coding, and enjoy the extra control!
 
 <!-- LATEST:END -->
 
