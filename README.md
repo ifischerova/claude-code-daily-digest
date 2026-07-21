@@ -23,23 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### You're back in the driver's seat with Claude Code 🚀
+### Claude Code 2.1.216: Smoother sessions and smarter handling ⚡
 
-_Claude Code v2.1.215 — 2026-07-19_
+_Claude Code v2.1.216 — 2026-07-21_
 
-**TL;DR** — Claude Code now gives you full control over when to trigger verification and code reviews.
+**TL;DR** — This release squashes a mountain of bugs, fixes performance stalls in long sessions, and makes background agent tasks more reliable.
 
 **⭐ Highlight of the release**
-We’ve updated the agent’s behavior so it no longer runs `/verify` and `/code-review` automatically; these powerful tools now wait for your explicit command.
+We’ve fixed a major performance bottleneck where Claude Code would get slower the longer your session lasted; your conversations should now feel snappy from start to finish.
 
 **What's new**
-* **Manual triggers:** You now decide exactly when to kick off a verification scan or a code review.
-* **Less noise:** By removing the automatic execution, your terminal stays cleaner and focused only on the tasks you’ve requested.
+*   **Reliable Sessions:** Fixed issues where background agents would lose their settings or get stuck after re-authentication.
+*   **Smart Interactions:** Claude now better respects your instructions when you ask it to "wait" or "explain" before acting.
+*   **Better Safety:** Improved sandbox controls, including a new `sandbox.filesystem.disabled` setting, and better protection against symlink-based file modification.
+*   **Refined UI:** Fixed terminal glitches, better formatting for fullscreen mode, and improved error messages for `/ultrareview` and `/context`.
+*   **Cross-Platform Fixes:** Improved support for PowerShell tool validation, non-ASCII character handling, and better right-to-left text rendering in VSCode.
 
 **Why you'll care**
-This change puts you in total command of your workflow, preventing unexpected interruptions and saving you tokens on tasks you aren't ready to run yet.
+Everything should feel more stable, predictable, and responsive, especially if you tend to keep long-running sessions or background tasks active while you work.
 
-Happy coding, and enjoy the extra control!
+Happy coding, and enjoy the smoother experience!
 
 <!-- LATEST:END -->
 
