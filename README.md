@@ -23,26 +23,23 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.216: Smoother sessions and smarter handling ⚡
+### Claude Code 2.1.217: Smarter, safer, and emoji-ready 🚀
 
-_Claude Code v2.1.216 — 2026-07-21_
+_Claude Code v2.1.217 — 2026-07-22_
 
-**TL;DR** — This release squashes a mountain of bugs, fixes performance stalls in long sessions, and makes background agent tasks more reliable.
+**TL;DR** — This update brings emoji autocompletion, critical memory fixes, and better guardrails for background tasks.
 
-**⭐ Highlight of the release**
-We’ve fixed a major performance bottleneck where Claude Code would get slower the longer your session lasted; your conversations should now feel snappy from start to finish.
+**⭐ Highlight of the release** — You can now type shortcuts like `:heart:` directly in the prompt to insert emojis, making your interactions a little more expressive.
 
 **What's new**
-*   **Reliable Sessions:** Fixed issues where background agents would lose their settings or get stuck after re-authentication.
-*   **Smart Interactions:** Claude now better respects your instructions when you ask it to "wait" or "explain" before acting.
-*   **Better Safety:** Improved sandbox controls, including a new `sandbox.filesystem.disabled` setting, and better protection against symlink-based file modification.
-*   **Refined UI:** Fixed terminal glitches, better formatting for fullscreen mode, and improved error messages for `/ultrareview` and `/context`.
-*   **Cross-Platform Fixes:** Improved support for PowerShell tool validation, non-ASCII character handling, and better right-to-left text rendering in VSCode.
+* **Stay protected:** We’ve added clear warnings if your session transcripts fail to save, so you never lose your work unexpectedly.
+* **Better performance:** We fixed a memory leak related to tool outputs and added a cap on subagent spawning to keep your system running smoothly.
+* **Reliability:** Updates on Windows are now much safer, and we’ve fixed several bugs affecting mTLS, proxy settings, and session isolation.
+* **UX polish:** The terminal UI is cleaner, with improved hyperlink support for PR badges and better spacing for transcript previews.
 
-**Why you'll care**
-Everything should feel more stable, predictable, and responsive, especially if you tend to keep long-running sessions or background tasks active while you work.
+**Why you'll care** — These changes make Claude Code significantly more stable and predictable, especially when you're running complex tasks or working within corporate network environments.
 
-Happy coding, and enjoy the smoother experience!
+Happy coding, and may your scripts always run without a hitch!
 
 <!-- LATEST:END -->
 
