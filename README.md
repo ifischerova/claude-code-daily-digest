@@ -23,21 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Polishing your Claude Code experience 🛠️
+### Claude Code 2.1.221: Cleaner chats and faster workflows 🚀
 
-_Claude Code v2.1.220 — 2026-07-25_
+_Claude Code v2.1.221 — 2026-08-04_
 
-**TL;DR** — This release focuses on making your workflow smoother and more dependable.
+**TL;DR** — This update introduces a new Focus view to declutter your workspace, adds robust security for sandbox credentials, and squashes a long list of bugs for a smoother experience.
 
-**⭐ Highlight of the release** — A suite of stability improvements and squashed bugs to keep your coding sessions uninterrupted.
+**⭐ Highlight of the release**
+We’ve added a **Focus view** in VSCode! You can now toggle off the noisy stream of tool activity with `Ctrl+Alt+F` (or the command palette), keeping your chat clean while keeping a live summary of what Claude is working on just a click away.
 
 **What's new**
-- Under-the-hood reliability tweaks to improve overall performance.
-- Targeted bug fixes to ensure consistent behavior while working in your terminal.
+*   **Smarter Security:** Sandboxed commands now use a "masking" mode for credential files, protecting your real keys while allowing the agent to function safely.
+*   **Better Background Tasks:** Claude now handles background work more intelligently, following your `CLAUDE.md` instructions and automatically cleaning up browser tabs when finished.
+*   **Vim Improvements:** Your yank register now persists across dialogs and history searches, making the terminal feel much more natural.
+*   **Permission Fixes:** We’ve patched several edge cases where terminal commands (like zsh or PowerShell) could bypass security checks, keeping your local environment locked down.
+*   **Clearer Stats:** The stats panel now correctly breaks down your token usage, including a detailed view of cache reads and writes.
 
-**Why you'll care** — You’ll spend less time troubleshooting the tool and more time building your next big project.
+**Why you'll care**
+Between the new Focus view and the improved reliability of background tasks, Claude Code is now much less distracting and far more capable of handling complex, multi-step work without constant supervision.
 
-Happy coding, and thanks for being part of our community!
+Happy coding, and let us know what you think of the new view!
 
 <!-- LATEST:END -->
 
