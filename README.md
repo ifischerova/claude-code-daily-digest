@@ -23,26 +23,25 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.221: Cleaner chats and faster workflows 🚀
+### Claude Code 2.1.222: Smoother, safer, and more reliable 🚀
 
-_Claude Code v2.1.221 — 2026-08-04_
+_Claude Code v2.1.222 — 2026-08-05_
 
-**TL;DR** — This update introduces a new Focus view to declutter your workspace, adds robust security for sandbox credentials, and squashes a long list of bugs for a smoother experience.
+**TL;DR** — This update brings a massive wave of stability fixes, improved security boundaries, and a much smoother experience for remote and proxy-based workflows.
 
-**⭐ Highlight of the release**
-We’ve added a **Focus view** in VSCode! You can now toggle off the noisy stream of tool activity with `Ctrl+Alt+F` (or the command palette), keeping your chat clean while keeping a live summary of what Claude is working on just a click away.
+**⭐ Highlight of the release** — We've significantly tightened security for agent sessions, ensuring that file edits and bash commands are strictly contained within their isolated worktrees, preventing any accidental interference with your main repository.
 
 **What's new**
-*   **Smarter Security:** Sandboxed commands now use a "masking" mode for credential files, protecting your real keys while allowing the agent to function safely.
-*   **Better Background Tasks:** Claude now handles background work more intelligently, following your `CLAUDE.md` instructions and automatically cleaning up browser tabs when finished.
-*   **Vim Improvements:** Your yank register now persists across dialogs and history searches, making the terminal feel much more natural.
-*   **Permission Fixes:** We’ve patched several edge cases where terminal commands (like zsh or PowerShell) could bypass security checks, keeping your local environment locked down.
-*   **Clearer Stats:** The stats panel now correctly breaks down your token usage, including a detailed view of cache reads and writes.
+* **Better Proxy Support:** Startup connectivity checks now respect your HTTPS proxy settings, so no more hanging on launch.
+* **Clearer Usage Stats:** MCP server usage is now tracked accurately, so you only see the requests that actually used your tools.
+* **Smart Login Prompts:** If your session token expires, we’ll now nudge you to `/login` instead of showing confusing authorization errors.
+* **Improved Accessibility:** Screen readers now behave much better when deleting characters, so you aren't forced to hear the whole line read back to you.
+* **Robust Messaging:** Longer summaries are now intelligently truncated instead of failing, keeping your conversations flowing.
 
 **Why you'll care**
-Between the new Focus view and the improved reliability of background tasks, Claude Code is now much less distracting and far more capable of handling complex, multi-step work without constant supervision.
+This release focuses on the "plumbing" of Claude Code—making sure connections are reliable, costs are tracked correctly, and your safety boundaries are rock-solid, so you can spend less time troubleshooting and more time building.
 
-Happy coding, and let us know what you think of the new view!
+Happy coding!
 
 <!-- LATEST:END -->
 
