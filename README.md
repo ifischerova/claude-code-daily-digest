@@ -23,25 +23,27 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.222: Smoother, safer, and more reliable 🚀
+### Smoother workflows and tighter security in Claude Code 2.1.223 🚀
 
-_Claude Code v2.1.222 — 2026-08-05_
+_Claude Code v2.1.223 — 2026-08-06_
 
-**TL;DR** — This update brings a massive wave of stability fixes, improved security boundaries, and a much smoother experience for remote and proxy-based workflows.
+**TL;DR**
+This update brings better security, more flexible workspace controls, and a more intuitive experience for your daily code reviews.
 
-**⭐ Highlight of the release** — We've significantly tightened security for agent sessions, ensuring that file edits and bash commands are strictly contained within their isolated worktrees, preventing any accidental interference with your main repository.
+**⭐ Highlight of the release**
+We’ve significantly hardened security by closing permission bypasses, ensuring that commands can no longer hide their true intent behind tabs or invisible characters.
 
 **What's new**
-* **Better Proxy Support:** Startup connectivity checks now respect your HTTPS proxy settings, so no more hanging on launch.
-* **Clearer Usage Stats:** MCP server usage is now tracked accurately, so you only see the requests that actually used your tools.
-* **Smart Login Prompts:** If your session token expires, we’ll now nudge you to `/login` instead of showing confusing authorization errors.
-* **Improved Accessibility:** Screen readers now behave much better when deleting characters, so you aren't forced to hear the whole line read back to you.
-* **Robust Messaging:** Longer summaries are now intelligently truncated instead of failing, keeping your conversations flowing.
+* **Smarter Marketplace Control:** You can now use wildcards (e.g., `owner/*`) to easily manage all repositories within a GitHub organization.
+* **Seamless Handoffs:** A new `/teleport` hint makes it easier to jump from a cloud session back to your local machine.
+* **Improved Reviews:** `/review` is now a handy alias for `/code-review`, which remembers your preferred effort level automatically.
+* **Better Model Handling:** We’ve fixed issues with model discovery and added smarter auto-compaction to keep your context windows stable.
+* **Reliability Fixes:** We squashed bugs affecting resumed sessions, sandbox permissions on Linux, and git command parsing.
 
 **Why you'll care**
-This release focuses on the "plumbing" of Claude Code—making sure connections are reliable, costs are tracked correctly, and your safety boundaries are rock-solid, so you can spend less time troubleshooting and more time building.
+This release makes Claude Code not only more secure and predictable but also faster to navigate when you’re switching between cloud and local work.
 
-Happy coding!
+Happy coding, and let us know what you think of the new updates!
 
 <!-- LATEST:END -->
 
