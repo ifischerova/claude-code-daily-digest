@@ -23,27 +23,27 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother workflows and tighter security in Claude Code 2.1.223 🚀
+### Claude Code 2.1.224: Agents talking to agents 🤖
 
-_Claude Code v2.1.223 — 2026-08-06_
+_Claude Code v2.1.224 — 2026-08-07_
 
-**TL;DR**
-This update brings better security, more flexible workspace controls, and a more intuitive experience for your daily code reviews.
+**TL;DR** — This release brings powerful agent-to-agent communication, self-hosted runners, and a massive set of stability fixes for a smoother coding experience.
 
 **⭐ Highlight of the release**
-We’ve significantly hardened security by closing permission bypasses, ensuring that commands can no longer hide their true intent behind tabs or invisible characters.
+Claude Code sessions can now talk to each other! Using `SendMessage` and `ListAgents`, your sessions across different machines can collaborate, share information, and work together on complex tasks.
 
 **What's new**
-* **Smarter Marketplace Control:** You can now use wildcards (e.g., `owner/*`) to easily manage all repositories within a GitHub organization.
-* **Seamless Handoffs:** A new `/teleport` hint makes it easier to jump from a cloud session back to your local machine.
-* **Improved Reviews:** `/review` is now a handy alias for `/code-review`, which remembers your preferred effort level automatically.
-* **Better Model Handling:** We’ve fixed issues with model discovery and added smarter auto-compaction to keep your context windows stable.
-* **Reliability Fixes:** We squashed bugs affecting resumed sessions, sandbox permissions on Linux, and git command parsing.
+*   **Self-Hosted Runners:** You can now use your own hardware or containers as the environment for your web, mobile, and desktop Claude Code sessions.
+*   **Easier Plugins:** Install plugins directly via HTTPS zip files without needing Git or npm.
+*   **Smarter Security:** Enhanced credential masking (including JWT and AWS SigV4 support) keeps your secrets safe even when using advanced sandbox features.
+*   **Remote Control Upgrades:** Better reliability, persistent failure indicators, and improved sync between your mobile/web clients and your desktop sessions.
+*   **No More Limits:** Removed the 200-subagent-per-session cap, allowing for more complex, long-running agent workflows.
+*   **Bug Fixes:** A long list of refinements, including fixes for project path resolution, clipboard issues on Wayland, and better visibility into sandbox access denials.
 
 **Why you'll care**
-This release makes Claude Code not only more secure and predictable but also faster to navigate when you’re switching between cloud and local work.
+These updates make Claude Code feel more like a distributed team of assistants rather than a single tool, giving you more control over your infrastructure and better reliability when working across multiple devices.
 
-Happy coding, and let us know what you think of the new updates!
+Happy coding, and enjoy the new superpowers!
 
 <!-- LATEST:END -->
 
