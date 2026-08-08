@@ -23,27 +23,21 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.224: Agents talking to agents 🤖
+### Smooth sailing with Claude Code 2.1.226 ⛵
 
-_Claude Code v2.1.224 — 2026-08-07_
+_Claude Code v2.1.226 — 2026-08-08_
 
-**TL;DR** — This release brings powerful agent-to-agent communication, self-hosted runners, and a massive set of stability fixes for a smoother coding experience.
+**TL;DR** — This update focuses on squashing pesky bugs to keep your coding flow uninterrupted.
 
-**⭐ Highlight of the release**
-Claude Code sessions can now talk to each other! Using `SendMessage` and `ListAgents`, your sessions across different machines can collaborate, share information, and work together on complex tasks.
+**⭐ Highlight of the release** — We’ve rolled out a series of under-the-hood reliability improvements to ensure the tool runs more consistently.
 
 **What's new**
-*   **Self-Hosted Runners:** You can now use your own hardware or containers as the environment for your web, mobile, and desktop Claude Code sessions.
-*   **Easier Plugins:** Install plugins directly via HTTPS zip files without needing Git or npm.
-*   **Smarter Security:** Enhanced credential masking (including JWT and AWS SigV4 support) keeps your secrets safe even when using advanced sandbox features.
-*   **Remote Control Upgrades:** Better reliability, persistent failure indicators, and improved sync between your mobile/web clients and your desktop sessions.
-*   **No More Limits:** Removed the 200-subagent-per-session cap, allowing for more complex, long-running agent workflows.
-*   **Bug Fixes:** A long list of refinements, including fixes for project path resolution, clipboard issues on Wayland, and better visibility into sandbox access denials.
+* Various bug fixes to address reported issues.
+* Refinements to core stability for a smoother experience.
 
-**Why you'll care**
-These updates make Claude Code feel more like a distributed team of assistants rather than a single tool, giving you more control over your infrastructure and better reliability when working across multiple devices.
+**Why you'll care** — You’ll spend less time troubleshooting the tool and more time letting Claude handle the heavy lifting of your codebase.
 
-Happy coding, and enjoy the new superpowers!
+Happy coding, and thanks for being part of the community!
 
 <!-- LATEST:END -->
 
