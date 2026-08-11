@@ -23,21 +23,22 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smooth sailing with Claude Code 2.1.226 ⛵
+### Smoother workflows and UI polish in Claude Code 🚀
 
-_Claude Code v2.1.226 — 2026-08-08_
+_Claude Code v2.1.227 — 2026-08-11_
 
-**TL;DR** — This update focuses on squashing pesky bugs to keep your coding flow uninterrupted.
+**TL;DR** — This update fixes pesky permission bugs, polishes the command menu, and makes Claude Code feel snappier.
 
-**⭐ Highlight of the release** — We’ve rolled out a series of under-the-hood reliability improvements to ensure the tool runs more consistently.
+**⭐ Highlight of the release** — The slash-command menu has been refined for better readability, featuring clearer selection highlights and improved text formatting that preserves your emoji and special characters.
 
 **What's new**
-* Various bug fixes to address reported issues.
-* Refinements to core stability for a smoother experience.
+- **Permission fixes:** Resolved issues where Max plan users were incorrectly prompted for credits, and fixed Bash execution errors on GitHub-hosted runners.
+- **Better history management:** The `/tui` command now correctly handles rewound conversations without resurrecting deleted messages.
+- **Under-the-hood speed:** Reduced event-loop stalls, meaning faster file suggestions and smoother performance when checking mentions.
 
-**Why you'll care** — You’ll spend less time troubleshooting the tool and more time letting Claude handle the heavy lifting of your codebase.
+**Why you'll care** — You'll spend less time fighting with configuration errors or UI glitches and more time letting Claude handle the heavy lifting.
 
-Happy coding, and thanks for being part of the community!
+Happy coding, and may your terminal stay green!
 
 <!-- LATEST:END -->
 
