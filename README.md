@@ -23,22 +23,25 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother workflows and UI polish in Claude Code 🚀
+### Smoother sessions and smarter tools in Claude Code 2.1.228 🚀
 
-_Claude Code v2.1.227 — 2026-08-11_
+_Claude Code v2.1.228 — 2026-08-12_
 
-**TL;DR** — This update fixes pesky permission bugs, polishes the command menu, and makes Claude Code feel snappier.
+**TL;DR** — This update polishes your workflow with critical stability fixes, smarter tool behavior, and a more reliable experience for self-hosted runners.
 
-**⭐ Highlight of the release** — The slash-command menu has been refined for better readability, featuring clearer selection highlights and improved text formatting that preserves your emoji and special characters.
+**⭐ Highlight of the release** — We've hardened skills synced from claude.ai, ensuring they play nicely with your local commands and keep your files safe by restricting potentially risky operations.
 
 **What's new**
-- **Permission fixes:** Resolved issues where Max plan users were incorrectly prompted for credits, and fixed Bash execution errors on GitHub-hosted runners.
-- **Better history management:** The `/tui` command now correctly handles rewound conversations without resurrecting deleted messages.
-- **Under-the-hood speed:** Reduced event-loop stalls, meaning faster file suggestions and smoother performance when checking mentions.
+* **Reliability fixes:** We've squashed bugs that caused interface freezes, misplaced messages, and incorrect model reverts when using `/tui`.
+* **Smarter file writing:** Newer models can now overwrite files directly, mirroring the flexibility of the Edit tool.
+* **Better Windows support:** Claude Code now correctly detects Git when launched from parent directories.
+* **Self-hosted improvements:** Runners are now more resilient, handling repository checkouts and background tasks without dropping sessions unexpectedly.
+* **Clearer feedback:** Compaction progress is now more transparent, and cross-session messaging is easier to read at a glance.
+* **Faster errors:** Vertex AI credential issues are caught in seconds rather than minutes.
 
-**Why you'll care** — You'll spend less time fighting with configuration errors or UI glitches and more time letting Claude handle the heavy lifting.
+**Why you'll care** — You’ll spend less time wrestling with configuration glitches and UI hiccups, letting you focus entirely on your code.
 
-Happy coding, and may your terminal stay green!
+Happy coding, and see you in the next update!
 
 <!-- LATEST:END -->
 
