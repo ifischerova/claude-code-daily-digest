@@ -23,25 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother sessions and smarter tools in Claude Code 2.1.228 🚀
+### Smoother sessions and better organization in Claude Code 2.1.229 🛠️
 
-_Claude Code v2.1.228 — 2026-08-12_
+_Claude Code v2.1.229 — 2026-08-13_
 
-**TL;DR** — This update polishes your workflow with critical stability fixes, smarter tool behavior, and a more reliable experience for self-hosted runners.
+**TL;DR** — This update brings major stability improvements, smarter session management, and a cleaner experience for VS Code users.
 
-**⭐ Highlight of the release** — We've hardened skills synced from claude.ai, ensuring they play nicely with your local commands and keep your files safe by restricting potentially risky operations.
+**⭐ Highlight of the release**
+VS Code users can now organize their work with **Session Groups** in the sidebar. You can right-click to create, rename, or delete groups, and use standard multi-select shortcuts to move sessions around, making it much easier to keep your workspace tidy.
 
 **What's new**
-* **Reliability fixes:** We've squashed bugs that caused interface freezes, misplaced messages, and incorrect model reverts when using `/tui`.
-* **Smarter file writing:** Newer models can now overwrite files directly, mirroring the flexibility of the Edit tool.
-* **Better Windows support:** Claude Code now correctly detects Git when launched from parent directories.
-* **Self-hosted improvements:** Runners are now more resilient, handling repository checkouts and background tasks without dropping sessions unexpectedly.
-* **Clearer feedback:** Compaction progress is now more transparent, and cross-session messaging is easier to read at a glance.
-* **Faster errors:** Vertex AI credential issues are caught in seconds rather than minutes.
+* **Reliable Connections:** No more idle timeouts during long thinking pauses; we’ve added keepalive pings to keep your stream active.
+* **Plugin Flexibility:** You can now point Claude Code to a local plugin directory that updates instantly without needing a restart.
+* **Safer Git:** Dangerous Git flags (like `--force` or `--amend`) now require manual approval rather than running automatically.
+* **Smoother Performance:** We’ve squashed several bugs that caused crashes in narrow terminal windows, Windows file paths, and large file editing.
+* **Clearer Errors:** If your conversation is too long to compact, you’ll get a helpful explanation of *why* instead of a generic error.
 
-**Why you'll care** — You’ll spend less time wrestling with configuration glitches and UI hiccups, letting you focus entirely on your code.
+**Why you'll care**
+Whether you’re juggling multiple projects or dealing with complex file systems, these fixes remove the friction and instability that get in the way of your flow.
 
-Happy coding, and see you in the next update!
+Happy coding, and enjoy the cleaner terminal experience!
 
 <!-- LATEST:END -->
 
