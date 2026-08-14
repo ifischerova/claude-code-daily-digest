@@ -23,26 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother sessions and better organization in Claude Code 2.1.229 🛠️
+### Claude Code 2.1.232: Better subagents and cross-session powers 🚀
 
-_Claude Code v2.1.229 — 2026-08-13_
+_Claude Code v2.1.232 — 2026-08-14_
 
-**TL;DR** — This update brings major stability improvements, smarter session management, and a cleaner experience for VS Code users.
+**TL;DR** — This update introduces smarter background subagents, easier cross-session communication, and significant security hardening.
 
 **⭐ Highlight of the release**
-VS Code users can now organize their work with **Session Groups** in the sidebar. You can right-click to create, rename, or delete groups, and use standard multi-select shortcuts to move sessions around, making it much easier to keep your workspace tidy.
+Subagent forking is now the default! When you spawn a non-teammate agent, it now runs in the background automatically, inheriting your current conversation context and cache so it’s ready to work immediately without cluttering your main view.
 
 **What's new**
-* **Reliable Connections:** No more idle timeouts during long thinking pauses; we’ve added keepalive pings to keep your stream active.
-* **Plugin Flexibility:** You can now point Claude Code to a local plugin directory that updates instantly without needing a restart.
-* **Safer Git:** Dangerous Git flags (like `--force` or `--amend`) now require manual approval rather than running automatically.
-* **Smoother Performance:** We’ve squashed several bugs that caused crashes in narrow terminal windows, Windows file paths, and large file editing.
-* **Clearer Errors:** If your conversation is too long to compact, you’ll get a helpful explanation of *why* instead of a generic error.
+*   **Talk to other sessions:** Use `@` in your prompt to mention and send messages directly to your other active Claude sessions.
+*   **GitLab integration:** Full support for GitLab repositories, including automatic credential redaction and easier cloning.
+*   **Smarter settings:** We've introduced friendlier alias names for marketplace settings and added more granular control over dialog expiry and cross-session permissions.
+*   **Security & Stability:** We’ve patched several permission bypasses on Windows/PowerShell, hardened the filesystem sandbox, and improved how Remote Control sessions handle reconnections and state.
+*   **UI Polish:** The agent panel is cleaner, and `/feedback` commands now trigger instantly even while Claude is typing.
 
 **Why you'll care**
-Whether you’re juggling multiple projects or dealing with complex file systems, these fixes remove the friction and instability that get in the way of your flow.
+This release makes Claude Code feel more like a cohesive team; by allowing sessions to talk to each other and backgrounding complex tasks, you can manage multiple project threads without losing your flow.
 
-Happy coding, and enjoy the cleaner terminal experience!
+Happy coding, and enjoy the new powers!
 
 <!-- LATEST:END -->
 
