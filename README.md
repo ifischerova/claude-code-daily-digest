@@ -23,26 +23,25 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.232: Better subagents and cross-session powers 🚀
+### Claude Code 2.1.233: GitLab support and smoother sessions 🚀
 
-_Claude Code v2.1.232 — 2026-08-14_
+_Claude Code v2.1.233 — 2026-08-15_
 
-**TL;DR** — This update introduces smarter background subagents, easier cross-session communication, and significant security hardening.
+**TL;DR** — This release brings GitLab integration, better resource management, and a collection of stability fixes for a smoother coding experience.
 
-**⭐ Highlight of the release**
-Subagent forking is now the default! When you spawn a non-teammate agent, it now runs in the background automatically, inheriting your current conversation context and cache so it’s ready to work immediately without cluttering your main view.
+**⭐ Highlight of the release** — Claude Code now officially supports GitLab merge requests! You can now view and interact with MRs directly via the `--worktree` flag and the `claude agents` command.
 
 **What's new**
-*   **Talk to other sessions:** Use `@` in your prompt to mention and send messages directly to your other active Claude sessions.
-*   **GitLab integration:** Full support for GitLab repositories, including automatic credential redaction and easier cloning.
-*   **Smarter settings:** We've introduced friendlier alias names for marketplace settings and added more granular control over dialog expiry and cross-session permissions.
-*   **Security & Stability:** We’ve patched several permission bypasses on Windows/PowerShell, hardened the filesystem sandbox, and improved how Remote Control sessions handle reconnections and state.
-*   **UI Polish:** The agent panel is cleaner, and `/feedback` commands now trigger instantly even while Claude is typing.
+* **Resource Control:** You can now set a memory limit for Bash commands on Linux to prevent runaway builds from hanging your session.
+* **Better Windows Support:** We’ve squashed a bug that caused auto-mode to pause unnecessarily for simple file redirections.
+* **Accessibility:** Screen reader users will find the effort selector easier to navigate, and dialog text is now fully visible.
+* **Plugin Validation:** `claude plugin validate` is smarter, catching errors in your skill frontmatter before they cause issues.
+* **Performance:** Self-hosted runner sessions launch faster, and we’ve fixed an issue where idle sessions would occasionally hog 100% of a CPU core.
 
 **Why you'll care**
-This release makes Claude Code feel more like a cohesive team; by allowing sessions to talk to each other and backgrounding complex tasks, you can manage multiple project threads without losing your flow.
+Whether you’re working on GitLab, managing heavy build processes, or just need a more stable environment on Windows, these updates remove friction so you can focus on shipping code.
 
-Happy coding, and enjoy the new powers!
+Happy coding!
 
 <!-- LATEST:END -->
 
