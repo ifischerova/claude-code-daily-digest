@@ -23,25 +23,27 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.233: GitLab support and smoother sessions 🚀
+### Claude Code 2.1.234: Smoother sessions & GitLab support 🚀
 
-_Claude Code v2.1.233 — 2026-08-15_
+_Claude Code v2.1.234 — 2026-08-18_
 
-**TL;DR** — This release brings GitLab integration, better resource management, and a collection of stability fixes for a smoother coding experience.
+**TL;DR** — We’ve rolled out a massive update focused on stability, better GitLab integration, and a smarter, more resilient session experience.
 
-**⭐ Highlight of the release** — Claude Code now officially supports GitLab merge requests! You can now view and interact with MRs directly via the `--worktree` flag and the `claude agents` command.
+**⭐ Highlight of the release**
+Claude Code now automatically resumes your session the moment your claude.ai usage limit resets, keeping you in the flow without needing to manually jump back in.
 
 **What's new**
-* **Resource Control:** You can now set a memory limit for Bash commands on Linux to prevent runaway builds from hanging your session.
-* **Better Windows Support:** We’ve squashed a bug that caused auto-mode to pause unnecessarily for simple file redirections.
-* **Accessibility:** Screen reader users will find the effort selector easier to navigate, and dialog text is now fully visible.
-* **Plugin Validation:** `claude plugin validate` is smarter, catching errors in your skill frontmatter before they cause issues.
-* **Performance:** Self-hosted runner sessions launch faster, and we’ve fixed an issue where idle sessions would occasionally hog 100% of a CPU core.
+* **GitLab Integration:** You can now see your Merge Request status (like draft or pending) right in the footer.
+* **Smarter Background Tasks:** Claude will now check in on long-running goals after 30 minutes, so tasks don't get lost in the void.
+* **Improved Transparency:** Your prompts now render with the same clean markdown formatting as Claude’s replies.
+* **Actionable `/goal`:** If a task hits an unrecoverable error, the goal will clear itself so you aren't left wondering why things stopped.
+* **Enhanced Control:** New keybindings to clear text selections and the ability to open configuration dialogs (like `/permissions` or `/config`) even while Claude is busy working.
+* **Security Hardening:** We’ve beefed up file path security to prevent potential credential-leak vectors on Windows.
 
 **Why you'll care**
-Whether you’re working on GitLab, managing heavy build processes, or just need a more stable environment on Windows, these updates remove friction so you can focus on shipping code.
+This release is all about reducing friction—whether it's automatically picking up where you left off after a rate limit or getting better visibility into your GitLab workflows, you can spend less time managing the tool and more time building.
 
-Happy coding!
+Happy coding, and see you in the next one!
 
 <!-- LATEST:END -->
 
