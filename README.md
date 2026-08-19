@@ -23,27 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.234: Smoother sessions & GitLab support 🚀
+### Claude Code 2.1.235: Smoother typing and smarter stability 🚀
 
-_Claude Code v2.1.234 — 2026-08-18_
+_Claude Code v2.1.235 — 2026-08-19_
 
-**TL;DR** — We’ve rolled out a massive update focused on stability, better GitLab integration, and a smarter, more resilient session experience.
+**TL;DR** — This release brings a polished terminal experience, better performance for background tasks, and a new spellcheck feature to keep your prompts typo-free.
 
 **⭐ Highlight of the release**
-Claude Code now automatically resumes your session the moment your claude.ai usage limit resets, keeping you in the flow without needing to manually jump back in.
+We’ve added an optional `spellcheck` setting! If you have `aspell`, `hunspell`, or `ispell` installed, Claude Code will now underline typos in your prompt input as you type.
 
 **What's new**
-* **GitLab Integration:** You can now see your Merge Request status (like draft or pending) right in the footer.
-* **Smarter Background Tasks:** Claude will now check in on long-running goals after 30 minutes, so tasks don't get lost in the void.
-* **Improved Transparency:** Your prompts now render with the same clean markdown formatting as Claude’s replies.
-* **Actionable `/goal`:** If a task hits an unrecoverable error, the goal will clear itself so you aren't left wondering why things stopped.
-* **Enhanced Control:** New keybindings to clear text selections and the ability to open configuration dialogs (like `/permissions` or `/config`) even while Claude is busy working.
-* **Security Hardening:** We’ve beefed up file path security to prevent potential credential-leak vectors on Windows.
+*   **Better UI:** Fixed list alignment issues and ensured slash commands and keywords stay perfectly highlighted in multi-line prompts.
+*   **Efficiency:** Background cloud sessions (like `/ultrareview`) now use significantly less CPU and memory by optimizing how event streams are handled.
+*   **Smarter Dialogs:** Navigating permission prompts and confirmation boxes is more reliable, with better feedback when things go wrong.
+*   **Vim Improvements:** Your cursor position and NORMAL mode state are now preserved when toggling panels.
+*   **VSCode Fixes:** Stopped the annoying focus-jumping issue when you have multiple Claude tabs open.
 
 **Why you'll care**
-This release is all about reducing friction—whether it's automatically picking up where you left off after a rate limit or getting better visibility into your GitLab workflows, you can spend less time managing the tool and more time building.
+These updates make the tool feel snappier and more predictable, clearing away those tiny friction points so you can stay in your flow.
 
-Happy coding, and see you in the next one!
+Happy coding, and enjoy the smoother ride!
 
 <!-- LATEST:END -->
 
