@@ -23,26 +23,23 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.235: Smoother typing and smarter stability 🚀
+### Get straight to the code with new Concise mode ⚡
 
-_Claude Code v2.1.235 — 2026-08-19_
+_Claude Code v2.1.237 — 2026-08-20_
 
-**TL;DR** — This release brings a polished terminal experience, better performance for background tasks, and a new spellcheck feature to keep your prompts typo-free.
+**TL;DR** — Claude Code now lets you skip the small talk and fixes connection issues for custom LLM setups.
 
 **⭐ Highlight of the release**
-We’ve added an optional `spellcheck` setting! If you have `aspell`, `hunspell`, or `ispell` installed, Claude Code will now underline typos in your prompt input as you type.
+We’ve introduced a new "Concise" output style. Claude will now lead with your results and skip the preamble, giving you the same thorough work with significantly less chatter.
 
 **What's new**
-*   **Better UI:** Fixed list alignment issues and ensured slash commands and keywords stay perfectly highlighted in multi-line prompts.
-*   **Efficiency:** Background cloud sessions (like `/ultrareview`) now use significantly less CPU and memory by optimizing how event streams are handled.
-*   **Smarter Dialogs:** Navigating permission prompts and confirmation boxes is more reliable, with better feedback when things go wrong.
-*   **Vim Improvements:** Your cursor position and NORMAL mode state are now preserved when toggling panels.
-*   **VSCode Fixes:** Stopped the annoying focus-jumping issue when you have multiple Claude tabs open.
+* **Concise Mode:** Enable this in `/config` to get straight to the point.
+* **Gateway Fixes:** We’ve squashed a bug that was preventing prompt caching from working correctly when using an LLM gateway or custom base URL.
 
 **Why you'll care**
-These updates make the tool feel snappier and more predictable, clearing away those tiny friction points so you can stay in your flow.
+Your workflow just got faster—between the snappier responses and more reliable caching, you'll spend less time waiting and more time building.
 
-Happy coding, and enjoy the smoother ride!
+Happy coding, and enjoy the extra screen space!
 
 <!-- LATEST:END -->
 
