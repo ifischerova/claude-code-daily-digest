@@ -23,23 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Get straight to the code with new Concise mode ⚡
+### Smoother sessions and better Bash controls 🚀
 
-_Claude Code v2.1.237 — 2026-08-20_
+_Claude Code v2.1.238 — 2026-08-21_
 
-**TL;DR** — Claude Code now lets you skip the small talk and fixes connection issues for custom LLM setups.
+**TL;DR** — Claude Code 2.1.238 brings long-session memory fixes, improved Remote Control stability, and a new Bash-style keybinding option.
 
 **⭐ Highlight of the release**
-We’ve introduced a new "Concise" output style. Claude will now lead with your results and skip the preamble, giving you the same thorough work with significantly less chatter.
+We’ve squashed a major memory leak! Claude Code now intelligently clears out old subagent tool results during long interactive sessions, keeping your terminal zippy and preventing resource bloat.
 
 **What's new**
-* **Concise Mode:** Enable this in `/config` to get straight to the point.
-* **Gateway Fixes:** We’ve squashed a bug that was preventing prompt caching from working correctly when using an LLM gateway or custom base URL.
+*   **Custom Keybindings:** Prefer Bash-style editing? Set `keybindingFlavor` to `"readline"` to make `Ctrl+W` delete to the previous whitespace.
+*   **Remote Control Reliability:** Connections are now much more resilient to network hiccups, VPN blips, and temporary proxy refusals.
+*   **Startup Speed:** Claude launches faster on macOS, and update checks now wait 10 seconds to avoid competing with your initial commands.
+*   **Better Bash & Terminal UX:** Fixed issues with backspace handling on slow SSH connections, improved text wrapping for emojis/tabs, and cleaned up leftover temporary files.
+*   **Plugin Security:** Added a `headersHelper` feature for secure, ephemeral token management in plugins and catalog entries.
 
 **Why you'll care**
-Your workflow just got faster—between the snappier responses and more reliable caching, you'll spend less time waiting and more time building.
+This update is all about making your daily workflow feel more robust—whether you're working in long, complex sessions, using remote control features, or just want your terminal shortcuts to behave exactly how you expect them to.
 
-Happy coding, and enjoy the extra screen space!
+Happy coding, and enjoy the smoother ride!
 
 <!-- LATEST:END -->
 
