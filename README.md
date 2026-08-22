@@ -23,26 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother sessions and better Bash controls 🚀
+### Claude Code 2.1.239: Smoother, smarter, and more reliable 🚀
 
-_Claude Code v2.1.238 — 2026-08-21_
+_Claude Code v2.1.239 — 2026-08-22_
 
-**TL;DR** — Claude Code 2.1.238 brings long-session memory fixes, improved Remote Control stability, and a new Bash-style keybinding option.
+**TL;DR** — This massive update brings major stability fixes, better cross-machine communication, and improved workspace management for all users.
 
 **⭐ Highlight of the release**
-We’ve squashed a major memory leak! Claude Code now intelligently clears out old subagent tool results during long interactive sessions, keeping your terminal zippy and preventing resource bloat.
+Claude Code now supports cross-session messaging on Windows, meaning your sessions across different machines can finally "talk" to each other using `SendMessage` and `ListAgents`, just like on macOS and Linux.
 
 **What's new**
-*   **Custom Keybindings:** Prefer Bash-style editing? Set `keybindingFlavor` to `"readline"` to make `Ctrl+W` delete to the previous whitespace.
-*   **Remote Control Reliability:** Connections are now much more resilient to network hiccups, VPN blips, and temporary proxy refusals.
-*   **Startup Speed:** Claude launches faster on macOS, and update checks now wait 10 seconds to avoid competing with your initial commands.
-*   **Better Bash & Terminal UX:** Fixed issues with backspace handling on slow SSH connections, improved text wrapping for emojis/tabs, and cleaned up leftover temporary files.
-*   **Plugin Security:** Added a `headersHelper` feature for secure, ephemeral token management in plugins and catalog entries.
+*   **Easier Migration:** Use `/claude-api upgrade` to automatically update your Python projects from `anthropic` 0.x to 1.x.
+*   **Smarter Cloud Sessions:** Sync plugins from claude.ai seamlessly without overwriting your local versions.
+*   **Better Visibility:** `/list-agents` now shows your live teammates, and usage-limit messages now clearly state when your credits will reset.
+*   **Enhanced Reliability:** Fixed various startup hangs behind proxies, resolved terminal flickering in JetBrains, and improved handling of deleted working directories.
+*   **Fullscreen Polish:** New installs start in fullscreen by default, with better scrolling for long forms and fixed color themes.
 
 **Why you'll care**
-This update is all about making your daily workflow feel more robust—whether you're working in long, complex sessions, using remote control features, or just want your terminal shortcuts to behave exactly how you expect them to.
+We’ve squashed dozens of edge-case bugs—from terminal text-rendering issues to credential pre-check hangs—making your day-to-day coding flow much more predictable and stable.
 
-Happy coding, and enjoy the smoother ride!
+Happy coding, and let us know what you think!
 
 <!-- LATEST:END -->
 
