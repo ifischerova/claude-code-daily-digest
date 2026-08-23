@@ -23,26 +23,21 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.239: Smoother, smarter, and more reliable 🚀
+### Polishing your Claude Code experience 🛠️
 
-_Claude Code v2.1.239 — 2026-08-22_
+_Claude Code v2.1.241 — 2026-08-23_
 
-**TL;DR** — This massive update brings major stability fixes, better cross-machine communication, and improved workspace management for all users.
+**TL;DR** — This release focuses on under-the-hood stability to make your coding sessions smoother and more reliable.
 
-**⭐ Highlight of the release**
-Claude Code now supports cross-session messaging on Windows, meaning your sessions across different machines can finally "talk" to each other using `SendMessage` and `ListAgents`, just like on macOS and Linux.
+**⭐ Highlight of the release** — We've squashed a variety of pesky bugs to ensure Claude Code runs more consistently while you work.
 
 **What's new**
-*   **Easier Migration:** Use `/claude-api upgrade` to automatically update your Python projects from `anthropic` 0.x to 1.x.
-*   **Smarter Cloud Sessions:** Sync plugins from claude.ai seamlessly without overwriting your local versions.
-*   **Better Visibility:** `/list-agents` now shows your live teammates, and usage-limit messages now clearly state when your credits will reset.
-*   **Enhanced Reliability:** Fixed various startup hangs behind proxies, resolved terminal flickering in JetBrains, and improved handling of deleted working directories.
-*   **Fullscreen Polish:** New installs start in fullscreen by default, with better scrolling for long forms and fixed color themes.
+* General stability improvements to keep your terminal interactions feeling snappy.
+* Targeted bug fixes that address minor hiccups during your development workflow.
 
-**Why you'll care**
-We’ve squashed dozens of edge-case bugs—from terminal text-rendering issues to credential pre-check hangs—making your day-to-day coding flow much more predictable and stable.
+**Why you'll care** — You can spend less time troubleshooting your tools and more time building great things.
 
-Happy coding, and let us know what you think!
+Happy coding, and thanks for being part of our community!
 
 <!-- LATEST:END -->
 
