@@ -23,19 +23,19 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Polishing your Claude Code experience 🛠️
+### Smooth sailing for Linux users 🐧
 
-_Claude Code v2.1.241 — 2026-08-23_
+_Claude Code v2.1.245 — 2026-08-25_
 
-**TL;DR** — This release focuses on under-the-hood stability to make your coding sessions smoother and more reliable.
+**TL;DR** — We’ve patched a startup crash affecting users on the latest Linux distributions.
 
-**⭐ Highlight of the release** — We've squashed a variety of pesky bugs to ensure Claude Code runs more consistently while you work.
+**⭐ Highlight of the release** — Claude Code now plays nicely with glibc 2.44, ensuring a stable launch on cutting-edge systems like Arch and Fedora Rawhide.
 
 **What's new**
-* General stability improvements to keep your terminal interactions feeling snappy.
-* Targeted bug fixes that address minor hiccups during your development workflow.
+* Fixed a technical bug that caused the app to crash immediately upon opening.
+* Improved compatibility for developers running the latest versions of Linux.
 
-**Why you'll care** — You can spend less time troubleshooting your tools and more time building great things.
+**Why you'll care** — If you've been stuck at the starting gate on your Linux machine, you can finally get back to building with Claude.
 
 Happy coding, and thanks for being part of our community!
 
