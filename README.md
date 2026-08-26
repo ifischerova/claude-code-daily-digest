@@ -23,21 +23,27 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smooth sailing for Linux users 🐧
+### Claude Code 2.1.246: Smoother sessions and sharper tools 🚀
 
-_Claude Code v2.1.245 — 2026-08-25_
+_Claude Code v2.1.246 — 2026-08-26_
 
-**TL;DR** — We’ve patched a startup crash affecting users on the latest Linux distributions.
+**TL;DR**
+This update brings major performance improvements, smarter background session management, and dozens of fixes to make your development workflow more reliable.
 
-**⭐ Highlight of the release** — Claude Code now plays nicely with glibc 2.44, ensuring a stable launch on cutting-edge systems like Arch and Fedora Rawhide.
+**⭐ Highlight of the release**
+We’ve significantly boosted performance in large sessions by optimizing memory usage and fixing a rendering slowdown that occurred when handling very long lines of code (like base64 strings).
 
 **What's new**
-* Fixed a technical bug that caused the app to crash immediately upon opening.
-* Improved compatibility for developers running the latest versions of Linux.
+*   **Better Feedback:** You can now see exactly how long each turn takes with a new timestamp and duration indicator.
+*   **Smarter Permissions:** A new Auto mode tab in `/permissions` lets you easily view and edit classifier rules.
+*   **Improved Navigation:** Changing directories with `/cd` now instantly applies your project settings, plugins, and agents.
+*   **Resilient Sessions:** Non-interactive sessions are now much better at auto-recovering from connection hiccups or stream interruptions.
+*   **Safety First:** We’ve added a startup warning for ambiguous Bash wildcard rules and stricter approval requirements for potentially malformed commands.
 
-**Why you'll care** — If you've been stuck at the starting gate on your Linux machine, you can finally get back to building with Claude.
+**Why you'll care**
+Whether you're juggling multiple background agents or working on massive files, these changes make the terminal experience feel faster, more stable, and less prone to those annoying "stuck" moments.
 
-Happy coding, and thanks for being part of our community!
+Happy coding!
 
 <!-- LATEST:END -->
 
