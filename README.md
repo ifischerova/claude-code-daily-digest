@@ -23,25 +23,24 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.246: Smoother sessions and sharper tools 🚀
+### Claude Code 2.1.247: Smarter cost controls & better feedback 🛠️
 
-_Claude Code v2.1.246 — 2026-08-26_
+_Claude Code v2.1.247 — 2026-08-27_
 
-**TL;DR**
-This update brings major performance improvements, smarter background session management, and dozens of fixes to make your development workflow more reliable.
+**TL;DR** — This release brings powerful cost-optimization tools, easier feedback reporting, and a long list of stability fixes to keep your workflow smooth.
 
 **⭐ Highlight of the release**
-We’ve significantly boosted performance in large sessions by optimizing memory usage and fixing a rendering slowdown that occurred when handling very long lines of code (like base64 strings).
+We’ve introduced the `/claude-api cost-optimize` command. It profiles your project’s API usage and walks you through specific levers—like caching, token hygiene, and model selection—so you can measure and reduce your spend step-by-step.
 
 **What's new**
-*   **Better Feedback:** You can now see exactly how long each turn takes with a new timestamp and duration indicator.
-*   **Smarter Permissions:** A new Auto mode tab in `/permissions` lets you easily view and edit classifier rules.
-*   **Improved Navigation:** Changing directories with `/cd` now instantly applies your project settings, plugins, and agents.
-*   **Resilient Sessions:** Non-interactive sessions are now much better at auto-recovering from connection hiccups or stream interruptions.
-*   **Safety First:** We’ve added a startup warning for ambiguous Bash wildcard rules and stricter approval requirements for potentially malformed commands.
+*   **Easy Feedback:** If something goes wrong, you can now use `/feedback` to have Claude draft a report for you to review and send.
+*   **Custom Spinner Tips:** Organizations can now inject their own helpful tips into the spinner rotation.
+*   **Auto-Mode Shortcut:** When you hit a Bash permission prompt, you’ll see a one-keystroke option to grant access and switch to auto-mode simultaneously.
+*   **Admin API Coverage:** The `/claude-api` skill now supports comprehensive organization management, from API keys to rate limit reports.
+*   **Stability & Fixes:** Dozens of refinements, including improved keyboard shortcut support for non-Latin layouts, better handling of long-running background tasks, and smarter session cleanup.
 
 **Why you'll care**
-Whether you're juggling multiple background agents or working on massive files, these changes make the terminal experience feel faster, more stable, and less prone to those annoying "stuck" moments.
+Whether you’re looking to get a tighter grip on your API budget or just want a more reliable terminal experience, these updates make Claude Code feel more like a seasoned teammate that’s always looking out for your workflow.
 
 Happy coding!
 
