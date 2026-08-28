@@ -23,26 +23,21 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.247: Smarter cost controls & better feedback 🛠️
+### Smooth sailing with Claude Code 2.1.250 ⛵
 
-_Claude Code v2.1.247 — 2026-08-27_
+_Claude Code v2.1.250 — 2026-08-28_
 
-**TL;DR** — This release brings powerful cost-optimization tools, easier feedback reporting, and a long list of stability fixes to keep your workflow smooth.
+**TL;DR** — We’ve polished the internal mechanics of Claude Code to keep your workflow reliable and bug-free.
 
-**⭐ Highlight of the release**
-We’ve introduced the `/claude-api cost-optimize` command. It profiles your project’s API usage and walks you through specific levers—like caching, token hygiene, and model selection—so you can measure and reduce your spend step-by-step.
+**⭐ Highlight of the release** — This update focuses on stability, smoothing out rough edges to ensure a more consistent experience during your coding sessions.
 
 **What's new**
-*   **Easy Feedback:** If something goes wrong, you can now use `/feedback` to have Claude draft a report for you to review and send.
-*   **Custom Spinner Tips:** Organizations can now inject their own helpful tips into the spinner rotation.
-*   **Auto-Mode Shortcut:** When you hit a Bash permission prompt, you’ll see a one-keystroke option to grant access and switch to auto-mode simultaneously.
-*   **Admin API Coverage:** The `/claude-api` skill now supports comprehensive organization management, from API keys to rate limit reports.
-*   **Stability & Fixes:** Dozens of refinements, including improved keyboard shortcut support for non-Latin layouts, better handling of long-running background tasks, and smarter session cleanup.
+*   Squashed several pesky bugs that could cause unexpected behavior.
+*   Under-the-hood reliability improvements to keep the CLI running smoothly.
 
-**Why you'll care**
-Whether you’re looking to get a tighter grip on your API budget or just want a more reliable terminal experience, these updates make Claude Code feel more like a seasoned teammate that’s always looking out for your workflow.
+**Why you'll care** — You can spend less time troubleshooting your tools and more time building great software.
 
-Happy coding!
+Happy coding, and thanks for being part of our community!
 
 <!-- LATEST:END -->
 
