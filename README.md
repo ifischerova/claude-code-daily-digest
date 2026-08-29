@@ -23,21 +23,26 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smooth sailing with Claude Code 2.1.250 ⛵
+### Claude Code 2.1.251: A Massive Performance & Stability Update 🚀
 
-_Claude Code v2.1.250 — 2026-08-28_
+_Claude Code v2.1.251 — 2026-08-29_
 
-**TL;DR** — We’ve polished the internal mechanics of Claude Code to keep your workflow reliable and bug-free.
+**TL;DR** — This release brings significant stability improvements, better subagent communication, and a leaner, faster experience for your development workflow.
 
-**⭐ Highlight of the release** — This update focuses on stability, smoothing out rough edges to ensure a more consistent experience during your coding sessions.
+**⭐ Highlight of the release**
+We’ve overhauled how Claude Code handles background subagents and TUI updates. You’ll notice much smoother performance when running multiple parallel tasks, as UI rendering is now optimized to prevent "transcript pile-up."
 
 **What's new**
-*   Squashed several pesky bugs that could cause unexpected behavior.
-*   Under-the-hood reliability improvements to keep the CLI running smoothly.
+*   **Better Insight:** New commands and status lines (like `/cost` and `/usage`) now provide granular details on prompt caching and spend limits.
+*   **Subagent Clarity:** Foreground subagents now stream tool calls and results live, and message routing between agents and team leads is much more reliable.
+*   **Security Fixes:** We’ve hardened file-handling and symlink logic, ensuring Claude respects your project boundaries even more strictly.
+*   **Smarter Defaults:** Effort levels are now saved per-model, and the binary is roughly 7.5 MB lighter thanks to optimized assets.
+*   **Workflow Enhancements:** Improved support for `git worktree`, better handling of shell command permissions, and more intuitive managed-settings approval flows.
 
-**Why you'll care** — You can spend less time troubleshooting your tools and more time building great software.
+**Why you'll care**
+Whether you’re managing complex agent teams or just trying to keep your terminal snappy, these fixes remove the "gotchas" that interrupt your flow, making Claude Code feel more like a native extension of your shell.
 
-Happy coding, and thanks for being part of our community!
+Happy coding!
 
 <!-- LATEST:END -->
 
