@@ -23,26 +23,22 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.251: A Massive Performance & Stability Update 🚀
+### Smoother sessions and reliable background tasks 🛠️
 
-_Claude Code v2.1.251 — 2026-08-29_
+_Claude Code v2.1.252 — 2026-09-01_
 
-**TL;DR** — This release brings significant stability improvements, better subagent communication, and a leaner, faster experience for your development workflow.
+**TL;DR** — This update squashes several bugs that were causing session stalls and configuration hiccups on macOS.
 
-**⭐ Highlight of the release**
-We’ve overhauled how Claude Code handles background subagents and TUI updates. You’ll notice much smoother performance when running multiple parallel tasks, as UI rendering is now optimized to prevent "transcript pile-up."
+**⭐ Highlight of the release** — We fixed a pesky issue where Bash commands would fail on certain Macs due to task directory errors, ensuring your terminal workflow stays uninterrupted.
 
 **What's new**
-*   **Better Insight:** New commands and status lines (like `/cost` and `/usage`) now provide granular details on prompt caching and spend limits.
-*   **Subagent Clarity:** Foreground subagents now stream tool calls and results live, and message routing between agents and team leads is much more reliable.
-*   **Security Fixes:** We’ve hardened file-handling and symlink logic, ensuring Claude respects your project boundaries even more strictly.
-*   **Smarter Defaults:** Effort levels are now saved per-model, and the binary is roughly 7.5 MB lighter thanks to optimized assets.
-*   **Workflow Enhancements:** Improved support for `git worktree`, better handling of shell command permissions, and more intuitive managed-settings approval flows.
+*   **Reliable settings:** The "always allow" preference now correctly saves even when a local project configuration file doesn't exist yet.
+*   **Better connection handling:** Remote sessions hosted via Claude Desktop or VS Code are now much more resilient to degraded network connections.
+*   **Smart error management:** Background tasks with massive error logs (like full-disk git failures) no longer crash your conversations by exceeding API limits.
 
-**Why you'll care**
-Whether you’re managing complex agent teams or just trying to keep your terminal snappy, these fixes remove the "gotchas" that interrupt your flow, making Claude Code feel more like a native extension of your shell.
+**Why you'll care** — You’ll spend less time troubleshooting your environment and more time building, with a much more stable experience across the board.
 
-Happy coding!
+Happy coding, and let us know what you think!
 
 <!-- LATEST:END -->
 
