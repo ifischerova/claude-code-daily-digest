@@ -23,22 +23,22 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Smoother sessions and reliable background tasks 🛠️
+### Claude Code 2.1.258: Smoother sailing for macOS ⛵
 
-_Claude Code v2.1.252 — 2026-09-01_
+_Claude Code v2.1.258 — 2026-09-02_
 
-**TL;DR** — This update squashes several bugs that were causing session stalls and configuration hiccups on macOS.
+**TL;DR** — We’ve squashed a couple of pesky bugs to get your workflow back on track.
 
-**⭐ Highlight of the release** — We fixed a pesky issue where Bash commands would fail on certain Macs due to task directory errors, ensuring your terminal workflow stays uninterrupted.
+**⭐ Highlight of the release** — macOS 12 (Monterey) users can now launch Claude Code again without any hiccups.
 
 **What's new**
-*   **Reliable settings:** The "always allow" preference now correctly saves even when a local project configuration file doesn't exist yet.
-*   **Better connection handling:** Remote sessions hosted via Claude Desktop or VS Code are now much more resilient to degraded network connections.
-*   **Smart error management:** Background tasks with massive error logs (like full-disk git failures) no longer crash your conversations by exceeding API limits.
+* Fixed a launch issue that specifically affected macOS 12 users.
+* Resolved a bug where remote or scheduled sessions would occasionally crash when re-approving permissions.
 
-**Why you'll care** — You’ll spend less time troubleshooting your environment and more time building, with a much more stable experience across the board.
+**Why you'll care**
+These fixes ensure your environment stays stable and your sessions don't get interrupted by unnecessary errors.
 
-Happy coding, and let us know what you think!
+Happy coding, and thanks for being part of the community!
 
 <!-- LATEST:END -->
 
