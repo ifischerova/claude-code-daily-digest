@@ -4,10 +4,15 @@ from src.summarizer import Digest, _parse_response, summarize
 
 
 def test_parse_response_extracts_json_from_fenced_text():
-    content = 'Sure!\n```json\n{"subject": "Hi 👋", "body": "## TL;DR\\nx"}\n```'
+    content = (
+        'Sure!\n```json\n{"czech_subject": "Ahoj", '
+        '"czech_body": "## Shrnutí\\nx", "english_subject": "Hi", '
+        '"english_body": "## TL;DR\\nx"}\n```'
+    )
     digest = _parse_response(content)
     assert isinstance(digest, Digest)
-    assert digest.subject == "Hi 👋"
+    assert digest.czech_subject == "Ahoj"
+    assert digest.english_subject == "Hi"
     assert "TL;DR" in digest.body_markdown
 
 
@@ -17,7 +22,7 @@ def test_parse_response_raises_on_no_json():
 
 
 def test_parse_response_raises_on_missing_keys():
-    with pytest.raises(ValueError, match="missing subject/body"):
+    with pytest.raises(ValueError, match="missing bilingual digest fields"):
         _parse_response('{"title": "wrong key"}')
 
 
@@ -49,7 +54,14 @@ def test_summarize_posts_to_openrouter_and_parses():
         def json(self):
             return {
                 "choices": [
-                    {"message": {"content": '{"subject": "S", "body": "B"}'}}
+                    {
+                        "message": {
+                            "content": (
+                                '{"czech_subject": "CS", "czech_body": "CB", '
+                                '"english_subject": "EN", "english_body": "EB"}'
+                            )
+                        }
+                    }
                 ]
             }
 
@@ -64,8 +76,8 @@ def test_summarize_posts_to_openrouter_and_parses():
     digest = summarize(
         "1.0.0", "notes", api_key="k", model="m", http_post=fake_post
     )
-    assert digest.subject == "S"
-    assert digest.body_markdown == "B"
+    assert digest.subject == "CS | EN"
+    assert digest.body_markdown.index("CS") < digest.body_markdown.index("EN")
     assert captured["model"] == "m"
     assert captured["auth"] == "Bearer k"
     assert "openrouter.ai" in captured["url"]

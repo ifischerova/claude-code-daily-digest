@@ -14,23 +14,40 @@ SYSTEM_PROMPT = """You are the editor of a warm, friendly developer newsletter \
 about Claude Code. Rewrite raw release notes so a busy human enjoys reading them.
 
 Return ONLY a single JSON object, no prose around it:
-{"subject": "...", "body": "..."}
+{"czech_subject": "...", "czech_body": "...", "english_subject": "...", "english_body": "..."}
 
-- "subject": a catchy one-line subject with exactly one tasteful emoji.
-- "body": Markdown with these sections, in this order:
+- Write the Czech fields in natural Czech and the English fields in natural English.
+- Each "subject" is a concise, descriptive release headline with exactly one
+  tasteful emoji. Do not write it in all capitals.
+- Each "body" is Markdown with these sections, in this order:
   **TL;DR** — one sentence.
   **⭐ Highlight of the release** — the single most exciting change.
   **What's new** — plain-language bullets; translate jargon into human terms.
   **Why you'll care** — a short "so what".
   A warm one-line sign-off.
 
-Keep it concise and human. Do not invent features that are not in the notes."""
+Keep both versions concise, equivalent in meaning, and human. Localize the
+section headings naturally for their language. Do not invent features that are
+not in the notes."""
 
 
 @dataclass(frozen=True)
 class Digest:
-    subject: str
-    body_markdown: str
+    czech_subject: str
+    czech_body_markdown: str
+    english_subject: str
+    english_body_markdown: str
+
+    @property
+    def subject(self) -> str:
+        return f"{self.czech_subject} | {self.english_subject}"
+
+    @property
+    def body_markdown(self) -> str:
+        return (
+            f"## {self.czech_subject}\n\n{self.czech_body_markdown}\n\n"
+            f"---\n\n## {self.english_subject}\n\n{self.english_body_markdown}"
+        )
 
 
 def _build_messages(version: str, notes: str) -> list[dict]:
@@ -53,9 +70,14 @@ def _parse_response(content: str) -> Digest:
     except json.JSONDecodeError as exc:
         raise ValueError("Malformed JSON in model response") from exc
     try:
-        return Digest(subject=data["subject"], body_markdown=data["body"])
+        return Digest(
+            czech_subject=data["czech_subject"],
+            czech_body_markdown=data["czech_body"],
+            english_subject=data["english_subject"],
+            english_body_markdown=data["english_body"],
+        )
     except (KeyError, TypeError) as exc:
-        raise ValueError("Model response missing subject/body") from exc
+        raise ValueError("Model response missing bilingual digest fields") from exc
 
 
 def summarize(

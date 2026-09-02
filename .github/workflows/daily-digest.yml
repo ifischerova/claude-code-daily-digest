@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "0 5 * * *"  # 06:00 (CET) / 07:00 (CEST) Europe/Prague
   workflow_dispatch:
+    inputs:
+      send_test_email:
+        description: Send a sample bilingual email without archiving a release
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -32,7 +38,13 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           MAIL_FROM: ${{ vars.MAIL_FROM || 'onboarding@resend.dev' }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
-        run: python -m src.main
+          SEND_TEST_EMAIL: ${{ inputs.send_test_email || 'false' }}
+        run: |
+          if [ "$SEND_TEST_EMAIL" = "true" ]; then
+            python -m src.main --test-email
+          else
+            python -m src.main
+          fi
 
       - name: Commit new digest
         # Always run: if README update failed (non-zero exit) the archive was

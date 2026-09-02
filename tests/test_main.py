@@ -13,6 +13,10 @@ FAKE_CONFIG = SimpleNamespace(
 )
 
 
+def _digest() -> Digest:
+    return Digest("Český předmět", "české tělo", "English subject", "English body")
+
+
 def _readme_with_block(tmp_path):
     readme = tmp_path / "README.md"
     readme.write_text(
@@ -20,6 +24,23 @@ def _readme_with_block(tmp_path):
         encoding="utf-8",
     )
     return readme
+
+
+def test_run_test_email_sends_czech_first_without_archiving(monkeypatch):
+    monkeypatch.setattr(m, "load_config", lambda: FAKE_CONFIG)
+    sent = {}
+
+    def fake_send(subject, body_markdown, **kwargs):
+        sent["subject"] = subject
+        sent["body"] = body_markdown
+
+    monkeypatch.setattr(m, "send_email", fake_send)
+
+    assert m.run_test_email() == 0
+    assert "Zkušební e-mail" in sent["subject"]
+    assert sent["body"].index("Zkušební e-mail") < sent["body"].index(
+        "Claude Code daily digest test email"
+    )
 
 
 def test_run_happy_path_emails_and_archives(tmp_path, monkeypatch):
@@ -31,7 +52,7 @@ def test_run_happy_path_emails_and_archives(tmp_path, monkeypatch):
     monkeypatch.setattr(m, "fetch_changelog", lambda: "raw")
     monkeypatch.setattr(m, "parse_latest", lambda raw: Release("9.9.9", "notes"))
     monkeypatch.setattr(
-        m, "summarize", lambda *a, **k: Digest("Subj 🎉", "body")
+        m, "summarize", lambda *a, **k: _digest()
     )
     sent = {}
     monkeypatch.setattr(
@@ -43,7 +64,8 @@ def test_run_happy_path_emails_and_archives(tmp_path, monkeypatch):
     assert code == 0
     assert sent.get("ok") is True
     assert (digests / "2026-06-22-v9.9.9.md").exists()
-    assert "Subj 🎉" in readme.read_text(encoding="utf-8")
+    archived = (digests / "2026-06-22-v9.9.9.md").read_text(encoding="utf-8")
+    assert archived.index("Český předmět") < archived.index("English subject")
 
 
 def test_run_skips_when_version_already_digested(tmp_path, monkeypatch):
@@ -72,7 +94,7 @@ def test_run_skips_archive_when_email_fails(tmp_path, monkeypatch):
     monkeypatch.setattr(m, "fetch_changelog", lambda: "raw")
     monkeypatch.setattr(m, "parse_latest", lambda raw: Release("9.9.9", "notes"))
     monkeypatch.setattr(
-        m, "summarize", lambda *a, **k: Digest("Subj", "body")
+        m, "summarize", lambda *a, **k: _digest()
     )
 
     def boom(*a, **k):
@@ -96,7 +118,7 @@ def test_run_continues_when_readme_update_fails(tmp_path, monkeypatch):
     monkeypatch.setattr(m, "load_config", lambda: FAKE_CONFIG)
     monkeypatch.setattr(m, "fetch_changelog", lambda: "raw")
     monkeypatch.setattr(m, "parse_latest", lambda raw: Release("9.9.9", "notes"))
-    monkeypatch.setattr(m, "summarize", lambda *a, **k: Digest("Subj", "body"))
+    monkeypatch.setattr(m, "summarize", lambda *a, **k: _digest())
     monkeypatch.setattr(m, "send_email", lambda *a, **k: None)
 
     def boom(*a, **k):

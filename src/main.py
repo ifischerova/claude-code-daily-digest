@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import datetime
 import sys
+import argparse
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -16,6 +17,36 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DIGESTS_DIR = REPO_ROOT / "digests"
 README_PATH = REPO_ROOT / "README.md"
 _PRAGUE = ZoneInfo("Europe/Prague")
+
+
+def run_test_email() -> int:
+    """Send a manual, archive-free bilingual email to verify delivery."""
+    config = load_config()
+    digest = Digest(
+        czech_subject="Zkušební e-mail denního přehledu Claude Code",
+        czech_body_markdown=(
+            "Toto je zkušební e-mail pro ověření doručení a českého formátu.\n\n"
+            "**Co ověřuje** — Čeština je první a angličtina následuje níže."
+        ),
+        english_subject="Claude Code daily digest test email",
+        english_body_markdown=(
+            "This is a test email to verify delivery and the bilingual format.\n\n"
+            "**What it checks** — Czech comes first and English follows below."
+        ),
+    )
+    try:
+        send_email(
+            digest.subject,
+            digest.body_markdown,
+            api_key=config.resend_api_key,
+            mail_from=config.mail_from,
+            mail_to=config.mail_to,
+        )
+    except Exception as exc:  # noqa: BLE001
+        print(f"Test email failed ({exc}).")
+        return 1
+    print("Test email sent; no digest was archived.")
+    return 0
 
 
 def _today() -> str:
@@ -45,8 +76,13 @@ def run(*, today: str | None = None) -> int:
     except Exception as exc:  # noqa: BLE001
         print(f"AI summary failed ({exc}); falling back to raw notes.")
         digest = Digest(
-            subject=f"📝 Claude Code v{release.version} released",
-            body_markdown=(
+            czech_subject=f"Claude Code v{release.version}: poznámky k vydání",
+            czech_body_markdown=(
+                "_České shrnutí se nepodařilo vytvořit; níže jsou původní "
+                "poznámky k vydání v angličtině._"
+            ),
+            english_subject=f"Claude Code v{release.version} released",
+            english_body_markdown=(
                 "_AI summary unavailable - here are the raw notes:_\n\n"
                 + release.notes
             ),
@@ -85,7 +121,14 @@ def run(*, today: str | None = None) -> int:
 
 
 def main() -> None:
-    sys.exit(run())
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--test-email",
+        action="store_true",
+        help="send a bilingual test email without fetching or archiving a release",
+    )
+    args = parser.parse_args()
+    sys.exit(run_test_email() if args.test_email else run())
 
 
 if __name__ == "__main__":
