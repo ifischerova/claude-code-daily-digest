@@ -23,43 +23,41 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.261: Lepší správa dovedností a ladění 🛠️ | Claude Code 2.1.261: Smarter skill management & fixes 🛠️
+### Vylepšení stability pro Claude Code 🛠️ | Stability improvements for Claude Code 🛠️
 
-_Claude Code v2.1.261 — 2026-09-05_
+_Claude Code v2.1.263 — 2026-09-06_
 
-## Claude Code 2.1.261: Lepší správa dovedností a ladění 🛠️
+## Vylepšení stability pro Claude Code 🛠️
 
-**TL;DR** — Tato verze přináší vylepšenou diagnostiku dovedností, větší flexibilitu v nastavení výstupů a opravu mnoha drobných chyb pro plynulejší práci.
+**TL;DR** – Tato verze přináší opravy chyb a celkové zvýšení spolehlivosti nástroje.
 
-**⭐ Hlavní novinka** — Příkaz `/skill-doctor`. Konečně uvidíte, které dovednosti (skills) zbytečně plýtvají vaším kontextem, a můžete je snadno vyčistit.
+**⭐ Hlavní změna**
+Zaměřili jsme se na ladění pod kapotou, aby byl váš vývoj s Claude Code plynulejší a předvídatelnější.
 
 **Co je nového**
-* **Více prostoru:** Nastavení `bashOutputMaxChars` a `taskOutputMaxChars` nyní umožňují předávat až 128 000 znaků výstupu přímo do kontextu.
-* **Organizační politika:** Příkaz `/status` nyní jasně napoví, proč se firemní pravidla nenačetla (např. kvůli proxy).
-* **Větší soubory:** Nový příznak `--append-subagent-system-prompt-file` pro načítání dlouhých systémových promptů ze souboru.
-* **VS Code vylepšení:** Snadnější správa MCP serverů a možnost „sbalit“ okna s dotazy, abyste viděli na historii konverzace.
-* **Opravy:** Vyřešili jsme zasekávání při psaní, chyby v Remote Control a lepší stabilitu při práci za firemními proxy.
+* Opravy drobných chyb, které mohly způsobovat nečekané chování.
+* Celková optimalizace stability pro spolehlivější běh příkazů.
 
-**Proč by vás to mělo zajímat** — Claude Code je nyní mnohem přehlednější a lépe zvládá složité projekty, kde záleží na každém tokenu a stabilním připojení.
+**Proč na tom záleží**
+I když to nejsou velké nové funkce, tyto úpravy zajišťují, že vás při práci nebude nic zbytečně brzdit.
 
-Ať se vám dnes skvěle kóduje!
+Užívejte si hladší kódování!
 
 ---
 
-## Claude Code 2.1.261: Smarter skill management & fixes 🛠️
+## Stability improvements for Claude Code 🛠️
 
-**TL;DR** — This release adds powerful new diagnostic tools, increased output limits, and a long list of quality-of-life fixes for a smoother terminal experience.
+**TL;DR** – This release focuses on squashing bugs and making your experience more reliable.
 
-**⭐ Highlight of the release** — The new `/skill-doctor` command. You can now see exactly which loaded skills are going unused and how much context they’re costing you, making it easy to prune your setup.
+**⭐ Highlight of the release**
+We’ve polished the internals to ensure your development workflow with Claude Code is smoother and more predictable.
 
 **What's new**
-* **More breathing room:** You can now increase inline command and task output up to 128K characters using new settings.
-* **Clearer status:** `/status` now explains why your organization's policy might fail to load, such as proxy interference.
-* **Large prompts:** Use `--append-subagent-system-prompt-file` to feed massive system prompts to subagents without hitting command-line limits.
-* **VS Code polish:** Manage MCP servers directly from the UI and use the new fold button on prompts to keep your conversation flow visible while answering questions.
-* **Reliability:** Fixed various input glitches, Remote Control UI hangs, and connectivity issues behind TLS-inspecting corporate proxies.
+* Fixed various minor bugs that could cause unexpected behavior.
+* General stability improvements to keep your commands running reliably.
 
-**Why you'll care** — You’ll spend less time debugging your environment and more time coding, with better visibility into what’s actually using up your model's context.
+**Why you'll care**
+While these aren't flashy new features, these fixes ensure you spend less time troubleshooting the tool and more time building.
 
 Happy coding!
 
