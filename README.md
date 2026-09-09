@@ -23,43 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Vylepšení stability pro Claude Code 🛠️ | Stability improvements for Claude Code 🛠️
+### Oprava chyby v síťovém nastavení Claude Code 🛠️ | Fixing network setup issues in Claude Code 🛠️
 
-_Claude Code v2.1.263 — 2026-09-06_
+_Claude Code v2.1.266 — 2026-09-09_
 
-## Vylepšení stability pro Claude Code 🛠️
+## Oprava chyby v síťovém nastavení Claude Code 🛠️
 
-**TL;DR** – Tato verze přináší opravy chyb a celkové zvýšení spolehlivosti nástroje.
+**TL;DR** — Opravili jsme chybu v minulé verzi, která způsobovala problémy při používání vlastních proxy serverů.
 
-**⭐ Hlavní změna**
-Zaměřili jsme se na ladění pod kapotou, aby byl váš vývoj s Claude Code plynulejší a předvídatelnější.
+**⭐ Hlavní změna** — Vyřešili jsme regresi, kvůli které se Claude Code mylně snažil vynutit přihlášení přes Cloud-gateway, i když jste používali vlastní nastavení.
 
 **Co je nového**
-* Opravy drobných chyb, které mohly způsobovat nečekané chování.
-* Celková optimalizace stability pro spolehlivější běh příkazů.
+* Odstranili jsme konflikt, kdy se proměnná `CLAUDE_CODE_USE_GATEWAY` chovala příliš agresivně.
+* Všechny vaše stávající konfigurace s API klíči nebo vlastními hlavičkami opět fungují tak, jak mají.
+* Není potřeba nic měnit – vše se vrací do starých kolejí.
 
-**Proč na tom záleží**
-I když to nejsou velké nové funkce, tyto úpravy zajišťují, že vás při práci nebude nic zbytečně brzdit.
+**Proč vás to zajímá**
+Pokud používáte vlastní síťové brány, už se vám nebudou zobrazovat chyby o „nepřihlášení“ k bráně. 
 
-Užívejte si hladší kódování!
+Užívejte si kódování bez zbytečných zádrhelů!
 
 ---
 
-## Stability improvements for Claude Code 🛠️
+## Fixing network setup issues in Claude Code 🛠️
 
-**TL;DR** – This release focuses on squashing bugs and making your experience more reliable.
+**TL;DR** — We’ve squashed a bug from the last release that caused issues for users with custom proxy setups.
 
-**⭐ Highlight of the release**
-We’ve polished the internals to ensure your development workflow with Claude Code is smoother and more predictable.
+**⭐ Highlight of the release** — We fixed a regression where the `CLAUDE_CODE_USE_GATEWAY` variable was incorrectly forcing a Cloud-gateway sign-in, even when it shouldn't have.
 
 **What's new**
-* Fixed various minor bugs that could cause unexpected behavior.
-* General stability improvements to keep your commands running reliably.
+* The problematic behavior where the environment variable forced authentication on its own is gone.
+* Configurations using API keys, helpers, or custom headers are now working perfectly again.
+* No action is required on your part; everything should just work.
 
 **Why you'll care**
-While these aren't flashy new features, these fixes ensure you spend less time troubleshooting the tool and more time building.
+If you rely on custom proxy or gateway configurations, you can get back to coding without seeing those frustrating "Not signed in" errors.
 
-Happy coding!
+Happy coding, and see you in the next update!
 
 <!-- LATEST:END -->
 
