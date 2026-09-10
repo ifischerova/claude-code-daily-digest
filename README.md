@@ -23,43 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Oprava chyby v síťovém nastavení Claude Code 🛠️ | Fixing network setup issues in Claude Code 🛠️
+### Claude Code 2.1.267: Lepší stabilita a plynulejší práce 🚀 | Claude Code 2.1.267: Better stability and smoother sessions 🚀
 
-_Claude Code v2.1.266 — 2026-09-09_
+_Claude Code v2.1.267 — 2026-09-10_
 
-## Oprava chyby v síťovém nastavení Claude Code 🛠️
+## Claude Code 2.1.267: Lepší stabilita a plynulejší práce 🚀
 
-**TL;DR** — Opravili jsme chybu v minulé verzi, která způsobovala problémy při používání vlastních proxy serverů.
+**TL;DR** — Tato aktualizace přináší vylepšenou stabilitu mezipaměti, opravu mnoha chyb při obnovování relací a celkové zrychlení odezvy.
 
-**⭐ Hlavní změna** — Vyřešili jsme regresi, kvůli které se Claude Code mylně snažil vynutit přihlášení přes Cloud-gateway, i když jste používali vlastní nastavení.
+**⭐ Highlight of the release** — Výrazně jsme zlepšili stabilitu mezipaměti (prompt-cache), takže Claude si nyní lépe pamatuje kontext a nástroje, i když přepínáte modely nebo obnovujete starší relace.
 
-**Co je nového**
-* Odstranili jsme konflikt, kdy se proměnná `CLAUDE_CODE_USE_GATEWAY` chovala příliš agresivně.
-* Všechny vaše stávající konfigurace s API klíči nebo vlastními hlavičkami opět fungují tak, jak mají.
-* Není potřeba nic měnit – vše se vrací do starých kolejí.
+**What's new**
+* **Kontrola úsilí:** Nové nastavení `maxEffortLevel` vám umožní zastropovat náročnost modelu napříč všemi poskytovateli.
+* **Iterace promptů:** Nový příznak `--system-prompt-snapshot off` vynutí čerstvé vykreslení systémového promptu při každém požadavku.
+* **Opravy v VS Code:** Vyřešili jsme problémy s výkonem při práci s velkými soubory, vkládáním obrázků na WSL2 a nesprávným barevným schématem v panelech rozdílů (diff).
+* **Spolehlivější publikování:** Artifacty se nyní při výpadku spojení automaticky pokusí o obnovení nahrávání.
+* **Lepší nápověda:** Claude nyní lépe vysvětluje, proč se akce nezdařila a jak ji opravit, místo aby jen vypsal obecnou chybu.
 
-**Proč vás to zajímá**
-Pokud používáte vlastní síťové brány, už se vám nebudou zobrazovat chyby o „nepřihlášení“ k bráně. 
+**Why you'll care** — Vaše relace budou stabilnější, méně často se budou „ztrácet“ a práce v terminálu i editoru bude mnohem předvídatelnější.
 
-Užívejte si kódování bez zbytečných zádrhelů!
+Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Fixing network setup issues in Claude Code 🛠️
+## Claude Code 2.1.267: Better stability and smoother sessions 🚀
 
-**TL;DR** — We’ve squashed a bug from the last release that caused issues for users with custom proxy setups.
+**TL;DR** — This release focuses on rock-solid session restoration, improved prompt-cache efficiency, and a smoother experience across VS Code and CLI.
 
-**⭐ Highlight of the release** — We fixed a regression where the `CLAUDE_CODE_USE_GATEWAY` variable was incorrectly forcing a Cloud-gateway sign-in, even when it shouldn't have.
+**⭐ Highlight of the release** — Massive improvements to prompt-cache stability: Claude now remembers tool definitions and context perfectly when you switch models or resume long sessions.
 
 **What's new**
-* The problematic behavior where the environment variable forced authentication on its own is gone.
-* Configurations using API keys, helpers, or custom headers are now working perfectly again.
-* No action is required on your part; everything should just work.
+* **Effort control:** Added `maxEffortLevel` to cap compute usage across all providers, including Bedrock, Vertex, and Foundry.
+* **Prompt iteration:** Use `--system-prompt-snapshot off` to force a fresh system prompt on every request.
+* **VS Code fixes:** Resolved high CPU usage in large workspaces, fixed image pasting on WSL2, and ensured diff views now respect your active color theme.
+* **Resilient publishing:** Artifact uploads now automatically retry once if a connection drops mid-transfer.
+* **Clearer feedback:** Error messages for failed publishes or API limits are now actionable, telling you exactly what went wrong and how to fix it.
 
-**Why you'll care**
-If you rely on custom proxy or gateway configurations, you can get back to coding without seeing those frustrating "Not signed in" errors.
+**Why you'll care** — You’ll spend less time managing session state and more time building, with fewer interruptions during model switches or deep-dive coding sessions.
 
-Happy coding, and see you in the next update!
+Happy coding!
 
 <!-- LATEST:END -->
 
