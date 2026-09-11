@@ -23,45 +23,47 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.267: Lepší stabilita a plynulejší práce 🚀 | Claude Code 2.1.267: Better stability and smoother sessions 🚀
+### Claude Code 2.1.268: Rychlejší, plynulejší a chytřejší 🚀 | Claude Code 2.1.268: Smoother, faster, and more reliable 🚀
 
-_Claude Code v2.1.267 — 2026-09-10_
+_Claude Code v2.1.268 — 2026-09-11_
 
-## Claude Code 2.1.267: Lepší stabilita a plynulejší práce 🚀
+## Claude Code 2.1.268: Rychlejší, plynulejší a chytřejší 🚀
 
-**TL;DR** — Tato aktualizace přináší vylepšenou stabilitu mezipaměti, opravu mnoha chyb při obnovování relací a celkové zrychlení odezvy.
+**TL;DR** — Tato aktualizace přináší zásadní vylepšení výkonu, opravy chyb v oprávněních a plynulejší práci s pluginy i v rozšíření pro VS Code.
 
-**⭐ Highlight of the release** — Výrazně jsme zlepšili stabilitu mezipaměti (prompt-cache), takže Claude si nyní lépe pamatuje kontext a nástroje, i když přepínáte modely nebo obnovujete starší relace.
+**⭐ Highlight of the release** — Pluginy nyní fungují okamžitě: instalace, aktivace či deaktivace se projeví v běžících relacích bez nutnosti restartu.
 
-**What's new**
-* **Kontrola úsilí:** Nové nastavení `maxEffortLevel` vám umožní zastropovat náročnost modelu napříč všemi poskytovateli.
-* **Iterace promptů:** Nový příznak `--system-prompt-snapshot off` vynutí čerstvé vykreslení systémového promptu při každém požadavku.
-* **Opravy v VS Code:** Vyřešili jsme problémy s výkonem při práci s velkými soubory, vkládáním obrázků na WSL2 a nesprávným barevným schématem v panelech rozdílů (diff).
-* **Spolehlivější publikování:** Artifacty se nyní při výpadku spojení automaticky pokusí o obnovení nahrávání.
-* **Lepší nápověda:** Claude nyní lépe vysvětluje, proč se akce nezdařila a jak ji opravit, místo aby jen vypsal obecnou chybu.
+**Co je nového**
+* **Lepší správa:** Správci mohou nyní využít `gatewayInternalNetworks` pro bezpečný přístup k bráně z interních sítí.
+* **Plynulejší práce:** Opravili jsme chyby způsobující vysoké vytížení CPU a zrychlili načítání při obnovování konverzací.
+* **Přehlednější pluginy:** Příkaz `claude plugin` nyní podporuje `--json` pro snadnější automatizaci.
+* **Chytřejší oprávnění:** Claude nyní lépe vysvětluje, proč zablokoval určitou akci, a nabízí bezpečnější alternativy.
+* **VS Code:** Opraveny problémy s nekonzistentním zobrazením modelů a vylepšeno ovládání pomocí klávesnice.
 
-**Why you'll care** — Vaše relace budou stabilnější, méně často se budou „ztrácet“ a práce v terminálu i editoru bude mnohem předvídatelnější.
+**Proč vás to zajímá**
+Claude Code je nyní stabilnější a méně vás vyrušuje při práci – vše od pluginů až po obnovu relací funguje přesně tak, jak byste čekali.
 
-Ať se vám dnes skvěle kóduje!
+Užívejte si kódování bez zbytečných zádrhelů!
 
 ---
 
-## Claude Code 2.1.267: Better stability and smoother sessions 🚀
+## Claude Code 2.1.268: Smoother, faster, and more reliable 🚀
 
-**TL;DR** — This release focuses on rock-solid session restoration, improved prompt-cache efficiency, and a smoother experience across VS Code and CLI.
+**TL;DR** — This release brings major performance optimizations, refined permission handling, and a much smoother experience for plugins and VS Code users.
 
-**⭐ Highlight of the release** — Massive improvements to prompt-cache stability: Claude now remembers tool definitions and context perfectly when you switch models or resume long sessions.
+**⭐ Highlight of the release** — Plugin changes (installs, enables, and disables) now take effect in open sessions instantly—no more `/reload-plugins` required.
 
 **What's new**
-* **Effort control:** Added `maxEffortLevel` to cap compute usage across all providers, including Bedrock, Vertex, and Foundry.
-* **Prompt iteration:** Use `--system-prompt-snapshot off` to force a fresh system prompt on every request.
-* **VS Code fixes:** Resolved high CPU usage in large workspaces, fixed image pasting on WSL2, and ensured diff views now respect your active color theme.
-* **Resilient publishing:** Artifact uploads now automatically retry once if a connection drops mid-transfer.
-* **Clearer feedback:** Error messages for failed publishes or API limits are now actionable, telling you exactly what went wrong and how to fix it.
+* **Gateway control:** Added `gatewayInternalNetworks` to let admins allow login access from specific public IPv4 blocks.
+* **Performance:** Fixed high CPU usage in idle sessions and optimized startup times for projects with many workflow scripts.
+* **Better feedback:** Claude now explains exactly which rule blocked an action and suggests safer alternatives.
+* **Plugin automation:** Added `--json` output support for all plugin management commands.
+* **VS Code improvements:** Fixed model picker glitches, improved keyboard navigation, and ensured session settings persist correctly.
 
-**Why you'll care** — You’ll spend less time managing session state and more time building, with fewer interruptions during model switches or deep-dive coding sessions.
+**Why you'll care**
+Your workflow will feel snappier and more intuitive, with fewer manual restarts and clearer guidance when permissions get in the way.
 
-Happy coding!
+Happy coding, and let us know what you think!
 
 <!-- LATEST:END -->
 
