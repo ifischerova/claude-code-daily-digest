@@ -23,47 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.268: Rychlejší, plynulejší a chytřejší 🚀 | Claude Code 2.1.268: Smoother, faster, and more reliable 🚀
+### Claude Code 2.1.269: Nové možnosti vyhodnocování a vylepšení pro VS Code 🚀 | Claude Code 2.1.269: Plugin evaluation and VS Code power-ups 🚀
 
-_Claude Code v2.1.268 — 2026-09-11_
+_Claude Code v2.1.269 — 2026-09-12_
 
-## Claude Code 2.1.268: Rychlejší, plynulejší a chytřejší 🚀
+## Claude Code 2.1.269: Nové možnosti vyhodnocování a vylepšení pro VS Code 🚀
 
-**TL;DR** — Tato aktualizace přináší zásadní vylepšení výkonu, opravy chyb v oprávněních a plynulejší práci s pluginy i v rozšíření pro VS Code.
+**TL;DR** — Tato verze přináší nástroje pro vyhodnocování pluginů, vylepšené rozhraní ve VS Code a desítky oprav pro plynulejší práci.
 
-**⭐ Highlight of the release** — Pluginy nyní fungují okamžitě: instalace, aktivace či deaktivace se projeví v běžících relacích bez nutnosti restartu.
+**⭐ Highlight of the release** — Nový příkaz `claude plugin eval`, který vám umožní spustit testovací sadu pro pluginy a získat přehledné výsledky ve formátu JSON nebo HTML.
 
-**Co je nového**
-* **Lepší správa:** Správci mohou nyní využít `gatewayInternalNetworks` pro bezpečný přístup k bráně z interních sítí.
-* **Plynulejší práce:** Opravili jsme chyby způsobující vysoké vytížení CPU a zrychlili načítání při obnovování konverzací.
-* **Přehlednější pluginy:** Příkaz `claude plugin` nyní podporuje `--json` pro snadnější automatizaci.
-* **Chytřejší oprávnění:** Claude nyní lépe vysvětluje, proč zablokoval určitou akci, a nabízí bezpečnější alternativy.
-* **VS Code:** Opraveny problémy s nekonzistentním zobrazením modelů a vylepšeno ovládání pomocí klávesnice.
+**What's new**
+* **Nové nástroje:** Přidali jsme `/output-style` pro přepínání výstupů a možnost nastavit limit souběžných agentů (`CLAUDE_CODE_WORKFLOW_MAX_CONCURRENT_AGENTS`).
+* **Lepší přehled ve VS Code:** Nová mapa agentů, dialogy pro správu oprávnění a háčků (hooks) přímo v editoru.
+* **Bash vylepšení:** Claude nyní zobrazuje diff změn u souborů, které upravil pomocí Bash příkazů.
+* **Opravy:** Vyřešili jsme problémy s terminály (kitty, st, WezTerm), vylepšili filtrování návrhů pro asijské jazyky a opravili stabilitu při obnovování relací.
 
-**Proč vás to zajímá**
-Claude Code je nyní stabilnější a méně vás vyrušuje při práci – vše od pluginů až po obnovu relací funguje přesně tak, jak byste čekali.
+**Why you'll care**
+Získáte větší kontrolu nad tím, jak Claude pracuje s pluginy a soubory, a díky novým prvkům ve VS Code už nebudete muset tak často přepínat do terminálu.
 
-Užívejte si kódování bez zbytečných zádrhelů!
+Užívejte si kódování a ať se daří!
 
 ---
 
-## Claude Code 2.1.268: Smoother, faster, and more reliable 🚀
+## Claude Code 2.1.269: Plugin evaluation and VS Code power-ups 🚀
 
-**TL;DR** — This release brings major performance optimizations, refined permission handling, and a much smoother experience for plugins and VS Code users.
+**TL;DR** — This release introduces plugin evaluation tools, a major UI upgrade for VS Code, and dozens of stability fixes.
 
-**⭐ Highlight of the release** — Plugin changes (installs, enables, and disables) now take effect in open sessions instantly—no more `/reload-plugins` required.
+**⭐ Highlight of the release** — You can now use `claude plugin eval` to run a plugin's evaluation suite against Claude Code and generate clean, reproducible JSON or HTML reports.
 
 **What's new**
-* **Gateway control:** Added `gatewayInternalNetworks` to let admins allow login access from specific public IPv4 blocks.
-* **Performance:** Fixed high CPU usage in idle sessions and optimized startup times for projects with many workflow scripts.
-* **Better feedback:** Claude now explains exactly which rule blocked an action and suggests safer alternatives.
-* **Plugin automation:** Added `--json` output support for all plugin management commands.
-* **VS Code improvements:** Fixed model picker glitches, improved keyboard navigation, and ensured session settings persist correctly.
+* **New controls:** Added `/output-style` for headless sessions and `CLAUDE_CODE_WORKFLOW_MAX_CONCURRENT_AGENTS` to scale up your agent fan-outs.
+* **VS Code enhancements:** Added a new agent map, a dedicated Permission rules dialog, and a Hooks manager directly in the extension.
+* **Bash visibility:** Claude now provides a diff of file changes whenever it executes a Bash command that edits files.
+* **Refinements:** Fixed various terminal rendering issues (kitty, st, WezTerm), improved non-English prompt suggestions, and hardened session resumption logic.
 
 **Why you'll care**
-Your workflow will feel snappier and more intuitive, with fewer manual restarts and clearer guidance when permissions get in the way.
+These updates make Claude Code more transparent and easier to manage, whether you're building plugins or just need a more reliable experience in your VS Code workspace.
 
-Happy coding, and let us know what you think!
+Happy coding, and see you in the next build!
 
 <!-- LATEST:END -->
 
