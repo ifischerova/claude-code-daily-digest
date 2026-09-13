@@ -23,45 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.269: Nové možnosti vyhodnocování a vylepšení pro VS Code 🚀 | Claude Code 2.1.269: Plugin evaluation and VS Code power-ups 🚀
+### Oprava oprávnění v příkazech Git 🛠️ | Smoother Git operations are back 🛠️
 
-_Claude Code v2.1.269 — 2026-09-12_
+_Claude Code v2.1.270 — 2026-09-13_
 
-## Claude Code 2.1.269: Nové možnosti vyhodnocování a vylepšení pro VS Code 🚀
+## Oprava oprávnění v příkazech Git 🛠️
 
-**TL;DR** — Tato verze přináší nástroje pro vyhodnocování pluginů, vylepšené rozhraní ve VS Code a desítky oprav pro plynulejší práci.
+**TL;DR** — Opravili jsme chybu, kvůli které si Claude Code po delší době zbytečně říkal o potvrzení u příkazů Git pouze pro čtení.
 
-**⭐ Highlight of the release** — Nový příkaz `claude plugin eval`, který vám umožní spustit testovací sadu pro pluginy a získat přehledné výsledky ve formátu JSON nebo HTML.
+**⭐ Hlavní novinka**
+Vyřešili jsme nepříjemnou regresi, která vás nutila opakovaně schvalovat příkazy jako `git status` nebo `git log` v delších relacích.
 
-**What's new**
-* **Nové nástroje:** Přidali jsme `/output-style` pro přepínání výstupů a možnost nastavit limit souběžných agentů (`CLAUDE_CODE_WORKFLOW_MAX_CONCURRENT_AGENTS`).
-* **Lepší přehled ve VS Code:** Nová mapa agentů, dialogy pro správu oprávnění a háčků (hooks) přímo v editoru.
-* **Bash vylepšení:** Claude nyní zobrazuje diff změn u souborů, které upravil pomocí Bash příkazů.
-* **Opravy:** Vyřešili jsme problémy s terminály (kitty, st, WezTerm), vylepšili filtrování návrhů pro asijské jazyky a opravili stabilitu při obnovování relací.
+**Co je nového**
+* Odstranili jsme zbytečné výzvy k potvrzení u bezpečných operací v Gitu.
+* Claude teď opět plynule pracuje s vaším repozitářem bez přerušování.
 
-**Why you'll care**
-Získáte větší kontrolu nad tím, jak Claude pracuje s pluginy a soubory, a díky novým prvkům ve VS Code už nebudete muset tak často přepínat do terminálu.
+**Proč vás to zajímá**
+Vaše práce s Gitem bude zase o něco hladší a bez zbytečného vyrušování.
 
-Užívejte si kódování a ať se daří!
+Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.269: Plugin evaluation and VS Code power-ups 🚀
+## Smoother Git operations are back 🛠️
 
-**TL;DR** — This release introduces plugin evaluation tools, a major UI upgrade for VS Code, and dozens of stability fixes.
+**TL;DR** — We’ve fixed a bug where Claude Code would unnecessarily ask for permission to run read-only Git commands during long sessions.
 
-**⭐ Highlight of the release** — You can now use `claude plugin eval` to run a plugin's evaluation suite against Claude Code and generate clean, reproducible JSON or HTML reports.
+**⭐ Highlight of the release**
+We squashed a regression that was interrupting your workflow by prompting for approval on simple commands like `git status` or `git log`.
 
 **What's new**
-* **New controls:** Added `/output-style` for headless sessions and `CLAUDE_CODE_WORKFLOW_MAX_CONCURRENT_AGENTS` to scale up your agent fan-outs.
-* **VS Code enhancements:** Added a new agent map, a dedicated Permission rules dialog, and a Hooks manager directly in the extension.
-* **Bash visibility:** Claude now provides a diff of file changes whenever it executes a Bash command that edits files.
-* **Refinements:** Fixed various terminal rendering issues (kitty, st, WezTerm), improved non-English prompt suggestions, and hardened session resumption logic.
+* Removed redundant permission prompts for safe, read-only Git operations.
+* Improved session stability so Claude stays focused on your code, not your configuration.
 
 **Why you'll care**
-These updates make Claude Code more transparent and easier to manage, whether you're building plugins or just need a more reliable experience in your VS Code workspace.
+Your terminal experience is now back to being fluid and distraction-free.
 
-Happy coding, and see you in the next build!
+Happy coding!
 
 <!-- LATEST:END -->
 
