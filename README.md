@@ -23,41 +23,37 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Oprava oprávnění v příkazech Git 🛠️ | Smoother Git operations are back 🛠️
+### Claude Code 2.1.272 je tady 🛠️ | Claude Code 2.1.272 is here 🛠️
 
-_Claude Code v2.1.270 — 2026-09-13_
+_Claude Code v2.1.272 — 2026-09-15_
 
-## Oprava oprávnění v příkazech Git 🛠️
+## Claude Code 2.1.272 je tady 🛠️
 
-**TL;DR** — Opravili jsme chybu, kvůli které si Claude Code po delší době zbytečně říkal o potvrzení u příkazů Git pouze pro čtení.
+**TL;DR** — Tato verze přináší důležité opravy chyb a celkové zvýšení stability.
 
-**⭐ Hlavní novinka**
-Vyřešili jsme nepříjemnou regresi, která vás nutila opakovaně schvalovat příkazy jako `git status` nebo `git log` v delších relacích.
+**⭐ Hlavní novinka** — Zaměřili jsme se na vyladění výkonu, aby pro vás bylo kódování s Claudem ještě plynulejší.
 
 **Co je nového**
-* Odstranili jsme zbytečné výzvy k potvrzení u bezpečných operací v Gitu.
-* Claude teď opět plynule pracuje s vaším repozitářem bez přerušování.
+* Odstranění drobných chybek, které mohly způsobovat nečekané chování.
+* Optimalizace stability pro spolehlivější běh v každodenním provozu.
 
-**Proč vás to zajímá**
-Vaše práce s Gitem bude zase o něco hladší a bez zbytečného vyrušování.
+**Proč na tom záleží** — Díky těmto úpravám bude váš vývojářský workflow stabilnější a méně náchylný k přerušením.
 
 Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Smoother Git operations are back 🛠️
+## Claude Code 2.1.272 is here 🛠️
 
-**TL;DR** — We’ve fixed a bug where Claude Code would unnecessarily ask for permission to run read-only Git commands during long sessions.
+**TL;DR** — This release focuses on squashing bugs and making your experience more reliable.
 
-**⭐ Highlight of the release**
-We squashed a regression that was interrupting your workflow by prompting for approval on simple commands like `git status` or `git log`.
+**⭐ Highlight of the release** — We've polished the internals to ensure Claude Code runs more smoothly while you work.
 
 **What's new**
-* Removed redundant permission prompts for safe, read-only Git operations.
-* Improved session stability so Claude stays focused on your code, not your configuration.
+* Fixed various bugs that could cause unexpected hiccups.
+* Reliability improvements to keep your sessions running steadily.
 
-**Why you'll care**
-Your terminal experience is now back to being fluid and distraction-free.
+**Why you'll care** — These refinements mean fewer interruptions, allowing you to stay in your flow state longer.
 
 Happy coding!
 
