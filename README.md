@@ -23,37 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.272 je tady 🛠️ | Claude Code 2.1.272 is here 🛠️
+### Vylepšení stability a hladší workflow v Claude Code 🛠️ | Smoother sessions and better error reporting 🛠️
 
-_Claude Code v2.1.272 — 2026-09-15_
+_Claude Code v2.1.273 — 2026-09-16_
 
-## Claude Code 2.1.272 je tady 🛠️
+## Vylepšení stability a hladší workflow v Claude Code 🛠️
 
-**TL;DR** — Tato verze přináší důležité opravy chyb a celkové zvýšení stability.
+**TL;DR** — Tato verze přináší desítky oprav chyb, lepší chybové hlášky a plynulejší spolupráci mezi vaším terminálem a cloudem.
 
-**⭐ Hlavní novinka** — Zaměřili jsme se na vyladění výkonu, aby pro vás bylo kódování s Claudem ještě plynulejší.
+**⭐ Highlight of the release** — Nyní můžete snadno „forknout“ relaci z aplikace Claude přímo do svého počítače jako proces na pozadí, což vám umožní plynule přecházet mezi rozhraními bez ztráty kontextu.
 
-**Co je nového**
-* Odstranění drobných chybek, které mohly způsobovat nečekané chování.
-* Optimalizace stability pro spolehlivější běh v každodenním provozu.
+**What's new**
+- **Lepší diagnostika:** Chybové zprávy u GitHubu, AWS a proxy připojení jsou nyní mnohem konkrétnější a říkají vám, co přesně opravit.
+- **Stabilita:** Opravili jsme chybu, kvůli které auto-kompakce kontextu běžela příliš agresivně, a vylepšili jsme odezvu při dlouhých relacích.
+- **Bezpečnost:** Přísnější kontrola oprávnění pro Bash a opravy v chování MCP serverů.
+- **Code Review:** Vylepšili jsme logiku revizí, takže se už nebudou zbytečně opakovat u stejných změn.
 
-**Proč na tom záleží** — Díky těmto úpravám bude váš vývojářský workflow stabilnější a méně náchylný k přerušením.
+**Why you'll care**
+Získáte spolehlivější nástroj, který vás méně často vyruší obecnými chybami a lépe si rozumí s vaším GitHubem i cloudovým nastavením.
 
-Ať se vám dnes skvěle kóduje!
+Užívejte si kódování!
 
 ---
 
-## Claude Code 2.1.272 is here 🛠️
+## Smoother sessions and better error reporting 🛠️
 
-**TL;DR** — This release focuses on squashing bugs and making your experience more reliable.
+**TL;DR** — This release is packed with stability improvements, smarter error messages, and seamless session handling to keep you in the flow.
 
-**⭐ Highlight of the release** — We've polished the internals to ensure Claude Code runs more smoothly while you work.
+**⭐ Highlight of the release** — You can now fork a session started in the Claude app directly to your local machine as a background process, making it easier than ever to switch environments without losing your place.
 
 **What's new**
-* Fixed various bugs that could cause unexpected hiccups.
-* Reliability improvements to keep your sessions running steadily.
+- **Clearer Errors:** GitHub, AWS, and proxy connection issues now provide actionable advice instead of generic codes.
+- **Improved Stability:** Fixed an issue where context auto-compaction was triggering too early, and reduced UI lag during long sessions.
+- **Enhanced Security:** Refined Bash permission checks and fixed edge cases in MCP server management.
+- **Smarter Code Reviews:** PR reviews are now more efficient, avoiding redundant re-reviews for identical code pushes.
 
-**Why you'll care** — These refinements mean fewer interruptions, allowing you to stay in your flow state longer.
+**Why you'll care**
+Claude Code is now more predictable and transparent, helping you spend less time troubleshooting your tools and more time building.
 
 Happy coding!
 
