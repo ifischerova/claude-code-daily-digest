@@ -23,45 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Vylepšení stability a hladší workflow v Claude Code 🛠️ | Smoother sessions and better error reporting 🛠️
+### Claude Code 2.1.274: Hladší, rychlejší a spolehlivější 🚀 | Claude Code 2.1.274: Smoother, faster, and more reliable 🚀
 
-_Claude Code v2.1.273 — 2026-09-16_
+_Claude Code v2.1.274 — 2026-09-17_
 
-## Vylepšení stability a hladší workflow v Claude Code 🛠️
+## Claude Code 2.1.274: Hladší, rychlejší a spolehlivější 🚀
 
-**TL;DR** — Tato verze přináší desítky oprav chyb, lepší chybové hlášky a plynulejší spolupráci mezi vaším terminálem a cloudem.
+**TL;DR** — Tato aktualizace přináší desítky oprav stability, vylepšené propojení s MCP servery a chytřejší chování v VS Code.
 
-**⭐ Highlight of the release** — Nyní můžete snadno „forknout“ relaci z aplikace Claude přímo do svého počítače jako proces na pozadí, což vám umožní plynule přecházet mezi rozhraními bez ztráty kontextu.
+**⭐ Highlight of the release** — Claude nyní lépe zvládá kritické situace: pokud vám dochází paměť, dostanete jasné varování s návodem, jak situaci vyřešit, aniž byste přišli o rozdělanou práci.
 
 **What's new**
-- **Lepší diagnostika:** Chybové zprávy u GitHubu, AWS a proxy připojení jsou nyní mnohem konkrétnější a říkají vám, co přesně opravit.
-- **Stabilita:** Opravili jsme chybu, kvůli které auto-kompakce kontextu běžela příliš agresivně, a vylepšili jsme odezvu při dlouhých relacích.
-- **Bezpečnost:** Přísnější kontrola oprávnění pro Bash a opravy v chování MCP serverů.
-- **Code Review:** Vylepšili jsme logiku revizí, takže se už nebudou zbytečně opakovat u stejných změn.
+* **VS Code:** Snadnější přístup k paměti a instrukcím přímo z menu a automatické pokračování v práci po restartu okna.
+* **Stabilita MCP:** Opravili jsme zasekávání při chybách a vylepšili připojování k serverům, které používají starší formáty.
+* **Chytřejší Claude:** Claude nyní lépe chápe kontext po obnovení relace a efektivněji spravuje úkoly na pozadí.
+* **Vylepšená komunikace:** Opravili jsme formátování seznamů v chatu a přidali možnost rozbalit zprávy kolegů v režimu celé obrazovky.
 
-**Why you'll care**
-Získáte spolehlivější nástroj, který vás méně často vyruší obecnými chybami a lépe si rozumí s vaším GitHubem i cloudovým nastavením.
+**Why you'll care** — Váš vývojářský workflow bude méně přerušovaný a Claude bude lépe reagovat na vaše potřeby v prostředí, na které jste zvyklí.
 
-Užívejte si kódování!
+Užijte si kódování s novým, stabilnějším Claudem!
 
 ---
 
-## Smoother sessions and better error reporting 🛠️
+## Claude Code 2.1.274: Smoother, faster, and more reliable 🚀
 
-**TL;DR** — This release is packed with stability improvements, smarter error messages, and seamless session handling to keep you in the flow.
+**TL;DR** — This release brings dozens of stability fixes, improved MCP server connectivity, and a much more polished VS Code experience.
 
-**⭐ Highlight of the release** — You can now fork a session started in the Claude app directly to your local machine as a background process, making it easier than ever to switch environments without losing your place.
+**⭐ Highlight of the release** — We’ve added proactive memory management: Claude will now warn you when system memory is critical and provide clear steps to free it up or restart safely, preventing crashes.
 
 **What's new**
-- **Clearer Errors:** GitHub, AWS, and proxy connection issues now provide actionable advice instead of generic codes.
-- **Improved Stability:** Fixed an issue where context auto-compaction was triggering too early, and reduced UI lag during long sessions.
-- **Enhanced Security:** Refined Bash permission checks and fixed edge cases in MCP server management.
-- **Smarter Code Reviews:** PR reviews are now more efficient, avoiding redundant re-reviews for identical code pushes.
+* **VS Code:** Added quick access to memory settings and project instructions in the Customize menu, plus automatic session resumption after window reloads.
+* **MCP Robustness:** Fixed various connection loops and timeout issues, ensuring your tools work reliably even with legacy servers.
+* **Smarter Context:** Claude now maintains goals and background tasks better when resuming sessions or switching models.
+* **Better UX:** Fixed chat formatting glitches (like renumbered lists) and added click-to-expand functionality for messages in fullscreen mode.
 
-**Why you'll care**
-Claude Code is now more predictable and transparent, helping you spend less time troubleshooting your tools and more time building.
+**Why you'll care** — You'll spend less time troubleshooting the tool and more time building, with a much more stable experience across VS Code, the web, and Slack.
 
-Happy coding!
+Happy coding with this more robust Claude!
 
 <!-- LATEST:END -->
 
