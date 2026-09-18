@@ -23,43 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.274: Hladší, rychlejší a spolehlivější 🚀 | Claude Code 2.1.274: Smoother, faster, and more reliable 🚀
+### Oprava chyby při používání proxy v Claude Code 🛠️ | Fixing proxy issues in Claude Code 🛠️
 
-_Claude Code v2.1.274 — 2026-09-17_
+_Claude Code v2.1.276 — 2026-09-18_
 
-## Claude Code 2.1.274: Hladší, rychlejší a spolehlivější 🚀
+## Oprava chyby při používání proxy v Claude Code 🛠️
 
-**TL;DR** — Tato aktualizace přináší desítky oprav stability, vylepšené propojení s MCP servery a chytřejší chování v VS Code.
+**TL;DR** — Opravili jsme chybu, která způsobovala selhání všech požadavků při použití vlastní proxy adresy.
 
-**⭐ Highlight of the release** — Claude nyní lépe zvládá kritické situace: pokud vám dochází paměť, dostanete jasné varování s návodem, jak situaci vyřešit, aniž byste přišli o rozdělanou práci.
+**⭐ Hlavní změna**
+Oprava regresní chyby z minulé verze, která způsobovala, že Claude Code hlásil chybu `400` při komunikaci přes proxy nebo gateway.
 
-**What's new**
-* **VS Code:** Snadnější přístup k paměti a instrukcím přímo z menu a automatické pokračování v práci po restartu okna.
-* **Stabilita MCP:** Opravili jsme zasekávání při chybách a vylepšili připojování k serverům, které používají starší formáty.
-* **Chytřejší Claude:** Claude nyní lépe chápe kontext po obnovení relace a efektivněji spravuje úkoly na pozadí.
-* **Vylepšená komunikace:** Opravili jsme formátování seznamů v chatu a přidali možnost rozbalit zprávy kolegů v režimu celé obrazovky.
+**Co je nového**
+* Odstranili jsme problém s neplatným tagem `advisor_20260301`, který blokoval odesílání požadavků.
+* Claude Code nyní opět bez problémů spolupracuje s vaším vlastním nastavením `ANTHROPIC_BASE_URL`.
 
-**Why you'll care** — Váš vývojářský workflow bude méně přerušovaný a Claude bude lépe reagovat na vaše potřeby v prostředí, na které jste zvyklí.
+**Proč na tom záleží**
+Pokud používáte firemní proxy nebo vlastní bránu, Claude Code vám nyní bude opět fungovat přesně tak, jak má.
 
-Užijte si kódování s novým, stabilnějším Claudem!
+Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.274: Smoother, faster, and more reliable 🚀
+## Fixing proxy issues in Claude Code 🛠️
 
-**TL;DR** — This release brings dozens of stability fixes, improved MCP server connectivity, and a much more polished VS Code experience.
+**TL;DR** — We’ve squashed a bug that caused all requests to fail when using a custom proxy URL.
 
-**⭐ Highlight of the release** — We’ve added proactive memory management: Claude will now warn you when system memory is critical and provide clear steps to free it up or restart safely, preventing crashes.
+**⭐ Highlight of the release**
+We resolved a regression from version 2.1.275 that triggered a `400` error when your `ANTHROPIC_BASE_URL` pointed to a proxy or gateway.
 
 **What's new**
-* **VS Code:** Added quick access to memory settings and project instructions in the Customize menu, plus automatic session resumption after window reloads.
-* **MCP Robustness:** Fixed various connection loops and timeout issues, ensuring your tools work reliably even with legacy servers.
-* **Smarter Context:** Claude now maintains goals and background tasks better when resuming sessions or switching models.
-* **Better UX:** Fixed chat formatting glitches (like renumbered lists) and added click-to-expand functionality for messages in fullscreen mode.
+* Fixed a technical issue where an invalid input tag was blocking your requests.
+* Claude Code now correctly handles custom base URLs again without any friction.
 
-**Why you'll care** — You'll spend less time troubleshooting the tool and more time building, with a much more stable experience across VS Code, the web, and Slack.
+**Why you'll care**
+If you rely on a proxy or gateway for your connection, you can get back to building without those pesky request errors.
 
-Happy coding with this more robust Claude!
+Happy coding!
 
 <!-- LATEST:END -->
 
