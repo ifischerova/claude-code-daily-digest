@@ -23,41 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Oprava chyby při používání proxy v Claude Code 🛠️ | Fixing proxy issues in Claude Code 🛠️
+### Chytřejší a úspornější automatický režim 🚀 | Smarter and more cost-effective auto mode 🚀
 
-_Claude Code v2.1.276 — 2026-09-18_
+_Claude Code v2.1.278 — 2026-09-19_
 
-## Oprava chyby při používání proxy v Claude Code 🛠️
+## Chytřejší a úspornější automatický režim 🚀
 
-**TL;DR** — Opravili jsme chybu, která způsobovala selhání všech požadavků při použití vlastní proxy adresy.
+**TL;DR**
+Automatický režim je nyní efektivnější díky přesunu klasifikátoru na stranu serveru, což šetří vaše náklady.
 
-**⭐ Hlavní změna**
-Oprava regresní chyby z minulé verze, která způsobovala, že Claude Code hlásil chybu `400` při komunikaci přes proxy nebo gateway.
+**⭐ Hlavní novinka**
+Claude Code nyní standardně využívá serverový klasifikátor pro automatický režim, takže za jeho provoz už neplatíte žádné poplatky navíc.
 
 **Co je nového**
-* Odstranili jsme problém s neplatným tagem `advisor_20260301`, který blokoval odesílání požadavků.
-* Claude Code nyní opět bez problémů spolupracuje s vaším vlastním nastavením `ANTHROPIC_BASE_URL`.
+*   Automatický režim pro API, Enterprise, Bedrock, Vertex a Foundry nyní automaticky využívá bezplatný serverový klasifikátor.
+*   V příkazu `/status` najdete nový řádek „Auto mode server“, který vám vždy ukáže, zda klasifikátor běží na serveru.
+*   Pokud by došlo k problému a systém musel přepnout na placenou variantu, včas vás na to upozorníme.
 
-**Proč na tom záleží**
-Pokud používáte firemní proxy nebo vlastní bránu, Claude Code vám nyní bude opět fungovat přesně tak, jak má.
+**Proč vás to zajímá**
+Vaše automatizace bude nyní levnější a díky novému indikátoru ve statusu máte vždy přehled o tom, jak vaše náklady vznikají.
 
 Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Fixing proxy issues in Claude Code 🛠️
+## Smarter and more cost-effective auto mode 🚀
 
-**TL;DR** — We’ve squashed a bug that caused all requests to fail when using a custom proxy URL.
+**TL;DR**
+Auto mode is now more efficient by defaulting to a server-side classifier, eliminating extra overhead costs.
 
 **⭐ Highlight of the release**
-We resolved a regression from version 2.1.275 that triggered a `400` error when your `ANTHROPIC_BASE_URL` pointed to a proxy or gateway.
+Claude Code now defaults to using a server-side classifier for auto mode, meaning you won't be charged for classifier overhead.
 
 **What's new**
-* Fixed a technical issue where an invalid input tag was blocking your requests.
-* Claude Code now correctly handles custom base URLs again without any friction.
+*   Auto mode for API, Enterprise, Bedrock, Vertex, and Foundry now uses the server-side classifier by default.
+*   A new "Auto mode server" row in the `/status` command lets you see exactly how your session is being handled.
+*   The system will provide a warning if it ever needs to fall back to a billed classifier model.
 
 **Why you'll care**
-If you rely on a proxy or gateway for your connection, you can get back to building without those pesky request errors.
+Your automated workflows are now more budget-friendly, and you have full transparency into your session costs via the status command.
 
 Happy coding!
 
