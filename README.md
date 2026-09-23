@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Chytřejší a úspornější automatický režim 🚀 | Smarter and more cost-effective auto mode 🚀
+### Claude Code 2.1.280: Nový model Opus 5.5 a spousta vylepšení 🚀 | Claude Code 2.1.280: Meet Opus 5.5 and improved polish 🚀
 
-_Claude Code v2.1.278 — 2026-09-19_
+_Claude Code v2.1.280 — 2026-09-23_
 
-## Chytřejší a úspornější automatický režim 🚀
+## Claude Code 2.1.280: Nový model Opus 5.5 a spousta vylepšení 🚀
 
-**TL;DR**
-Automatický režim je nyní efektivnější díky přesunu klasifikátoru na stranu serveru, což šetří vaše náklady.
+**TL;DR** — Tato aktualizace přináší chytřejší model Claude Opus 5.5, lepší podporu myši v terminálu a desítky oprav pro plynulejší práci.
 
 **⭐ Hlavní novinka**
-Claude Code nyní standardně využívá serverový klasifikátor pro automatický režim, takže za jeho provoz už neplatíte žádné poplatky navíc.
+Nyní můžete využívat model **Claude Opus 5.5** (`claude-opus-5-5`), který se stává výchozím pro uživatele placených tarifů. Nabízí obrovské 1M kontextové okno a efektivnější práci s mezipamětí.
 
 **Co je nového**
-*   Automatický režim pro API, Enterprise, Bedrock, Vertex a Foundry nyní automaticky využívá bezplatný serverový klasifikátor.
-*   V příkazu `/status` najdete nový řádek „Auto mode server“, který vám vždy ukáže, zda klasifikátor běží na serveru.
-*   Pokud by došlo k problému a systém musel přepnout na placenou variantu, včas vás na to upozorníme.
+*   **Ovládání:** V celoobrazovkovém režimu už můžete pohodlně scrollovat seznamy kolečkem myši a klikat na možnosti pluginů.
+*   **Flexibilita:** Přidali jsme proměnnou `CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH`, díky které si můžete sami upravit limit pro délku popisků MCP nástrojů.
+*   **Stabilita:** Opravili jsme desítky drobných chyb, od chování klávesových zkratek v dialozích až po bezpečnější zpracování souborů a automatických režimů.
+*   **VS Code:** Přidali jsme nové přehledné dialogy pro stav, sandbox a integraci s Chrome.
 
-**Proč vás to zajímá**
-Vaše automatizace bude nyní levnější a díky novému indikátoru ve statusu máte vždy přehled o tom, jak vaše náklady vznikají.
+**Proč by vás to mělo zajímat**
+Claude Code je díky těmto změnám mnohem předvídatelnější a lépe reaguje na vaše vstupy, ať už pracujete v terminálu nebo přímo ve VS Code.
 
-Ať se vám dnes skvěle kóduje!
+Užívejte si kódování s novým výkonem!
 
 ---
 
-## Smarter and more cost-effective auto mode 🚀
+## Claude Code 2.1.280: Meet Opus 5.5 and improved polish 🚀
 
-**TL;DR**
-Auto mode is now more efficient by defaulting to a server-side classifier, eliminating extra overhead costs.
+**TL;DR** — This release introduces the new Claude Opus 5.5 model, enhanced mouse support, and a massive set of stability fixes.
 
 **⭐ Highlight of the release**
-Claude Code now defaults to using a server-side classifier for auto mode, meaning you won't be charged for classifier overhead.
+We’ve added **Claude Opus 5.5** (`claude-opus-5-5`) as the new default Opus model, featuring a 1M token context window and improved cost-efficiency with cache reads.
 
 **What's new**
-*   Auto mode for API, Enterprise, Bedrock, Vertex, and Foundry now uses the server-side classifier by default.
-*   A new "Auto mode server" row in the `/status` command lets you see exactly how your session is being handled.
-*   The system will provide a warning if it ever needs to fall back to a billed classifier model.
+*   **Better navigation:** You can now use your mouse wheel to scroll lists in fullscreen mode and click directly on plugin state options.
+*   **Customization:** Use the new `CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH` setting to increase the character limit for MCP tool descriptions.
+*   **Quality of life:** We’ve squashed dozens of bugs, including fixes for dialog navigation, auto-mode retries, and better handling of invisible characters in terminal inputs.
+*   **VS Code updates:** New dedicated dialogs for status, sandbox mode, and Chrome integration make managing your session easier than ever.
 
 **Why you'll care**
-Your automated workflows are now more budget-friendly, and you have full transparency into your session costs via the status command.
+Everything feels snappier and more reliable, especially when handling complex workflows or navigating settings in fullscreen mode.
 
 Happy coding!
 
