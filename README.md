@@ -23,45 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.280: Nový model Opus 5.5 a spousta vylepšení 🚀 | Claude Code 2.1.280: Meet Opus 5.5 and improved polish 🚀
+### Claude Code 2.1.281: Větší přehlednost a stabilita 🚀 | Claude Code 2.1.281: Polished, stable, and smarter 🚀
 
-_Claude Code v2.1.280 — 2026-09-23_
+_Claude Code v2.1.281 — 2026-09-24_
 
-## Claude Code 2.1.280: Nový model Opus 5.5 a spousta vylepšení 🚀
+## Claude Code 2.1.281: Větší přehlednost a stabilita 🚀
 
-**TL;DR** — Tato aktualizace přináší chytřejší model Claude Opus 5.5, lepší podporu myši v terminálu a desítky oprav pro plynulejší práci.
+**TL;DR** — Tato verze přináší vylepšenou stabilitu, chytřejší automatický režim a rozhraní, které je nyní přehlednější a lépe se ovládá.
 
-**⭐ Hlavní novinka**
-Nyní můžete využívat model **Claude Opus 5.5** (`claude-opus-5-5`), který se stává výchozím pro uživatele placených tarifů. Nabízí obrovské 1M kontextové okno a efektivnější práci s mezipamětí.
+**⭐ Highlight of the release** — Kompletní vylepšení stability při obnovování relací (resuming) a opravy chyb, které dříve způsobovaly ztrátu kontextu nebo nečekané ukončení konverzace.
 
-**Co je nového**
-*   **Ovládání:** V celoobrazovkovém režimu už můžete pohodlně scrollovat seznamy kolečkem myši a klikat na možnosti pluginů.
-*   **Flexibilita:** Přidali jsme proměnnou `CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH`, díky které si můžete sami upravit limit pro délku popisků MCP nástrojů.
-*   **Stabilita:** Opravili jsme desítky drobných chyb, od chování klávesových zkratek v dialozích až po bezpečnější zpracování souborů a automatických režimů.
-*   **VS Code:** Přidali jsme nové přehledné dialogy pro stav, sandbox a integraci s Chrome.
+**What's new**
+* **Chytřejší automatický režim:** /insights nyní odhaduje, kolik dotazů na oprávnění by za vás automatika zvládla.
+* **Lepší ovládání:** Všechny seznamy (plugins, skills, mcp) mají nyní funkční posuvníky a podporu pro klávesové zkratky.
+* **Bezpečnost:** Přísnější kontrola příkazů typu `rm` a vylepšená správa oprávnění v izolovaném prostředí (sandbox).
+* **Integrace:** Rozšířená podpora pro Claude apps gateway a Bedrock, včetně podpory IAM rolí.
+* **Opravy:** Vyřešeny desítky drobných chyb, od pádů při retries až po zobrazení dlouhých PDF souborů.
 
-**Proč by vás to mělo zajímat**
-Claude Code je díky těmto změnám mnohem předvídatelnější a lépe reaguje na vaše vstupy, ať už pracujete v terminálu nebo přímo ve VS Code.
+**Why you'll care** — Vaše práce bude plynulejší, méně často vás budou přerušovat technické chyby a rozhraní konečně funguje tak, jak byste od moderního nástroje čekali.
 
-Užívejte si kódování s novým výkonem!
+Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.280: Meet Opus 5.5 and improved polish 🚀
+## Claude Code 2.1.281: Polished, stable, and smarter 🚀
 
-**TL;DR** — This release introduces the new Claude Opus 5.5 model, enhanced mouse support, and a massive set of stability fixes.
+**TL;DR** — This release focuses on rock-solid session reliability, a smarter auto-mode, and a much more polished UI experience.
 
-**⭐ Highlight of the release**
-We’ve added **Claude Opus 5.5** (`claude-opus-5-5`) as the new default Opus model, featuring a 1M token context window and improved cost-efficiency with cache reads.
+**⭐ Highlight of the release** — Massive improvements to session resuming, ensuring that large conversations or interrupted tasks pick up exactly where you left off without losing reasoning or context.
 
 **What's new**
-*   **Better navigation:** You can now use your mouse wheel to scroll lists in fullscreen mode and click directly on plugin state options.
-*   **Customization:** Use the new `CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH` setting to increase the character limit for MCP tool descriptions.
-*   **Quality of life:** We’ve squashed dozens of bugs, including fixes for dialog navigation, auto-mode retries, and better handling of invisible characters in terminal inputs.
-*   **VS Code updates:** New dedicated dialogs for status, sandbox mode, and Chrome integration make managing your session easier than ever.
+* **Auto-mode insights:** The `/insights` command now estimates how many permission prompts the auto-mode could have handled for you.
+* **UI Polish:** Lists like `/skills`, `/mcp`, and `/plugin` now feature proper scrollbars and consistent keyboard navigation.
+* **Security:** Safer handling of dangerous commands (like `rm`) and better permission isolation for sandboxed tasks.
+* **Enterprise/Gateway:** Added support for Bedrock IAM roles, guardrails, and improved Claude apps gateway configuration.
+* **Bug squashing:** Resolved numerous issues, including session crashes, PDF reading delays, and inconsistent tool retries.
 
-**Why you'll care**
-Everything feels snappier and more reliable, especially when handling complex workflows or navigating settings in fullscreen mode.
+**Why you'll care** — You’ll spend less time fighting with session state or UI quirks and more time building, with a more reliable and predictable assistant.
 
 Happy coding!
 
