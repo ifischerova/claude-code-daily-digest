@@ -23,43 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.281: Větší přehlednost a stabilita 🚀 | Claude Code 2.1.281: Polished, stable, and smarter 🚀
+### Claude Code 2.1.282: Vylepšená stabilita a opravy 🛠️ | Claude Code 2.1.282: Stability and polish 🛠️
 
-_Claude Code v2.1.281 — 2026-09-24_
+_Claude Code v2.1.282 — 2026-09-25_
 
-## Claude Code 2.1.281: Větší přehlednost a stabilita 🚀
+## Claude Code 2.1.282: Vylepšená stabilita a opravy 🛠️
 
-**TL;DR** — Tato verze přináší vylepšenou stabilitu, chytřejší automatický režim a rozhraní, které je nyní přehlednější a lépe se ovládá.
+**TL;DR** — Tato verze přináší desítky oprav chyb, vylepšení stability rozhraní a hladší integraci s nástroji třetích stran.
 
-**⭐ Highlight of the release** — Kompletní vylepšení stability při obnovování relací (resuming) a opravy chyb, které dříve způsobovaly ztrátu kontextu nebo nečekané ukončení konverzace.
+**⭐ Highlight of the release** — Výrazné zlepšení odolnosti relací; Claude nyní lépe zvládá přerušení, výpadky databází a automaticky opravuje chyby v historii konverzací, aby vás nic nezastavilo v práci.
 
 **What's new**
-* **Chytřejší automatický režim:** /insights nyní odhaduje, kolik dotazů na oprávnění by za vás automatika zvládla.
-* **Lepší ovládání:** Všechny seznamy (plugins, skills, mcp) mají nyní funkční posuvníky a podporu pro klávesové zkratky.
-* **Bezpečnost:** Přísnější kontrola příkazů typu `rm` a vylepšená správa oprávnění v izolovaném prostředí (sandbox).
-* **Integrace:** Rozšířená podpora pro Claude apps gateway a Bedrock, včetně podpory IAM rolí.
-* **Opravy:** Vyřešeny desítky drobných chyb, od pádů při retries až po zobrazení dlouhých PDF souborů.
+* **Lepší čitelnost:** Nové nastavení `maxProseWidth` omezuje šířku textu v terminálu, zatímco tabulky a kód zůstávají přes celou obrazovku.
+* **Stabilita:** Opraveny chyby při obnovování relací (`--continue`, `--resume`) a problémy s výpadky během dlouhých operací.
+* **Vim režim:** Kompletně opraveny chyby v navigaci a editaci (např. chyby při mazání řádků nebo vkládání textu).
+* **Cloud & Slack:** Vylepšená správa GitHub repozitářů a přesnější notifikace v Slacku.
+* **Bezpečnost:** Lepší správa oprávnění a transparentnější upozornění, pokud jsou některé proměnné ignorovány kvůli nastavení organizace.
 
-**Why you'll care** — Vaše práce bude plynulejší, méně často vás budou přerušovat technické chyby a rozhraní konečně funguje tak, jak byste od moderního nástroje čekali.
+**Why you'll care** — Všechno prostě funguje spolehlivěji – od terminálového rozhraní až po složité příkazy. Claude nyní lépe respektuje váš pracovní prostor a zbytečně vás neobtěžuje chybovými hláškami.
 
-Ať se vám dnes skvěle kóduje!
+Užívejte si hladší kódování!
 
 ---
 
-## Claude Code 2.1.281: Polished, stable, and smarter 🚀
+## Claude Code 2.1.282: Stability and polish 🛠️
 
-**TL;DR** — This release focuses on rock-solid session reliability, a smarter auto-mode, and a much more polished UI experience.
+**TL;DR** — This release is packed with dozens of bug fixes, UI refinements, and improved stability for long-running sessions.
 
-**⭐ Highlight of the release** — Massive improvements to session resuming, ensuring that large conversations or interrupted tasks pick up exactly where you left off without losing reasoning or context.
+**⭐ Highlight of the release** — Enhanced session resilience: Claude now handles database failovers, connection drops, and history corruption gracefully, ensuring your work isn't interrupted by transient errors.
 
 **What's new**
-* **Auto-mode insights:** The `/insights` command now estimates how many permission prompts the auto-mode could have handled for you.
-* **UI Polish:** Lists like `/skills`, `/mcp`, and `/plugin` now feature proper scrollbars and consistent keyboard navigation.
-* **Security:** Safer handling of dangerous commands (like `rm`) and better permission isolation for sandboxed tasks.
-* **Enterprise/Gateway:** Added support for Bedrock IAM roles, guardrails, and improved Claude apps gateway configuration.
-* **Bug squashing:** Resolved numerous issues, including session crashes, PDF reading delays, and inconsistent tool retries.
+* **Better readability:** Added `maxProseWidth` to cap prose width in wide terminals while keeping code blocks and tables full-width.
+* **Reliability:** Fixed issues where resuming sessions (`--continue`, `--resume`) would inadvertently drop context or trigger API errors.
+* **Vim mode:** Squashed bugs related to line joining, cursor placement, and repeating commands.
+* **Cloud & Slack:** Smoother repository management and better synchronization for enterprise Slack workspaces.
+* **Settings:** Improved transparency when managed settings or security policies override local configurations.
 
-**Why you'll care** — You’ll spend less time fighting with session state or UI quirks and more time building, with a more reliable and predictable assistant.
+**Why you'll care** — Everything just feels more solid. From the terminal layout to the way Claude handles complex tasks, this update removes the friction that occasionally gets in the way of your flow.
 
 Happy coding!
 
