@@ -23,43 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.282: Vylepšená stabilita a opravy 🛠️ | Claude Code 2.1.282: Stability and polish 🛠️
+### Claude Code 2.1.283: Novinky v auditech a ovládání 🛠️ | Claude Code 2.1.283: Prompt auditing and UI refinements 🛠️
 
-_Claude Code v2.1.282 — 2026-09-25_
+_Claude Code v2.1.283 — 2026-09-26_
 
-## Claude Code 2.1.282: Vylepšená stabilita a opravy 🛠️
+## Claude Code 2.1.283: Novinky v auditech a ovládání 🛠️
 
-**TL;DR** — Tato verze přináší desítky oprav chyb, vylepšení stability rozhraní a hladší integraci s nástroji třetích stran.
+**TL;DR** — Tato aktualizace přináší nástroj pro audit vašich promptů, lepší správu pluginů a řadu oprav pro hladší zážitek v terminálu i VS Code.
 
-**⭐ Highlight of the release** — Výrazné zlepšení odolnosti relací; Claude nyní lépe zvládá přerušení, výpadky databází a automaticky opravuje chyby v historii konverzací, aby vás nic nezastavilo v práci.
+**⭐ Highlight of the release** — Nový příkaz `/doctor prompt-audit` (nebo `/checkup prompt-audit`), který zkontroluje vaše soubory `CLAUDE.md`, dovednosti a agenty a upozorní vás na zastaralé vzorce, které nebudou s nejnovějšími modely fungovat optimálně.
 
 **What's new**
-* **Lepší čitelnost:** Nové nastavení `maxProseWidth` omezuje šířku textu v terminálu, zatímco tabulky a kód zůstávají přes celou obrazovku.
-* **Stabilita:** Opraveny chyby při obnovování relací (`--continue`, `--resume`) a problémy s výpadky během dlouhých operací.
-* **Vim režim:** Kompletně opraveny chyby v navigaci a editaci (např. chyby při mazání řádků nebo vkládání textu).
-* **Cloud & Slack:** Vylepšená správa GitHub repozitářů a přesnější notifikace v Slacku.
-* **Bezpečnost:** Lepší správa oprávnění a transparentnější upozornění, pokud jsou některé proměnné ignorovány kvůli nastavení organizace.
+* **Lepší správa modelů:** Přidáno nastavení `availableModelsMatch: "exact"` pro přísnější kontrolu verzí a `deniedModels` pro blokování konkrétních modelů.
+* **Vylepšené pluginy:** Opraveno načítání v kontejnerech, lepší validace a přehlednější správa nainstalovaných pluginů.
+* **Optimalizace výkonu:** Rychlejší start aplikace díky odložení načítání některých komponent a efektivnější práce s API připojením.
+* **Vylepšení rozhraní:** Seznamy (tasks, mcp, help) nyní podporují rolování kolečkem myši a klávesy pro stránkování.
+* **Opravy:** Vyřešeny problémy v režimu Vim, vylepšeno renderování odkazů v terminálu Warp a opraveno chování při práci s repozitáři.
 
-**Why you'll care** — Všechno prostě funguje spolehlivěji – od terminálového rozhraní až po složité příkazy. Claude nyní lépe respektuje váš pracovní prostor a zbytečně vás neobtěžuje chybovými hláškami.
+**Why you'll care**
+Získáte větší kontrolu nad tím, jak Claude přistupuje k vašim projektům, a díky novému auditu promptů zajistíte, že vaše nastavení bude vždy využívat plný potenciál nejnovějších modelů.
 
-Užívejte si hladší kódování!
+Ať se vám dnes v kódu daří!
 
 ---
 
-## Claude Code 2.1.282: Stability and polish 🛠️
+## Claude Code 2.1.283: Prompt auditing and UI refinements 🛠️
 
-**TL;DR** — This release is packed with dozens of bug fixes, UI refinements, and improved stability for long-running sessions.
+**TL;DR** — This release introduces a prompt auditing tool, better plugin management, and a massive list of stability fixes across terminal and VS Code.
 
-**⭐ Highlight of the release** — Enhanced session resilience: Claude now handles database failovers, connection drops, and history corruption gracefully, ensuring your work isn't interrupted by transient errors.
+**⭐ Highlight of the release** — The new `/doctor prompt-audit` (or `/checkup prompt-audit`) command, which scans your `CLAUDE.md` files, skills, and agents to flag outdated prompting patterns that aren't optimized for newer models.
 
 **What's new**
-* **Better readability:** Added `maxProseWidth` to cap prose width in wide terminals while keeping code blocks and tables full-width.
-* **Reliability:** Fixed issues where resuming sessions (`--continue`, `--resume`) would inadvertently drop context or trigger API errors.
-* **Vim mode:** Squashed bugs related to line joining, cursor placement, and repeating commands.
-* **Cloud & Slack:** Smoother repository management and better synchronization for enterprise Slack workspaces.
-* **Settings:** Improved transparency when managed settings or security policies override local configurations.
+* **Model control:** Added `availableModelsMatch: "exact"` to restrict model versions and `deniedModels` to explicitly block specific models.
+* **Plugin polish:** Fixed plugin loading in devcontainers, improved validation logic, and added better feedback when managing installed plugins.
+* **Faster startup:** Claude now delays loading non-essential components until they are actually needed, making your initial launch snappier.
+* **UI navigation:** Lists (tasks, help, plugins, etc.) now support mouse-wheel scrolling and page-up/down keys for easier navigation.
+* **Fixes:** Squashed bugs in Vim mode, fixed clickable links in Warp, and resolved various issues with MCP server connectivity and session persistence.
 
-**Why you'll care** — Everything just feels more solid. From the terminal layout to the way Claude handles complex tasks, this update removes the friction that occasionally gets in the way of your flow.
+**Why you'll care**
+You’ll spend less time troubleshooting configuration issues and more time using a tool that’s better at staying up-to-date with your project’s specific requirements.
 
 Happy coding!
 
