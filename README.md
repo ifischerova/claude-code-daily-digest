@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.283: Novinky v auditech a ovládání 🛠️ | Claude Code 2.1.283: Prompt auditing and UI refinements 🛠️
+### Claude Code 2.1.284: Sonnet 3.5 a vylepšené ovládání 🚀 | Claude Code 2.1.284: Sonnet 3.5 and better controls 🚀
 
-_Claude Code v2.1.283 — 2026-09-26_
+_Claude Code v2.1.284 — 2026-09-29_
 
-## Claude Code 2.1.283: Novinky v auditech a ovládání 🛠️
+## Claude Code 2.1.284: Sonnet 3.5 a vylepšené ovládání 🚀
 
-**TL;DR** — Tato aktualizace přináší nástroj pro audit vašich promptů, lepší správu pluginů a řadu oprav pro hladší zážitek v terminálu i VS Code.
+**TL;DR** — Vydání přináší nový model Claude Sonnet 3.5, chytřejší správu výdajů a možnost lépe ovládat úsilí asistenta.
 
-**⭐ Highlight of the release** — Nový příkaz `/doctor prompt-audit` (nebo `/checkup prompt-audit`), který zkontroluje vaše soubory `CLAUDE.md`, dovednosti a agenty a upozorní vás na zastaralé vzorce, které nebudou s nejnovějšími modely fungovat optimálně.
+**⭐ Hlavní novinka**
+Nyní můžete využívat model `claude-sonnet-3-5` s obrovským kontextem 1 milionu tokenů, který se stává výchozí volbou pro efektivní práci.
 
-**What's new**
-* **Lepší správa modelů:** Přidáno nastavení `availableModelsMatch: "exact"` pro přísnější kontrolu verzí a `deniedModels` pro blokování konkrétních modelů.
-* **Vylepšené pluginy:** Opraveno načítání v kontejnerech, lepší validace a přehlednější správa nainstalovaných pluginů.
-* **Optimalizace výkonu:** Rychlejší start aplikace díky odložení načítání některých komponent a efektivnější práce s API připojením.
-* **Vylepšení rozhraní:** Seznamy (tasks, mcp, help) nyní podporují rolování kolečkem myši a klávesy pro stránkování.
-* **Opravy:** Vyřešeny problémy v režimu Vim, vylepšeno renderování odkazů v terminálu Warp a opraveno chování při práci s repozitáři.
+**Co je nového**
+*   **Chytřejší limity:** V příkazu `/usage` nyní uvidíte přesnou útratu v dolarech a limity pro lepší přehled o rozpočtu.
+*   **Flexibilnější úsilí:** Pomocí klávesových zkratek si nyní můžete snadno přizpůsobit intenzitu práce asistenta (effort slider).
+*   **Lepší správa nástrojů:** Příkaz `/mcp reconnect all` vám umožní restartovat všechna selhaná připojení k MCP serverům najednou.
+*   **Opravy stability:** Odstranili jsme chyby při streamování odpovědí a vylepšili chování v režimu „auto“, aby vás asistent zbytečně neobtěžoval při opakovaném přístupu ke stejným souborům.
 
-**Why you'll care**
-Získáte větší kontrolu nad tím, jak Claude přistupuje k vašim projektům, a díky novému auditu promptů zajistíte, že vaše nastavení bude vždy využívat plný potenciál nejnovějších modelů.
+**Proč vás to bude zajímat**
+S novým modelem a lepším přehledem o nákladech bude váš vývoj plynulejší a pod větší kontrolou.
 
-Ať se vám dnes v kódu daří!
+Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.283: Prompt auditing and UI refinements 🛠️
+## Claude Code 2.1.284: Sonnet 3.5 and better controls 🚀
 
-**TL;DR** — This release introduces a prompt auditing tool, better plugin management, and a massive list of stability fixes across terminal and VS Code.
+**TL;DR** — This release introduces the new Claude Sonnet 3.5 model, clearer spend tracking, and more customizable control over your assistant’s effort.
 
-**⭐ Highlight of the release** — The new `/doctor prompt-audit` (or `/checkup prompt-audit`) command, which scans your `CLAUDE.md` files, skills, and agents to flag outdated prompting patterns that aren't optimized for newer models.
+**⭐ Highlight of the release**
+We’ve added `claude-sonnet-3-5` as the default model, bringing you 1M context support and improved performance.
 
 **What's new**
-* **Model control:** Added `availableModelsMatch: "exact"` to restrict model versions and `deniedModels` to explicitly block specific models.
-* **Plugin polish:** Fixed plugin loading in devcontainers, improved validation logic, and added better feedback when managing installed plugins.
-* **Faster startup:** Claude now delays loading non-essential components until they are actually needed, making your initial launch snappier.
-* **UI navigation:** Lists (tasks, help, plugins, etc.) now support mouse-wheel scrolling and page-up/down keys for easier navigation.
-* **Fixes:** Squashed bugs in Vim mode, fixed clickable links in Warp, and resolved various issues with MCP server connectivity and session persistence.
+*   **Clearer budgets:** The `/usage` command and status bar now display actual dollar amounts, making it easier to track your spend limits.
+*   **Customizable effort:** You can now rebind keybindings for the effort slider and Ultracode toggle to match your workflow.
+*   **MCP management:** Use `/mcp reconnect all` to instantly retry all disconnected or unauthenticated MCP servers.
+*   **Smoother experience:** We fixed various stream interruptions and improved how Auto mode handles directory permissions so you aren't interrupted unnecessarily.
 
 **Why you'll care**
-You’ll spend less time troubleshooting configuration issues and more time using a tool that’s better at staying up-to-date with your project’s specific requirements.
+These updates make Claude Code more transparent and easier to steer, helping you focus on the code rather than the configuration.
 
 Happy coding!
 
