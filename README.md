@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.284: Sonnet 3.5 a vylepšené ovládání 🚀 | Claude Code 2.1.284: Sonnet 3.5 and better controls 🚀
+### Claude Code 2.1.285: Nové možnosti správy pluginů a lepší desktopová integrace 🚀 | Claude Code 2.1.285: Better plugin control and smoother desktop workflows 🚀
 
-_Claude Code v2.1.284 — 2026-09-29_
+_Claude Code v2.1.285 — 2026-09-30_
 
-## Claude Code 2.1.284: Sonnet 3.5 a vylepšené ovládání 🚀
+## Claude Code 2.1.285: Nové možnosti správy pluginů a lepší desktopová integrace 🚀
 
-**TL;DR** — Vydání přináší nový model Claude Sonnet 3.5, chytřejší správu výdajů a možnost lépe ovládat úsilí asistenta.
+**TL;DR** — Tato aktualizace přináší vylepšenou správu pluginů, snadnější spouštění z desktopové aplikace a řadu oprav pro hladší fungování.
 
 **⭐ Hlavní novinka**
-Nyní můžete využívat model `claude-sonnet-3-5` s obrovským kontextem 1 milionu tokenů, který se stává výchozí volbou pro efektivní práci.
+Nyní můžete snadno konfigurovat pluginy přímo při instalaci pomocí příkazu `claude plugin install --config <server>.<klíč>=<hodnota>`, což vám ušetří zdlouhavé nastavování přes webové rozhraní.
 
 **Co je nového**
-*   **Chytřejší limity:** V příkazu `/usage` nyní uvidíte přesnou útratu v dolarech a limity pro lepší přehled o rozpočtu.
-*   **Flexibilnější úsilí:** Pomocí klávesových zkratek si nyní můžete snadno přizpůsobit intenzitu práce asistenta (effort slider).
-*   **Lepší správa nástrojů:** Příkaz `/mcp reconnect all` vám umožní restartovat všechna selhaná připojení k MCP serverům najednou.
-*   **Opravy stability:** Odstranili jsme chyby při streamování odpovědí a vylepšili chování v režimu „auto“, aby vás asistent zbytečně neobtěžoval při opakovaném přístupu ke stejným souborům.
+*   **Desktopová integrace:** Příkaz `claude --desktop` nyní otevře aplikaci přímo v aktuálním adresáři nebo naváže na předchozí relaci.
+*   **Správa pluginů:** Přibyl příkaz `claude plugin configure`, který vám přehledně ukáže, co je potřeba v nastavení doplnit.
+*   **Bezpečnost:** Přidána možnost `allowedProviders` pro správce, kteří chtějí omezit povolené API poskytovatele na daném stroji.
+*   **Větší stabilita:** Opravili jsme desítky drobných chyb v napojení na SSH, chování subagentů a synchronizaci artifactů, aby vás při práci nic nezastavilo.
 
-**Proč vás to bude zajímat**
-S novým modelem a lepším přehledem o nákladech bude váš vývoj plynulejší a pod větší kontrolou.
+**Proč na tom záleží**
+Claude Code je díky těmto změnám mnohem předvídatelnější a lépe se integruje do vašeho stávajícího pracovního postupu, ať už používáte VS Code nebo terminál.
 
 Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.284: Sonnet 3.5 and better controls 🚀
+## Claude Code 2.1.285: Better plugin control and smoother desktop workflows 🚀
 
-**TL;DR** — This release introduces the new Claude Sonnet 3.5 model, clearer spend tracking, and more customizable control over your assistant’s effort.
+**TL;DR** — This release streamlines plugin configuration, improves desktop app integration, and squashes a wide variety of bugs for a more reliable experience.
 
 **⭐ Highlight of the release**
-We’ve added `claude-sonnet-3-5` as the default model, bringing you 1M context support and improved performance.
+You can now configure MCP server settings directly during installation using `claude plugin install --config <server>.<key>=<value>`, letting you jump straight into your work without navigating to the settings menu.
 
 **What's new**
-*   **Clearer budgets:** The `/usage` command and status bar now display actual dollar amounts, making it easier to track your spend limits.
-*   **Customizable effort:** You can now rebind keybindings for the effort slider and Ultracode toggle to match your workflow.
-*   **MCP management:** Use `/mcp reconnect all` to instantly retry all disconnected or unauthenticated MCP servers.
-*   **Smoother experience:** We fixed various stream interruptions and improved how Auto mode handles directory permissions so you aren't interrupted unnecessarily.
+*   **Desktop Workflow:** Use `claude --desktop` to launch the app in your current folder or resume a specific session instantly.
+*   **Plugin Management:** Added `claude plugin configure` to easily view and set missing plugin options.
+*   **Enterprise Control:** Admins can now use `allowedProviders` to restrict which API providers (like Bedrock or Vertex AI) are permitted on a machine.
+*   **Stability Improvements:** Dozens of fixes for SSH handling, subagent behavior, and artifact synchronization ensure a more seamless development environment.
 
 **Why you'll care**
-These updates make Claude Code more transparent and easier to steer, helping you focus on the code rather than the configuration.
+These updates make Claude Code feel more like a native part of your workflow, reducing friction when setting up tools and keeping your sessions stable.
 
 Happy coding!
 
