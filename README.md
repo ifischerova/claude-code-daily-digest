@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.285: Nové možnosti správy pluginů a lepší desktopová integrace 🚀 | Claude Code 2.1.285: Better plugin control and smoother desktop workflows 🚀
+### Claude Code 2.1.286: Vylepšená navigace a stabilita 🚀 | Claude Code 2.1.286: Smoother navigation and stability 🚀
 
-_Claude Code v2.1.285 — 2026-09-30_
+_Claude Code v2.1.286 — 2026-10-01_
 
-## Claude Code 2.1.285: Nové možnosti správy pluginů a lepší desktopová integrace 🚀
+## Claude Code 2.1.286: Vylepšená navigace a stabilita 🚀
 
-**TL;DR** — Tato aktualizace přináší vylepšenou správu pluginů, snadnější spouštění z desktopové aplikace a řadu oprav pro hladší fungování.
+**TL;DR** – Tato aktualizace přináší desítky oprav stability, vylepšené ovládání rozhraní a nové funkce pro uživatele VS Code.
 
-**⭐ Hlavní novinka**
-Nyní můžete snadno konfigurovat pluginy přímo při instalaci pomocí příkazu `claude plugin install --config <server>.<klíč>=<hodnota>`, což vám ušetří zdlouhavé nastavování přes webové rozhraní.
+**⭐ Highlight of the release** – Kompletně přepracované seznamy v režimu celé obrazovky nyní podporují myš, obsahují přehledné posuvníky a umožňují rychlejší navigaci v dlouhých výstupech.
 
-**Co je nového**
-*   **Desktopová integrace:** Příkaz `claude --desktop` nyní otevře aplikaci přímo v aktuálním adresáři nebo naváže na předchozí relaci.
-*   **Správa pluginů:** Přibyl příkaz `claude plugin configure`, který vám přehledně ukáže, co je potřeba v nastavení doplnit.
-*   **Bezpečnost:** Přidána možnost `allowedProviders` pro správce, kteří chtějí omezit povolené API poskytovatele na daném stroji.
-*   **Větší stabilita:** Opravili jsme desítky drobných chyb v napojení na SSH, chování subagentů a synchronizaci artifactů, aby vás při práci nic nezastavilo.
+**What's new**
+* **Lepší přehled:** Permission prompty jsou nyní přehlednější a jasně ukazují pořadí požadavků.
+* **Stabilita:** Opravili jsme chyby při obnovování relací a pády způsobené neplatným formátem dat z nástrojů.
+* **VS Code novinky:** Přidali jsme záložky pro důležité odpovědi a vylepšili zobrazení otázek a odpovědí v chatu.
+* **Inteligentnější retries:** Claude nyní při selhání modelu automaticky zkusí alternativu, místo aby ukončil celou konverzaci.
+* **Čistší rozhraní:** Vylepšené našeptávání příkazů a přehlednější správa pluginů.
 
-**Proč na tom záleží**
-Claude Code je díky těmto změnám mnohem předvídatelnější a lépe se integruje do vašeho stávajícího pracovního postupu, ať už používáte VS Code nebo terminál.
+**Why you'll care**
+Claude Code je nyní mnohem stabilnější při dlouhých relacích a díky novým prvkům v UI se v něm lépe zorientujete, i když pracujete na složitých úkolech.
 
-Ať se vám dnes skvěle kóduje!
+Užívejte si kódování s novou verzí!
 
 ---
 
-## Claude Code 2.1.285: Better plugin control and smoother desktop workflows 🚀
+## Claude Code 2.1.286: Smoother navigation and stability 🚀
 
-**TL;DR** — This release streamlines plugin configuration, improves desktop app integration, and squashes a wide variety of bugs for a more reliable experience.
+**TL;DR** – This update delivers dozens of stability fixes, refined UI controls, and powerful new features for the VS Code extension.
 
-**⭐ Highlight of the release**
-You can now configure MCP server settings directly during installation using `claude plugin install --config <server>.<key>=<value>`, letting you jump straight into your work without navigating to the settings menu.
+**⭐ Highlight of the release** – Fullscreen lists are now fully mouse-navigable with improved scrollbars and intuitive "N more" row handling for a much smoother experience.
 
 **What's new**
-*   **Desktop Workflow:** Use `claude --desktop` to launch the app in your current folder or resume a specific session instantly.
-*   **Plugin Management:** Added `claude plugin configure` to easily view and set missing plugin options.
-*   **Enterprise Control:** Admins can now use `allowedProviders` to restrict which API providers (like Bedrock or Vertex AI) are permitted on a machine.
-*   **Stability Improvements:** Dozens of fixes for SSH handling, subagent behavior, and artifact synchronization ensure a more seamless development environment.
+* **Clearer Permissions:** Permission prompts now show a progress count, so you always know where you are in a stack of requests.
+* **Rock-solid Sessions:** Fixed several bugs that caused session loss during crashes, API errors, or when resuming from a cloud state.
+* **VS Code Enhancements:** Added a Bookmarks panel to save key responses and improved the chat view to clearly show your interaction history with questions.
+* **Smarter Fallbacks:** Claude now automatically retries with a different model if your preferred one hits an API issue, keeping your flow uninterrupted.
+* **Polished UI:** Slash command suggestions are snappier, and list screens are now consistently formatted for better readability.
 
 **Why you'll care**
-These updates make Claude Code feel more like a native part of your workflow, reducing friction when setting up tools and keeping your sessions stable.
+Whether you're managing complex background agents or just performing a quick task, these improvements make your workflow feel more reliable and significantly easier to navigate.
 
 Happy coding!
 
