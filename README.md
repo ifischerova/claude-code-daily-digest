@@ -23,45 +23,47 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.286: Vylepšená navigace a stabilita 🚀 | Claude Code 2.1.286: Smoother navigation and stability 🚀
+### Claude Code 2.1.287: Nový parťák, který vám kryje záda 🛡️ | Claude Code 2.1.287: Meet your new sidekick 🛡️
 
-_Claude Code v2.1.286 — 2026-10-01_
+_Claude Code v2.1.287 — 2026-10-02_
 
-## Claude Code 2.1.286: Vylepšená navigace a stabilita 🚀
+## Claude Code 2.1.287: Nový parťák, který vám kryje záda 🛡️
 
-**TL;DR** – Tato aktualizace přináší desítky oprav stability, vylepšené ovládání rozhraní a nové funkce pro uživatele VS Code.
+**TL;DR** — Nejnovější verze přináší „hlídacího agenta“, vylepšenou podporu pluginů a desítky oprav pro plynulejší vývoj.
 
-**⭐ Highlight of the release** – Kompletně přepracované seznamy v režimu celé obrazovky nyní podporují myš, obsahují přehledné posuvníky a umožňují rychlejší navigaci v dlouhých výstupech.
+**⭐ Hlavní novinka**
+Představujeme *You should know* – vestavěného pomocníka, který aktivně sleduje vaši práci a upozorní vás na detaily, které byste vy nebo Claude mohli přehlédnout. Aktivujete ho příkazem `/plugin enable cc-plugin-you-should-know@builtin`.
 
-**What's new**
-* **Lepší přehled:** Permission prompty jsou nyní přehlednější a jasně ukazují pořadí požadavků.
-* **Stabilita:** Opravili jsme chyby při obnovování relací a pády způsobené neplatným formátem dat z nástrojů.
-* **VS Code novinky:** Přidali jsme záložky pro důležité odpovědi a vylepšili zobrazení otázek a odpovědí v chatu.
-* **Inteligentnější retries:** Claude nyní při selhání modelu automaticky zkusí alternativu, místo aby ukončil celou konverzaci.
-* **Čistší rozhraní:** Vylepšené našeptávání příkazů a přehlednější správa pluginů.
+**Co je nového**
+*   **Claude Mods:** Pluginy nyní mohou hlouběji ovlivňovat chování Claude Code.
+*   **Chytřejší vyhledávání:** V seznamu agentů nyní funguje filtr `n:<text>` pro rychlé hledání v názvech a úkolech.
+*   **Lepší správa modelů:** Modely Opus 4.7+ a Fable nyní standardně využívají 1M kontextové okno.
+*   **Vylepšení pro VS Code:** Přidána možnost „Run in background“ pro přesun úloh na pozadí a lepší přehled o běžících procesech.
+*   **Opravy a stabilita:** Desítky oprav zaměřených na odezvu, práci s MCP servery a přístupnost pro čtečky obrazovky.
 
-**Why you'll care**
-Claude Code je nyní mnohem stabilnější při dlouhých relacích a díky novým prvkům v UI se v něm lépe zorientujete, i když pracujete na složitých úkolech.
+**Proč vás to bude zajímat**
+Claude Code je teď zase o kus samostatnější a pozornější, což vám ušetří čas strávený kontrolou drobných chyb.
 
-Užívejte si kódování s novou verzí!
+Ať se kód jen zelená!
 
 ---
 
-## Claude Code 2.1.286: Smoother navigation and stability 🚀
+## Claude Code 2.1.287: Meet your new sidekick 🛡️
 
-**TL;DR** – This update delivers dozens of stability fixes, refined UI controls, and powerful new features for the VS Code extension.
+**TL;DR** — This release introduces a proactive "watchdog" agent, deeper plugin capabilities, and a massive set of stability improvements.
 
-**⭐ Highlight of the release** – Fullscreen lists are now fully mouse-navigable with improved scrollbars and intuitive "N more" row handling for a much smoother experience.
+**⭐ Highlight of the release**
+We've added *You should know*, a built-in agent that watches your back and flags things you or Claude might miss. Enable it with `/plugin enable cc-plugin-you-should-know@builtin`.
 
 **What's new**
-* **Clearer Permissions:** Permission prompts now show a progress count, so you always know where you are in a stack of requests.
-* **Rock-solid Sessions:** Fixed several bugs that caused session loss during crashes, API errors, or when resuming from a cloud state.
-* **VS Code Enhancements:** Added a Bookmarks panel to save key responses and improved the chat view to clearly show your interaction history with questions.
-* **Smarter Fallbacks:** Claude now automatically retries with a different model if your preferred one hits an API issue, keeping your flow uninterrupted.
-* **Polished UI:** Slash command suggestions are snappier, and list screens are now consistently formatted for better readability.
+*   **Claude Mods:** Plugins can now modify deeper system behaviors.
+*   **Improved Navigation:** Use the `n:<text>` filter in the agents view to instantly jump to specific tasks or sessions.
+*   **Expanded Context:** Opus 4.7+ and Fable models now default to a 1M context window.
+*   **VS Code Enhancements:** You can now move commands to the background and see live output from shells directly in the agent map.
+*   **Polished Experience:** Dozens of fixes for MCP server reliability, file handling, and accessibility for screen readers.
 
 **Why you'll care**
-Whether you're managing complex background agents or just performing a quick task, these improvements make your workflow feel more reliable and significantly easier to navigate.
+With an agent actively keeping an eye on your workflow, you can focus on the logic while Claude handles the oversight.
 
 Happy coding!
 
