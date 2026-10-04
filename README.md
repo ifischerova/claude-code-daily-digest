@@ -23,43 +23,41 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.288: Vylepšená práce s historií a flexibilnější recenze kódu 🚀 | Claude Code 2.1.288: Better session recovery and refined code reviews 🚀
+### Claude Code 2.1.289: stabilnější a spolehlivější pluginy 🛠️ | Claude Code 2.1.289: smoother plugins and better stability 🛠️
 
-_Claude Code v2.1.288 — 2026-10-03_
+_Claude Code v2.1.289 — 2026-10-04_
 
-## Claude Code 2.1.288: Vylepšená práce s historií a flexibilnější recenze kódu 🚀
+## Claude Code 2.1.289: stabilnější a spolehlivější pluginy 🛠️
 
-**TL;DR** — Tato verze přináší lepší stabilitu při obnovování konverzací, nové ovládací prvky pro kontrolu kódu a řadu drobných oprav pro hladší zážitek.
+**TL;DR** — Tato aktualizace opravuje řadu chyb v pluginech, vylepšuje stabilitu terminálu a zpřesňuje pravidla pro zabezpečení.
 
-**⭐ Highlight of the release** — Nový parametr `--max-findings <n>|all` pro příkaz `/code-review`, který vám dává plnou kontrolu nad tím, kolik připomínek od Claudea k vašemu kódu dostanete.
+**⭐ Highlight of the release** — Výrazně jsme zlepšili odolnost pluginů: chyby v jednom modulu už neshodí celé zobrazení, ale ohlásí se lokálně, což udržuje vaši práci v chodu.
 
 **What's new**
-*   **Obnova po Ctrl+C:** Pokud omylem smažete rozepsaný prompt, klávesa šipka nahoru vám ho vrátí zpět včetně vložených obrázků.
-*   **Chytřejší procházení:** Pomocí Ctrl+F můžete snadno vyhledávat v relacích a Alt+šipky vám umožní rychle přeskakovat mezi skupinami agentů.
-*   **Vylepšená práce s historií:** Claude nyní lépe zvládá dlouhé konverzace díky vylepšené automatické komprimaci dat.
-*   **Lepší podpora pluginů:** Opravy instalací přes GitHub a stabilnější běh v rámci subagentů.
-*   **Přístupnost:** Vylepšené oznámení pro čtečky obrazovky při schvalování plánů.
+- **Stabilita:** Opravili jsme zamrzání terminálu při práci s komplexním kódem a tagy.
+- **Pluginy:** Vyřešili jsme problémy s načítáním lokálních pluginů, jejich aktualizací a chybným vykreslováním v panelech.
+- **Zabezpečení:** Pravidla pro čtení souborů a vykonávání příkazů (Bash) nyní lépe respektují symlinky a proměnné prostředí.
+- **Vývojářské nástroje:** Přidali jsme `agent.spawn` a vylepšili validaci pluginů.
 
-**Why you'll care** — S těmito změnami je Claude Code spolehlivější při delším programování a dává vám větší kontrolu nad tím, jakým způsobem vám pomáhá s recenzí kódu.
+**Why you'll care** — Váš pracovní prostor bude nyní mnohem předvídatelnější, pluginy se vám nebudou „rozpadat“ a bezpečnostní pravidla budou fungovat přesně tak, jak mají.
 
 Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.288: Better session recovery and refined code reviews 🚀
+## Claude Code 2.1.289: smoother plugins and better stability 🛠️
 
-**TL;DR** — This release improves session stability, adds flexible controls for code reviews, and squashes a long list of bugs to keep your workflow smooth.
+**TL;DR** — This release squashes a long list of plugin rendering bugs, fixes terminal freezes, and tightens up security rule enforcement.
 
-**⭐ Highlight of the release** — The new `--max-findings <n>|all` flag for `/code-review` lets you decide exactly how many issues you want Claude to report, giving you control over the verbosity of your reviews.
+**⭐ Highlight of the release** — Plugins are now much more resilient: if a module fails to render, it now fails gracefully on its own rather than taking down the entire UI.
 
 **What's new**
-*   **Draft recovery:** Accidentally cleared your prompt with Ctrl+C? Just hit Up to restore your draft, including any pasted text or images.
-*   **Easier navigation:** Use Ctrl+F to find sessions by name and Alt+Up/Down to jump between agent groups.
-*   **Smarter history:** Conversations are now more reliable thanks to improved auto-compaction and better handling of resumed sessions.
-*   **Plugin fixes:** Smoother plugin installs from GitHub and improved reliability when running multiple subagents.
-*   **Accessibility:** Screen reader users get clearer announcements when approving plans and navigating permission modes.
+- **Stability:** Fixed terminal freezes caused by complex code blocks or unclosed script tags.
+- **Plugins:** Resolved issues with stale plugin loading, local marketplace syncing, and rendering glitches in side panes.
+- **Security:** Bash deny/ask rules are now correctly applied even when environment variables or symlinks are involved.
+- **Developer Experience:** Added `agent.spawn` for better team collaboration and improved `claude plugin validate` reliability.
 
-**Why you'll care** — These updates make Claude Code feel more robust during long coding sessions and ensure you get exactly the level of feedback you need during reviews.
+**Why you'll care** — You'll spend less time troubleshooting UI glitches or unexpected crashes and more time letting Claude help you build.
 
 Happy coding!
 
