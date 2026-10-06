@@ -23,41 +23,37 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.289: stabilnější a spolehlivější pluginy 🛠️ | Claude Code 2.1.289: smoother plugins and better stability 🛠️
+### Claude Code 2.1.291: Opravy pro hladší průběh práce 🛠️ | Claude Code 2.1.291: Smoother sessions ahead 🛠️
 
-_Claude Code v2.1.289 — 2026-10-04_
+_Claude Code v2.1.291 — 2026-10-06_
 
-## Claude Code 2.1.289: stabilnější a spolehlivější pluginy 🛠️
+## Claude Code 2.1.291: Opravy pro hladší průběh práce 🛠️
 
-**TL;DR** — Tato aktualizace opravuje řadu chyb v pluginech, vylepšuje stabilitu terminálu a zpřesňuje pravidla pro zabezpečení.
+**TL;DR** — Tato aktualizace opravuje chyby, které způsobovaly ztrátu zpráv a problémů s potvrzováním v cloudu.
 
-**⭐ Highlight of the release** — Výrazně jsme zlepšili odolnost pluginů: chyby v jednom modulu už neshodí celé zobrazení, ale ohlásí se lokálně, což udržuje vaši práci v chodu.
+**⭐ Hlavní novinka** — Vyřešili jsme nepříjemnou chybu, kvůli které se při ukončení relace občas ztratily poslední zprávy.
 
-**What's new**
-- **Stabilita:** Opravili jsme zamrzání terminálu při práci s komplexním kódem a tagy.
-- **Pluginy:** Vyřešili jsme problémy s načítáním lokálních pluginů, jejich aktualizací a chybným vykreslováním v panelech.
-- **Zabezpečení:** Pravidla pro čtení souborů a vykonávání příkazů (Bash) nyní lépe respektují symlinky a proměnné prostředí.
-- **Vývojářské nástroje:** Přidali jsme `agent.spawn` a vylepšili validaci pluginů.
+**Co je nového**
+* Opravili jsme výpadek v cloudových relacích, kdy Claude přestal reagovat na žádosti o oprávnění.
+* Zajištění stability: už se vám nestane, že by se vaše poslední konverzace při vypnutí aplikace „vypařila“.
 
-**Why you'll care** — Váš pracovní prostor bude nyní mnohem předvídatelnější, pluginy se vám nebudou „rozpadat“ a bezpečnostní pravidla budou fungovat přesně tak, jak mají.
+**Proč vás to bude zajímat** — Všechno teď funguje spolehlivě, takže se můžete plně soustředit na kód bez obav o svá data.
 
 Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.289: smoother plugins and better stability 🛠️
+## Claude Code 2.1.291: Smoother sessions ahead 🛠️
 
-**TL;DR** — This release squashes a long list of plugin rendering bugs, fixes terminal freezes, and tightens up security rule enforcement.
+**TL;DR** — This update fixes bugs that caused dropped permission prompts and lost session messages.
 
-**⭐ Highlight of the release** — Plugins are now much more resilient: if a module fails to render, it now fails gracefully on its own rather than taking down the entire UI.
+**⭐ Highlight of the release** — We've squashed a bug that was causing your final messages to vanish when quitting a session.
 
 **What's new**
-- **Stability:** Fixed terminal freezes caused by complex code blocks or unclosed script tags.
-- **Plugins:** Resolved issues with stale plugin loading, local marketplace syncing, and rendering glitches in side panes.
-- **Security:** Bash deny/ask rules are now correctly applied even when environment variables or symlinks are involved.
-- **Developer Experience:** Added `agent.spawn` for better team collaboration and improved `claude plugin validate` reliability.
+* Fixed an issue where cloud sessions would occasionally ignore your responses to permission prompts.
+* Improved data integrity so your conversation history stays intact when you close the app.
 
-**Why you'll care** — You'll spend less time troubleshooting UI glitches or unexpected crashes and more time letting Claude help you build.
+**Why you'll care** — You can now work with peace of mind, knowing your commands and chat history are being saved correctly.
 
 Happy coding!
 
