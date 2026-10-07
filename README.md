@@ -23,37 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.291: Opravy pro hladší průběh práce 🛠️ | Claude Code 2.1.291: Smoother sessions ahead 🛠️
+### Claude Code 2.1.292: Lepší pluginy a chytřejší agenti 🚀 | Claude Code 2.1.292: Enhanced agents and smoother workflows 🚀
 
-_Claude Code v2.1.291 — 2026-10-06_
+_Claude Code v2.1.292 — 2026-10-07_
 
-## Claude Code 2.1.291: Opravy pro hladší průběh práce 🛠️
+## Claude Code 2.1.292: Lepší pluginy a chytřejší agenti 🚀
 
-**TL;DR** — Tato aktualizace opravuje chyby, které způsobovaly ztrátu zpráv a problémů s potvrzováním v cloudu.
+**TL;DR** — Tato aktualizace přináší vylepšenou správu pluginů, chytřejší agenty s nastavitelnou intenzitou práce a opravu desítek drobných chyb pro hladší vývoj.
 
-**⭐ Hlavní novinka** — Vyřešili jsme nepříjemnou chybu, kvůli které se při ukončení relace občas ztratily poslední zprávy.
+**⭐ Highlight of the release** — Nyní můžete u nástroje Agent nastavit parametr `effort`, díky kterému Claude přizpůsobí své úsilí náročnosti vašeho úkolu.
 
-**Co je nového**
-* Opravili jsme výpadek v cloudových relacích, kdy Claude přestal reagovat na žádosti o oprávnění.
-* Zajištění stability: už se vám nestane, že by se vaše poslední konverzace při vypnutí aplikace „vypařila“.
+**What's new**
+* Snadnější instalace pluginů přímo z marketplace pomocí příkazu `--marketplace`.
+* Lepší podpora pro autokompletaci v řádku pro zadávání příkazů.
+* Optimalizace výkonu při vykreslování dlouhých seznamů a rychlejší starty.
+* Vylepšená bezpečnost a správa oprávnění pro sandboxy a síťové cesty.
+* Opravy pro cloudové relace, Slack integraci a stabilnější běh naplánovaných úloh.
 
-**Proč vás to bude zajímat** — Všechno teď funguje spolehlivě, takže se můžete plně soustředit na kód bez obav o svá data.
+**Why you'll care** — Váš vývojářský workflow bude zase o něco plynulejší, bezpečnější a lépe přizpůsobitelný vašim konkrétním potřebám.
 
-Ať se vám dnes skvěle kóduje!
+Šťastné kódování!
 
 ---
 
-## Claude Code 2.1.291: Smoother sessions ahead 🛠️
+## Claude Code 2.1.292: Enhanced agents and smoother workflows 🚀
 
-**TL;DR** — This update fixes bugs that caused dropped permission prompts and lost session messages.
+**TL;DR** — This release introduces configurable agent effort, improved plugin management, and a massive set of stability fixes to keep your flow uninterrupted.
 
-**⭐ Highlight of the release** — We've squashed a bug that was causing your final messages to vanish when quitting a session.
+**⭐ Highlight of the release** — You can now pass an `effort` parameter to the Agent tool, allowing Claude to scale its sub-agent intensity based on the complexity of your request.
 
 **What's new**
-* Fixed an issue where cloud sessions would occasionally ignore your responses to permission prompts.
-* Improved data integrity so your conversation history stays intact when you close the app.
+* Streamlined plugin installation with the new `--marketplace` flag.
+* Better autocomplete support for custom mod hooks in the prompt box.
+* Faster rendering for long responses and improved startup times for sessions.
+* Security hardening for sandbox environments and network file paths.
+* Numerous fixes for cloud sessions, scheduled tasks, and Slack integration.
 
-**Why you'll care** — You can now work with peace of mind, knowing your commands and chat history are being saved correctly.
+**Why you'll care** — These refinements make Claude Code feel more reliable and responsive, giving you more control over how your AI assistants handle heavy lifting.
 
 Happy coding!
 
