@@ -23,43 +23,37 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.292: Lepší pluginy a chytřejší agenti 🚀 | Claude Code 2.1.292: Enhanced agents and smoother workflows 🚀
+### Claude Code 2.1.294: Chytřejší instrukce a méně předčasných zastavení 🛠️ | Claude Code 2.1.294: Better instruction following and smarter stops 🛠️
 
-_Claude Code v2.1.292 — 2026-10-07_
+_Claude Code v2.1.294 — 2026-10-08_
 
-## Claude Code 2.1.292: Lepší pluginy a chytřejší agenti 🚀
+## Claude Code 2.1.294: Chytřejší instrukce a méně předčasných zastavení 🛠️
 
-**TL;DR** — Tato aktualizace přináší vylepšenou správu pluginů, chytřejší agenty s nastavitelnou intenzitou práce a opravu desítek drobných chyb pro hladší vývoj.
+**TL;DR** — Vylepšili jsme způsob, jakým Claude chápe vaše vlastní instrukce, aby lépe dodržoval zákazy a nenechal se zbytečně odradit.
 
-**⭐ Highlight of the release** — Nyní můžete u nástroje Agent nastavit parametr `effort`, díky kterému Claude přizpůsobí své úsilí náročnosti vašeho úkolu.
+**⭐ Hlavní novinka** — Claude nyní mnohem lépe rozumí vašim „hookům“ a instrukcím, takže se už nestane, že by ignoroval zákaz konkrétního příkazu nebo předčasně ukončil práci, když má pokračovat.
 
-**What's new**
-* Snadnější instalace pluginů přímo z marketplace pomocí příkazu `--marketplace`.
-* Lepší podpora pro autokompletaci v řádku pro zadávání příkazů.
-* Optimalizace výkonu při vykreslování dlouhých seznamů a rychlejší starty.
-* Vylepšená bezpečnost a správa oprávnění pro sandboxy a síťové cesty.
-* Opravy pro cloudové relace, Slack integraci a stabilnější běh naplánovaných úloh.
+**Co je nového**
+* Opravili jsme chybu, kvůli které Claude občas ignoroval zákazy definované v `prompt` a `agent` hooku.
+* Vylepšili jsme logiku pro zastavení (Stop/SubagentStop) – Claude teď lépe rozpozná, kdy má v práci pokračovat (např. když je rozbitý build), místo aby zbytečně zastavil.
 
-**Why you'll care** — Váš vývojářský workflow bude zase o něco plynulejší, bezpečnější a lépe přizpůsobitelný vašim konkrétním potřebám.
+**Proč na tom záleží** — Vaše vlastní pravidla pro agenta budou konečně fungovat přesně tak, jak jste zamýšleli, a ušetříte čas při ladění.
 
-Šťastné kódování!
+Užijte si plynulejší kódování!
 
 ---
 
-## Claude Code 2.1.292: Enhanced agents and smoother workflows 🚀
+## Claude Code 2.1.294: Better instruction following and smarter stops 🛠️
 
-**TL;DR** — This release introduces configurable agent effort, improved plugin management, and a massive set of stability fixes to keep your flow uninterrupted.
+**TL;DR** — We’ve improved how Claude interprets your custom instructions, ensuring it respects your rules and stays focused on the task.
 
-**⭐ Highlight of the release** — You can now pass an `effort` parameter to the Agent tool, allowing Claude to scale its sub-agent intensity based on the complexity of your request.
+**⭐ Highlight of the release** — Claude is now much more reliable at following your custom `prompt` and `agent` instructions, preventing it from ignoring your restrictions or stopping work prematurely.
 
 **What's new**
-* Streamlined plugin installation with the new `--marketplace` flag.
-* Better autocomplete support for custom mod hooks in the prompt box.
-* Faster rendering for long responses and improved startup times for sessions.
-* Security hardening for sandbox environments and network file paths.
-* Numerous fixes for cloud sessions, scheduled tasks, and Slack integration.
+* Fixed a bug where Claude would occasionally ignore "block" instructions defined in your hooks.
+* Improved judgment for Stop and SubagentStop instructions, so Claude is smarter about continuing tasks even if it encounters a broken build.
 
-**Why you'll care** — These refinements make Claude Code feel more reliable and responsive, giving you more control over how your AI assistants handle heavy lifting.
+**Why you'll care** — You can now trust your custom rules to work as intended, leading to fewer interruptions and a more consistent coding flow.
 
 Happy coding!
 
