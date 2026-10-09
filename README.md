@@ -23,37 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.294: Chytřejší instrukce a méně předčasných zastavení 🛠️ | Claude Code 2.1.294: Better instruction following and smarter stops 🛠️
+### Claude Code 2.1.295: Vylepšené notifikace a stabilita 🚀 | Claude Code 2.1.295: Better notifications and stability 🚀
 
-_Claude Code v2.1.294 — 2026-10-08_
+_Claude Code v2.1.295 — 2026-10-09_
 
-## Claude Code 2.1.294: Chytřejší instrukce a méně předčasných zastavení 🛠️
+## Claude Code 2.1.295: Vylepšené notifikace a stabilita 🚀
 
-**TL;DR** — Vylepšili jsme způsob, jakým Claude chápe vaše vlastní instrukce, aby lépe dodržoval zákazy a nenechal se zbytečně odradit.
+**TL;DR** — Tato verze přináší desítky oprav stability, lepší podporu pro pluginy a chytřejší notifikace v terminálu.
 
-**⭐ Hlavní novinka** — Claude nyní mnohem lépe rozumí vašim „hookům“ a instrukcím, takže se už nestane, že by ignoroval zákaz konkrétního příkazu nebo předčasně ukončil práci, když má pokračovat.
+**⭐ Highlight of the release** — Podpora protokolu OSC 7501, díky kterému váš terminál nyní pozná, kdy Claude Code pracuje, kdy na vás čeká a kdy má hotovo.
 
-**Co je nového**
-* Opravili jsme chybu, kvůli které Claude občas ignoroval zákazy definované v `prompt` a `agent` hooku.
-* Vylepšili jsme logiku pro zastavení (Stop/SubagentStop) – Claude teď lépe rozpozná, kdy má v práci pokračovat (např. když je rozbitý build), místo aby zbytečně zastavil.
+**What's new**
+* **Chytřejší notifikace:** Přidáno `$.ui.notify`, které umožňuje pluginům posílat nativní oznámení přímo do vašeho systému.
+* **Lepší spolehlivost:** Opraveno mnoho chyb, které způsobovaly zamrzání terminálu při dlouhých výstupech nebo pády spojení s MCP servery.
+* **Vylepšené pluginy:** Přidána varování při instalaci pluginů, pokud nelze načíst konfigurační soubor, a možnost blokovat akce při selhání hooků.
+* **Opravy pro VS Code:** Vyřešeny problémy s fokusem klávesnice a chyby při větvení konverzací.
+* **Stabilita na pozadí:** Vylepšeno chování úloh běžících na pozadí, aby se vzájemně neovlivňovaly a neblokovaly.
 
-**Proč na tom záleží** — Vaše vlastní pravidla pro agenta budou konečně fungovat přesně tak, jak jste zamýšleli, a ušetříte čas při ladění.
+**Why you'll care**
+Claude Code je nyní mnohem stabilnější, lépe komunikuje s vaším prostředím a díky novým notifikacím už nezmeškáte, když bude potřebovat vaši pozornost.
 
-Užijte si plynulejší kódování!
+Užijte si kódování s novou verzí!
 
 ---
 
-## Claude Code 2.1.294: Better instruction following and smarter stops 🛠️
+## Claude Code 2.1.295: Better notifications and stability 🚀
 
-**TL;DR** — We’ve improved how Claude interprets your custom instructions, ensuring it respects your rules and stays focused on the task.
+**TL;DR** — This release brings dozens of stability fixes, improved plugin support, and smarter terminal notifications.
 
-**⭐ Highlight of the release** — Claude is now much more reliable at following your custom `prompt` and `agent` instructions, preventing it from ignoring your restrictions or stopping work prematurely.
+**⭐ Highlight of the release** — Added support for the OSC 7501 protocol, allowing your terminal to visually indicate whether Claude Code is busy, waiting for you, or finished.
 
 **What's new**
-* Fixed a bug where Claude would occasionally ignore "block" instructions defined in your hooks.
-* Improved judgment for Stop and SubagentStop instructions, so Claude is smarter about continuing tasks even if it encounters a broken build.
+* **Smarter notifications:** Added `$.ui.notify`, allowing plugins to send native system notifications.
+* **Improved reliability:** Fixed numerous terminal freezes during long outputs and connection issues with MCP servers.
+* **Plugin enhancements:** Added warnings for plugin configuration issues and a new `block` option for failing hooks to prevent invalid actions.
+* **VS Code fixes:** Resolved keyboard focus issues and bugs when branching conversations.
+* **Background stability:** Improved background task management to prevent tasks from interfering with each other.
 
-**Why you'll care** — You can now trust your custom rules to work as intended, leading to fewer interruptions and a more consistent coding flow.
+**Why you'll care**
+Claude Code is now significantly more reliable and communicative, ensuring your workflow stays smooth without missing critical status updates.
 
 Happy coding!
 
