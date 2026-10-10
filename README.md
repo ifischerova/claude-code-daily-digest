@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.295: Vylepšené notifikace a stabilita 🚀 | Claude Code 2.1.295: Better notifications and stability 🚀
+### Claude Code 2.1.296: Vylepšená správa agentů a vyšší stabilita 🛠️ | Claude Code 2.1.296: Better agent control and stability 🛠️
 
-_Claude Code v2.1.295 — 2026-10-09_
+_Claude Code v2.1.296 — 2026-10-10_
 
-## Claude Code 2.1.295: Vylepšené notifikace a stabilita 🚀
+## Claude Code 2.1.296: Vylepšená správa agentů a vyšší stabilita 🛠️
 
-**TL;DR** — Tato verze přináší desítky oprav stability, lepší podporu pro pluginy a chytřejší notifikace v terminálu.
+**TL;DR** — Tato verze přináší lepší kontrolu nad agenty, opravuje desítky chyb a zlevňuje práci s modelem Sonnet 5.5.
 
-**⭐ Highlight of the release** — Podpora protokolu OSC 7501, díky kterému váš terminál nyní pozná, kdy Claude Code pracuje, kdy na vás čeká a kdy má hotovo.
+**⭐ Hlavní novinka**
+Nyní můžete využít `CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL` pro přiřazení specifického modelu konkrétním workflow agentům, což vám dává mnohem větší kontrolu nad tím, který mozek na daném úkolu zrovna pracuje.
 
-**What's new**
-* **Chytřejší notifikace:** Přidáno `$.ui.notify`, které umožňuje pluginům posílat nativní oznámení přímo do vašeho systému.
-* **Lepší spolehlivost:** Opraveno mnoho chyb, které způsobovaly zamrzání terminálu při dlouhých výstupech nebo pády spojení s MCP servery.
-* **Vylepšené pluginy:** Přidána varování při instalaci pluginů, pokud nelze načíst konfigurační soubor, a možnost blokovat akce při selhání hooků.
-* **Opravy pro VS Code:** Vyřešeny problémy s fokusem klávesnice a chyby při větvení konverzací.
-* **Stabilita na pozadí:** Vylepšeno chování úloh běžících na pozadí, aby se vzájemně neovlivňovaly a neblokovaly.
+**Co je nového**
+* **Flexibilnější agenti:** Přidali jsme `autoCompactWindow` pro rychlejší čištění paměti u podagentů a možnost číst rozsáhlé soubory pomocí `allow_large`.
+* **Lepší správa:** Opravili jsme desítky drobných chyb v pluginech, přihlašování přes brány (gateways) a chování v terminálech.
+* **Zlevnění:** Snížili jsme cenu za cache čtení u modelu Sonnet 5.5 na polovinu ($0.10 za milion tokenů).
+* **Vylepšení pro Windows:** PowerShell nyní zvládne delší příkazy a instalace pluginů přes GitHub je spolehlivější.
 
-**Why you'll care**
-Claude Code je nyní mnohem stabilnější, lépe komunikuje s vaším prostředím a díky novým notifikacím už nezmeškáte, když bude potřebovat vaši pozornost.
+**Proč vás to zajímá**
+Claude Code je zase o kus stabilnější, rychlejší a lépe se přizpůsobí vašemu pracovnímu prostředí, ať už pracujete na Windows, nebo v cloudu.
 
-Užijte si kódování s novou verzí!
+Užívejte si kódování s novou verzí!
 
 ---
 
-## Claude Code 2.1.295: Better notifications and stability 🚀
+## Claude Code 2.1.296: Better agent control and stability 🛠️
 
-**TL;DR** — This release brings dozens of stability fixes, improved plugin support, and smarter terminal notifications.
+**TL;DR** — This release adds powerful new agent configuration options, fixes dozens of edge cases, and lowers the cost of Sonnet 5.5 cache reads.
 
-**⭐ Highlight of the release** — Added support for the OSC 7501 protocol, allowing your terminal to visually indicate whether Claude Code is busy, waiting for you, or finished.
+**⭐ Highlight of the release**
+You can now use the `CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL` environment variable to pin specific models to your workflow agents, giving you fine-grained control over which model handles which part of your task.
 
 **What's new**
-* **Smarter notifications:** Added `$.ui.notify`, allowing plugins to send native system notifications.
-* **Improved reliability:** Fixed numerous terminal freezes during long outputs and connection issues with MCP servers.
-* **Plugin enhancements:** Added warnings for plugin configuration issues and a new `block` option for failing hooks to prevent invalid actions.
-* **VS Code fixes:** Resolved keyboard focus issues and bugs when branching conversations.
-* **Background stability:** Improved background task management to prevent tasks from interfering with each other.
+* **Smarter Agents:** Added `autoCompactWindow` for subagents to manage memory better and an `allow_large` option for the Read tool to process big files in one go.
+* **Fixes Galore:** Resolved various issues with plugin hooks, gateway sign-ins, and terminal display artifacts.
+* **Cost Reduction:** Sonnet 5.5 cache reads are now 50% cheaper, down to $0.10 per million tokens.
+* **Windows Polish:** Improved PowerShell command limits and made GitHub plugin installations more robust.
 
 **Why you'll care**
-Claude Code is now significantly more reliable and communicative, ensuring your workflow stays smooth without missing critical status updates.
+This update makes Claude Code more predictable and reliable, especially in complex environments with multiple plugins or custom workflow requirements.
 
 Happy coding!
 
