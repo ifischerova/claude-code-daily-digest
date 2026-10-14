@@ -23,45 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.296: Vylepšená správa agentů a vyšší stabilita 🛠️ | Claude Code 2.1.296: Better agent control and stability 🛠️
+### Claude Code 2.1.299: Chytřejší paměť a lepší kontrola 🚀 | Claude Code 2.1.299: Smarter memory and better control 🚀
 
-_Claude Code v2.1.296 — 2026-10-10_
+_Claude Code v2.1.299 — 2026-10-14_
 
-## Claude Code 2.1.296: Vylepšená správa agentů a vyšší stabilita 🛠️
+## Claude Code 2.1.299: Chytřejší paměť a lepší kontrola 🚀
 
-**TL;DR** — Tato verze přináší lepší kontrolu nad agenty, opravuje desítky chyb a zlevňuje práci s modelem Sonnet 5.5.
+**TL;DR** — Tato verze přináší efektivnější správu paměti (kompakci), lepší zabezpečení a spoustu oprav pro hladší vývoj.
 
-**⭐ Hlavní novinka**
-Nyní můžete využít `CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL` pro přiřazení specifického modelu konkrétním workflow agentům, což vám dává mnohem větší kontrolu nad tím, který mozek na daném úkolu zrovna pracuje.
+**⭐ Highlight of the release** — Automatická kompakce konverzace: Pokud necháte relaci s více než 200 tisíci tokeny nečinnou déle než 54 minut, Claude ji nyní automaticky zkomprimuje. Ušetříte tak čas i tokeny při příštím dotazu, protože se nebude muset znovu zpracovávat celá historie.
 
-**Co je nového**
-* **Flexibilnější agenti:** Přidali jsme `autoCompactWindow` pro rychlejší čištění paměti u podagentů a možnost číst rozsáhlé soubory pomocí `allow_large`.
-* **Lepší správa:** Opravili jsme desítky drobných chyb v pluginech, přihlašování přes brány (gateways) a chování v terminálech.
-* **Zlevnění:** Snížili jsme cenu za cache čtení u modelu Sonnet 5.5 na polovinu ($0.10 za milion tokenů).
-* **Vylepšení pro Windows:** PowerShell nyní zvládne delší příkazy a instalace pluginů přes GitHub je spolehlivější.
+**What's new**
+* **Chytřejší soubory:** Pomocí `CLAUDE_CODE_DISABLE_FILE_MENTIONS` můžete nastavit, aby Claude viděl cesty k souborům, ale nečetl jejich obsah.
+* **Rychlejší start:** V agentním zobrazení nyní můžete použít `/fast` nebo `/effort` pro nastavení preferencí relace.
+* **Bezpečí na prvním místě:** Opravena řada bezpečnostních chyb v izolovaném prostředí (sandboxu) a přidán „safe mode“ pro background relace.
+* **Lepší ovládání:** Nové příkazy pro vypnutí (drain), vylepšené varování o využití limitů a podrobnější informace pro autory pluginů.
+* **Opravy:** Desítky vylepšení stability pro VS Code, cloudové relace a vzdálené ovládání.
 
-**Proč vás to zajímá**
-Claude Code je zase o kus stabilnější, rychlejší a lépe se přizpůsobí vašemu pracovnímu prostředí, ať už pracujete na Windows, nebo v cloudu.
+**Why you'll care** — Vaše relace budou nyní stabilnější, méně „hladové“ po paměti a díky lepšímu zabezpečení sandboxu můžete pracovat s ještě větším klidem.
 
-Užívejte si kódování s novou verzí!
+Šťastné kódování!
 
 ---
 
-## Claude Code 2.1.296: Better agent control and stability 🛠️
+## Claude Code 2.1.299: Smarter memory and better control 🚀
 
-**TL;DR** — This release adds powerful new agent configuration options, fixes dozens of edge cases, and lowers the cost of Sonnet 5.5 cache reads.
+**TL;DR** — This release introduces automatic conversation compaction, enhanced security, and a massive list of stability improvements for a smoother workflow.
 
-**⭐ Highlight of the release**
-You can now use the `CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL` environment variable to pin specific models to your workflow agents, giving you fine-grained control over which model handles which part of your task.
+**⭐ Highlight of the release** — Idle conversation compaction: Conversations with over 200K tokens that sit idle for 54 minutes will now be automatically compacted. This prevents your next message from triggering a massive re-processing of your prompt cache.
 
 **What's new**
-* **Smarter Agents:** Added `autoCompactWindow` for subagents to manage memory better and an `allow_large` option for the Read tool to process big files in one go.
-* **Fixes Galore:** Resolved various issues with plugin hooks, gateway sign-ins, and terminal display artifacts.
-* **Cost Reduction:** Sonnet 5.5 cache reads are now 50% cheaper, down to $0.10 per million tokens.
-* **Windows Polish:** Improved PowerShell command limits and made GitHub plugin installations more robust.
+* **File mentions:** Use `CLAUDE_CODE_DISABLE_FILE_MENTIONS` to allow Claude to see file paths without reading their contents.
+* **Faster workflow:** You can now use `/fast` or `/effort` in the agent view to set session preferences instantly.
+* **Security hardening:** Numerous fixes for sandbox isolation and a clearer "safe mode" indicator for background tasks.
+* **Better control:** Added `--shutdown-drain-sec` for graceful runner shutdowns and improved usage warnings for max effort and context limits.
+* **Quality of life:** Dozens of fixes for VS Code integration, cloud session memory spikes, and remote control reliability.
 
-**Why you'll care**
-This update makes Claude Code more predictable and reliable, especially in complex environments with multiple plugins or custom workflow requirements.
+**Why you'll care** — Your sessions will be more memory-efficient and stable, and the updated sandbox rules mean you can work with greater confidence.
 
 Happy coding!
 
