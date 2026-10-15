@@ -23,43 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.299: Chytřejší paměť a lepší kontrola 🚀 | Claude Code 2.1.299: Smarter memory and better control 🚀
+### Claude Code 2.1.300: Vylepšená stabilita a nové možnosti pro vývojáře 🛠️ | Claude Code 2.1.300: Improved stability and power-user features 🛠️
 
-_Claude Code v2.1.299 — 2026-10-14_
+_Claude Code v2.1.300 — 2026-10-15_
 
-## Claude Code 2.1.299: Chytřejší paměť a lepší kontrola 🚀
+## Claude Code 2.1.300: Vylepšená stabilita a nové možnosti pro vývojáře 🛠️
 
-**TL;DR** — Tato verze přináší efektivnější správu paměti (kompakci), lepší zabezpečení a spoustu oprav pro hladší vývoj.
+**TL;DR** — Tato aktualizace přináší desítky oprav stability, lepší podporu pro mody a plynulejší spolupráci v rámci Claude Desktop a VS Code.
 
-**⭐ Highlight of the release** — Automatická kompakce konverzace: Pokud necháte relaci s více než 200 tisíci tokeny nečinnou déle než 54 minut, Claude ji nyní automaticky zkomprimuje. Ušetříte tak čas i tokeny při příštím dotazu, protože se nebude muset znovu zpracovávat celá historie.
+**⭐ Hlavní novinka**
+Nová podpora pro `/advisor` v prostředí AWS, která vám dává větší kontrolu nad tím, jak a kdy vám Claude poskytuje rady při programování.
 
-**What's new**
-* **Chytřejší soubory:** Pomocí `CLAUDE_CODE_DISABLE_FILE_MENTIONS` můžete nastavit, aby Claude viděl cesty k souborům, ale nečetl jejich obsah.
-* **Rychlejší start:** V agentním zobrazení nyní můžete použít `/fast` nebo `/effort` pro nastavení preferencí relace.
-* **Bezpečí na prvním místě:** Opravena řada bezpečnostních chyb v izolovaném prostředí (sandboxu) a přidán „safe mode“ pro background relace.
-* **Lepší ovládání:** Nové příkazy pro vypnutí (drain), vylepšené varování o využití limitů a podrobnější informace pro autory pluginů.
-* **Opravy:** Desítky vylepšení stability pro VS Code, cloudové relace a vzdálené ovládání.
+**Co je nového**
+*   **Flexibilnější mody:** Přidali jsme nové nástroje pro úpravu vzhledu a interakci (např. `virtualText` nebo zobrazení historie agenta).
+*   **Vylepšené VS Code:** Opravili jsme desítky drobností, včetně přesnějšího vkládání souborů a lepšího zobrazení diffů.
+*   **Lepší správa agentů:** Agenti jsou nyní stabilnější při obnovení relace a lépe si pamatují kontext i po restartu.
+*   **Chytřejší Slack:** Claude v Slacku nyní lépe rozumí hlasovým zprávám a podporuje sdílené kanály (Slack Connect).
 
-**Why you'll care** — Vaše relace budou nyní stabilnější, méně „hladové“ po paměti a díky lepšímu zabezpečení sandboxu můžete pracovat s ještě větším klidem.
+**Proč by vás to mělo zajímat**
+S touto verzí je Claude Code zase o kus spolehlivějším parťákem, který méně často „zapomíná“ kontext a lépe spolupracuje s vaším editorem i cloudovými nástroji.
 
-Šťastné kódování!
+Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.299: Smarter memory and better control 🚀
+## Claude Code 2.1.300: Improved stability and power-user features 🛠️
 
-**TL;DR** — This release introduces automatic conversation compaction, enhanced security, and a massive list of stability improvements for a smoother workflow.
+**TL;DR** — This release is packed with stability fixes, enhanced modding capabilities, and a smoother experience across VS Code and cloud sessions.
 
-**⭐ Highlight of the release** — Idle conversation compaction: Conversations with over 200K tokens that sit idle for 54 minutes will now be automatically compacted. This prevents your next message from triggering a massive re-processing of your prompt cache.
+**⭐ Highlight of the release**
+We’ve introduced `/advisor` support for Claude Platform on AWS, giving you granular control over when and how Claude provides guidance.
 
 **What's new**
-* **File mentions:** Use `CLAUDE_CODE_DISABLE_FILE_MENTIONS` to allow Claude to see file paths without reading their contents.
-* **Faster workflow:** You can now use `/fast` or `/effort` in the agent view to set session preferences instantly.
-* **Security hardening:** Numerous fixes for sandbox isolation and a clearer "safe mode" indicator for background tasks.
-* **Better control:** Added `--shutdown-drain-sec` for graceful runner shutdowns and improved usage warnings for max effort and context limits.
-* **Quality of life:** Dozens of fixes for VS Code integration, cloud session memory spikes, and remote control reliability.
+*   **Advanced Modding:** New hooks and UI tools allow for more interactive mods, including virtual prompt text and embedded agent transcripts.
+*   **VS Code Polish:** Fixed dozens of UI quirks, including better file handling, improved font scaling for diffs, and more reliable session resumption.
+*   **Agent Reliability:** We’ve squashed bugs that caused agents to disappear from tasks or lose context during session restarts.
+*   **Smarter Slack Integration:** Claude in Slack now supports Slack Connect channels and can read Slack’s transcripts of voice clips.
 
-**Why you'll care** — Your sessions will be more memory-efficient and stable, and the updated sandbox rules mean you can work with greater confidence.
+**Why you'll care**
+This update focuses on making the tool feel more solid—sessions are more resilient, and the integration with your development environment is tighter and more predictable.
 
 Happy coding!
 
