@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.300: Vylepšená stabilita a nové možnosti pro vývojáře 🛠️ | Claude Code 2.1.300: Improved stability and power-user features 🛠️
+### Claude Code 2.1.301: Vylepšené Vim zkratky a stabilita 🚀 | Claude Code 2.1.301: Vim motions and LaTeX support 🚀
 
-_Claude Code v2.1.300 — 2026-10-15_
+_Claude Code v2.1.301 — 2026-10-16_
 
-## Claude Code 2.1.300: Vylepšená stabilita a nové možnosti pro vývojáře 🛠️
+## Claude Code 2.1.301: Vylepšené Vim zkratky a stabilita 🚀
 
-**TL;DR** — Tato aktualizace přináší desítky oprav stability, lepší podporu pro mody a plynulejší spolupráci v rámci Claude Desktop a VS Code.
+**TL;DR** — Tato verze přináší podporu pro matematické zápisy v LaTeXu, vylepšení Vim režimu a opravu desítek drobných chyb pro plynulejší práci.
 
 **⭐ Hlavní novinka**
-Nová podpora pro `/advisor` v prostředí AWS, která vám dává větší kontrolu nad tím, jak a kdy vám Claude poskytuje rady při programování.
+Do Vim režimu jsme přidali pohyb `%`, který vám umožní okamžitě skákat mezi odpovídajícími závorkami – je to drobnost, která vám ušetří spoustu času při úpravě kódu.
 
 **Co je nového**
-*   **Flexibilnější mody:** Přidali jsme nové nástroje pro úpravu vzhledu a interakci (např. `virtualText` nebo zobrazení historie agenta).
-*   **Vylepšené VS Code:** Opravili jsme desítky drobností, včetně přesnějšího vkládání souborů a lepšího zobrazení diffů.
-*   **Lepší správa agentů:** Agenti jsou nyní stabilnější při obnovení relace a lépe si pamatují kontext i po restartu.
-*   **Chytřejší Slack:** Claude v Slacku nyní lépe rozumí hlasovým zprávám a podporuje sdílené kanály (Slack Connect).
+* **LaTeX:** V VS Code nyní Claude vykresluje matematické vzorce (podpora `$$` i inline `$`).
+* **Chytřejší UI:** Vylepšili jsme vykreslování dlouhých úkolů, takže se rozhraní nezpomaluje, když Claude usilovně přemýšlí.
+* **Spolehlivost:** Opravili jsme chybu, kdy se binární soubory (např. .parquet nebo .epub) chybně četly jako text.
+* **Lepší správa:** Claude nyní lépe zvládá přechod na modely s menším kontextovým oknem a automaticky je shrne, aby nedošlo ke ztrátě informací.
 
-**Proč by vás to mělo zajímat**
-S touto verzí je Claude Code zase o kus spolehlivějším parťákem, který méně často „zapomíná“ kontext a lépe spolupracuje s vaším editorem i cloudovými nástroji.
+**Proč vás to zajímá**
+Práce s kódem je nyní stabilnější, editor je svižnější a díky podpoře matematiky a lepšímu Vim režimu bude váš vývojářský workflow zase o něco přirozenější.
 
-Ať se vám dnes skvěle kóduje!
+Užívejte si kódování a ať se daří!
 
 ---
 
-## Claude Code 2.1.300: Improved stability and power-user features 🛠️
+## Claude Code 2.1.301: Vim motions and LaTeX support 🚀
 
-**TL;DR** — This release is packed with stability fixes, enhanced modding capabilities, and a smoother experience across VS Code and cloud sessions.
+**TL;DR** — This update brings LaTeX math rendering, Vim motion improvements, and a slew of stability fixes to make your coding sessions smoother.
 
 **⭐ Highlight of the release**
-We’ve introduced `/advisor` support for Claude Platform on AWS, giving you granular control over when and how Claude provides guidance.
+We’ve added the `%` motion to Vim mode, letting you instantly jump between matching brackets—a small change that makes navigating complex code blocks feel much faster.
 
 **What's new**
-*   **Advanced Modding:** New hooks and UI tools allow for more interactive mods, including virtual prompt text and embedded agent transcripts.
-*   **VS Code Polish:** Fixed dozens of UI quirks, including better file handling, improved font scaling for diffs, and more reliable session resumption.
-*   **Agent Reliability:** We’ve squashed bugs that caused agents to disappear from tasks or lose context during session restarts.
-*   **Smarter Slack Integration:** Claude in Slack now supports Slack Connect channels and can read Slack’s transcripts of voice clips.
+* **LaTeX Math:** Claude now renders beautiful math equations in VS Code responses using standard `$$` and `$` notation.
+* **Better Performance:** Long-running tasks no longer cause the UI to stutter, as progress updates are now incremental rather than full-reloads.
+* **Smarter Context:** Switching to a model with a smaller context window is now safer; Claude will summarize the conversation using the previous model before switching.
+* **Binary Fixes:** The Read tool now correctly identifies and ignores binary files (like .epub or .parquet) instead of trying to read them as text.
 
 **Why you'll care**
-This update focuses on making the tool feel more solid—sessions are more resilient, and the integration with your development environment is tighter and more predictable.
+These updates resolve those annoying little friction points—like freezing UI or misread files—letting you stay in your flow state longer.
 
 Happy coding!
 
