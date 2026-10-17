@@ -23,47 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.301: Vylepšené Vim zkratky a stabilita 🚀 | Claude Code 2.1.301: Vim motions and LaTeX support 🚀
+### Claude Code 2.1.302: Rychlejší pluginy a lepší správa paměti ⚡ | Claude Code 2.1.302: Faster plugins and better memory management ⚡
 
-_Claude Code v2.1.301 — 2026-10-16_
+_Claude Code v2.1.302 — 2026-10-17_
 
-## Claude Code 2.1.301: Vylepšené Vim zkratky a stabilita 🚀
+## Claude Code 2.1.302: Rychlejší pluginy a lepší správa paměti ⚡
 
-**TL;DR** — Tato verze přináší podporu pro matematické zápisy v LaTeXu, vylepšení Vim režimu a opravu desítek drobných chyb pro plynulejší práci.
+**TL;DR** — Tato aktualizace přináší řadu oprav stability, zrychlení načítání pluginů a vylepšenou správu paměti při práci s obrázky.
 
-**⭐ Hlavní novinka**
-Do Vim režimu jsme přidali pohyb `%`, který vám umožní okamžitě skákat mezi odpovídajícími závorkami – je to drobnost, která vám ušetří spoustu času při úpravě kódu.
+**⭐ Highlight of the release** — Výrazně jsme zrychlili startování s mnoha aktivními pluginy; Claude nyní načítá příkazy a agenty mnohem efektivněji, což oceníte zejména na Windows.
 
 **Co je nového**
-* **LaTeX:** V VS Code nyní Claude vykresluje matematické vzorce (podpora `$$` i inline `$`).
-* **Chytřejší UI:** Vylepšili jsme vykreslování dlouhých úkolů, takže se rozhraní nezpomaluje, když Claude usilovně přemýšlí.
-* **Spolehlivost:** Opravili jsme chybu, kdy se binární soubory (např. .parquet nebo .epub) chybně četly jako text.
-* **Lepší správa:** Claude nyní lépe zvládá přechod na modely s menším kontextovým oknem a automaticky je shrne, aby nedošlo ke ztrátě informací.
+* **Správa paměti:** Claude nyní odmítne obrázky větší než 128 MB, aby předešel přetížení systému.
+* **Stabilita:** Opravili jsme chyby při přepínání modelů (Vertex/Bedrock) a problémy s ukládáním nastavení pluginů.
+* **Cloudové relace:** Vylepšili jsme spolehlivost automatických rutin a opravili chyby v zobrazení stavu pull requestů.
+* **Claude v Slacku:** Lepší podpora pro různé formáty obrázků (HEIC, SVG, TIFF) a přehlednější správa oprávnění v admin nastavení.
 
-**Proč vás to zajímá**
-Práce s kódem je nyní stabilnější, editor je svižnější a díky podpoře matematiky a lepšímu Vim režimu bude váš vývojářský workflow zase o něco přirozenější.
+**Proč na tom záleží**
+Claude Code je nyní stabilnější, rychleji reaguje při startu a lépe zvládá náročné operace v cloudu i lokálně.
 
-Užívejte si kódování a ať se daří!
+Užívejte si kódování s novou verzí!
 
 ---
 
-## Claude Code 2.1.301: Vim motions and LaTeX support 🚀
+## Claude Code 2.1.302: Faster plugins and better memory management ⚡
 
-**TL;DR** — This update brings LaTeX math rendering, Vim motion improvements, and a slew of stability fixes to make your coding sessions smoother.
+**TL;DR** — This release brings a massive batch of stability fixes, faster plugin loading, and smarter memory management for images.
 
-**⭐ Highlight of the release**
-We’ve added the `%` motion to Vim mode, letting you instantly jump between matching brackets—a small change that makes navigating complex code blocks feel much faster.
+**⭐ Highlight of the release** — We've significantly improved startup times when you have many plugins enabled by reducing the number of file system calls, making the experience much snappier, especially on Windows.
 
 **What's new**
-* **LaTeX Math:** Claude now renders beautiful math equations in VS Code responses using standard `$$` and `$` notation.
-* **Better Performance:** Long-running tasks no longer cause the UI to stutter, as progress updates are now incremental rather than full-reloads.
-* **Smarter Context:** Switching to a model with a smaller context window is now safer; Claude will summarize the conversation using the previous model before switching.
-* **Binary Fixes:** The Read tool now correctly identifies and ignores binary files (like .epub or .parquet) instead of trying to read them as text.
+* **Memory protection:** Claude now refuses image files over 128 MB to prevent memory exhaustion.
+* **Stability:** Fixed crashes when switching between Vertex or Bedrock models and resolved issues where settings changes could be lost.
+* **Cloud sessions:** Improved reliability for scheduled routines and fixed glitches in pull request status bars.
+* **Claude in Slack:** Better handling of various image formats (HEIC, SVG, TIFF) and a cleaner tabbed layout in admin settings.
 
 **Why you'll care**
-These updates resolve those annoying little friction points—like freezing UI or misread files—letting you stay in your flow state longer.
+Your workspace will feel more responsive, and the tool is now much more robust when handling complex tasks or large plugin collections.
 
-Happy coding!
+Happy coding with the new improvements!
 
 <!-- LATEST:END -->
 
