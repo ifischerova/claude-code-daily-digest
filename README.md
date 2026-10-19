@@ -23,45 +23,39 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.302: Rychlejší pluginy a lepší správa paměti ⚡ | Claude Code 2.1.302: Faster plugins and better memory management ⚡
+### Vylepšení stability pro Claude Code 🛠️ | Stability improvements for Claude Code 🛠️
 
-_Claude Code v2.1.302 — 2026-10-17_
+_Claude Code v2.1.303 — 2026-10-19_
 
-## Claude Code 2.1.302: Rychlejší pluginy a lepší správa paměti ⚡
+## Vylepšení stability pro Claude Code 🛠️
 
-**TL;DR** — Tato aktualizace přináší řadu oprav stability, zrychlení načítání pluginů a vylepšenou správu paměti při práci s obrázky.
+**TL;DR** — Tato aktualizace přináší důležité opravy chyb a celkové zvýšení spolehlivosti systému.
 
-**⭐ Highlight of the release** — Výrazně jsme zrychlili startování s mnoha aktivními pluginy; Claude nyní načítá příkazy a agenty mnohem efektivněji, což oceníte zejména na Windows.
+**⭐ Hlavní novinka** — Zaměřili jsme se na stabilitu, aby byl váš vývoj s Claudem plynulejší a bez zbytečných přerušení.
 
 **Co je nového**
-* **Správa paměti:** Claude nyní odmítne obrázky větší než 128 MB, aby předešel přetížení systému.
-* **Stabilita:** Opravili jsme chyby při přepínání modelů (Vertex/Bedrock) a problémy s ukládáním nastavení pluginů.
-* **Cloudové relace:** Vylepšili jsme spolehlivost automatických rutin a opravili chyby v zobrazení stavu pull requestů.
-* **Claude v Slacku:** Lepší podpora pro různé formáty obrázků (HEIC, SVG, TIFF) a přehlednější správa oprávnění v admin nastavení.
+- Opravili jsme několik drobných chyb, které mohly způsobovat nečekané chování.
+- Optimalizovali jsme vnitřní procesy pro spolehlivější běh příkazů.
 
-**Proč na tom záleží**
-Claude Code je nyní stabilnější, rychleji reaguje při startu a lépe zvládá náročné operace v cloudu i lokálně.
+**Proč vás to zajímá** — Váš pracovní nástroj bude nyní stabilnější a předvídatelnější, takže se můžete plně soustředit na psaní kódu.
 
-Užívejte si kódování s novou verzí!
+Ať se vám dnes skvěle programuje!
 
 ---
 
-## Claude Code 2.1.302: Faster plugins and better memory management ⚡
+## Stability improvements for Claude Code 🛠️
 
-**TL;DR** — This release brings a massive batch of stability fixes, faster plugin loading, and smarter memory management for images.
+**TL;DR** — This release focuses on squashing bugs and making your overall experience more reliable.
 
-**⭐ Highlight of the release** — We've significantly improved startup times when you have many plugins enabled by reducing the number of file system calls, making the experience much snappier, especially on Windows.
+**⭐ Highlight of the release** — We’ve polished the underlying mechanics to ensure everything runs smoother and more consistently.
 
 **What's new**
-* **Memory protection:** Claude now refuses image files over 128 MB to prevent memory exhaustion.
-* **Stability:** Fixed crashes when switching between Vertex or Bedrock models and resolved issues where settings changes could be lost.
-* **Cloud sessions:** Improved reliability for scheduled routines and fixed glitches in pull request status bars.
-* **Claude in Slack:** Better handling of various image formats (HEIC, SVG, TIFF) and a cleaner tabbed layout in admin settings.
+- Fixed a series of minor bugs to keep things running as expected.
+- Enhanced reliability to prevent unexpected hiccups during your workflow.
 
-**Why you'll care**
-Your workspace will feel more responsive, and the tool is now much more robust when handling complex tasks or large plugin collections.
+**Why you'll care** — You get a more stable, dependable coding partner so you can focus on building rather than troubleshooting.
 
-Happy coding with the new improvements!
+Happy coding!
 
 <!-- LATEST:END -->
 
