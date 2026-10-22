@@ -23,41 +23,39 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.306: Opravy pro spolehlivější práci 🛠️ | Claude Code 2.1.306: Smoother sessions and fixes 🛠️
+### Vylepšení stability pro Claude Code 🛠️ | Smoother coding with Claude Code 🛠️
 
-_Claude Code v2.1.306 — 2026-10-21_
+_Claude Code v2.1.308 — 2026-10-22_
 
-## Claude Code 2.1.306: Opravy pro spolehlivější práci 🛠️
+## Vylepšení stability pro Claude Code 🛠️
 
-**TL;DR** — Tato verze opravuje problémy s přihlášením v cloudu a chyby při používání mnoha nástrojů.
+**TL;DR** – Tato verze přináší opravy chyb a celkové zvýšení spolehlivosti nástroje.
 
-**⭐ Hlavní novinka** — Claude Code je nyní mnohem stabilnější při práci s velkým množstvím MCP nástrojů, díky čemuž se vyhnete zbytečným chybám.
+**⭐ Hlavní novinka** – Zaměřili jsme se na stabilitu, aby byl váš pracovní proces s Claude Code ještě plynulejší.
 
 **Co je nového**
-* Opravili jsme chybu, kvůli které si Claude v cloudových relacích občas „nepamatoval“, že jste přihlášeni.
-* Odstranili jsme matoucí chybové hlášky o příliš dlouhých promptech, které se objevovaly při používání mnoha doplňků.
-* Odstranili jsme zbytečné procesy „komprimace“ dat, které zpomalovaly práci.
+* Opravy drobných chyb, které vás mohly při práci brzdit.
+* Optimalizace výkonu pro stabilnější běh v terminálu.
 
-**Proč vás to bude zajímat** — Váš vývojářský workflow bude zase o něco plynulejší a bez zbytečných zádrhelů.
+**Proč na tom záleží** – Díky těmto úpravám bude Claude Code spolehlivějším parťákem při psaní kódu bez nečekaných zádrhelů.
 
-Ať se vám dnes skvěle kóduje!
+Užívejte si kódování a ať se vám daří!
 
 ---
 
-## Claude Code 2.1.306: Smoother sessions and fixes 🛠️
+## Smoother coding with Claude Code 🛠️
 
-**TL;DR** — This release fixes login issues in cloud environments and improves stability when using many MCP tools.
+**TL;DR** – This update focuses on squashing bugs and making your experience more reliable.
 
-**⭐ Highlight of the release** — Claude Code now handles sessions with many MCP tools much more gracefully, preventing false errors and unnecessary background processing.
+**⭐ Highlight of the release** – We’ve tightened up the internals to ensure a more stable and consistent development workflow.
 
 **What's new**
-* Fixed a bug where `claude -p` in cloud sessions would incorrectly report that you weren't logged in.
-* Resolved an issue where API errors were being mislabeled as "prompt too long."
-* Removed unnecessary data compaction steps that were interrupting your workflow.
+* Various bug fixes to address minor issues reported by the community.
+* Reliability improvements to keep your sessions running smoothly.
 
-**Why you'll care** — You'll spend less time troubleshooting connection quirks and more time building.
+**Why you'll care** – You can spend less time troubleshooting the tool and more time actually building great software.
 
-Happy coding!
+Happy coding, and see you in the terminal!
 
 <!-- LATEST:END -->
 
