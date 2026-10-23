@@ -23,39 +23,47 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Vylepšení stability pro Claude Code 🛠️ | Smoother coding with Claude Code 🛠️
+### Claude Code 2.1.309: stabilita a lepší správa souborů 🛠️ | Claude Code 2.1.309: stability and polish 🛠️
 
-_Claude Code v2.1.308 — 2026-10-22_
+_Claude Code v2.1.309 — 2026-10-23_
 
-## Vylepšení stability pro Claude Code 🛠️
+## Claude Code 2.1.309: stabilita a lepší správa souborů 🛠️
 
-**TL;DR** – Tato verze přináší opravy chyb a celkové zvýšení spolehlivosti nástroje.
+**TL;DR** — Tato aktualizace opravuje desítky chyb v sandboxu, vylepšuje práci se soubory a zpřesňuje chování v prostředí VS Code.
 
-**⭐ Hlavní novinka** – Zaměřili jsme se na stabilitu, aby byl váš pracovní proces s Claude Code ještě plynulejší.
+**⭐ Highlight of the release** — Kompletní revize zabezpečení sandboxu a Bash příkazů, která zajišťuje, že Claude Code vždy dodržuje nastavená omezení přístupu k souborům.
 
-**Co je nového**
-* Opravy drobných chyb, které vás mohly při práci brzdit.
-* Optimalizace výkonu pro stabilnější běh v terminálu.
+**What's new**
+* **Opravy sandboxu:** Lepší izolace na macOS a Linuxu a oprava problémů se symbolickými odkazy.
+* **Vylepšení VS Code:** Rychlejší úpravy kódu a lepší správa historie relací.
+* **Git & Bash:** Chytřejší práce s repozitáři a oprava chybných oprávnění u složitých příkazů.
+* **Claude API:** Rozšířené možnosti sledování (tracing) a lepší podpora pro OpenTelemetry.
+* **Slack & Cloud:** Stabilnější propojení a oprava chyb při odesílání zpráv.
 
-**Proč na tom záleží** – Díky těmto úpravám bude Claude Code spolehlivějším parťákem při psaní kódu bez nečekaných zádrhelů.
+**Why you'll care**
+Claude Code je nyní předvídatelnější, bezpečnější a v editoru VS Code mnohem svižnější. 
 
-Užívejte si kódování a ať se vám daří!
+Užívejte si kódování s novou verzí!
 
 ---
 
-## Smoother coding with Claude Code 🛠️
+## Claude Code 2.1.309: stability and polish 🛠️
 
-**TL;DR** – This update focuses on squashing bugs and making your experience more reliable.
+**TL;DR** — This release squashes dozens of bugs across the sandbox, git operations, and VS Code extension to make your workflow smoother and more reliable.
 
-**⭐ Highlight of the release** – We’ve tightened up the internals to ensure a more stable and consistent development workflow.
+**⭐ Highlight of the release** — A comprehensive hardening of sandbox and Bash command security, ensuring your file permissions and isolation rules are strictly enforced.
 
 **What's new**
-* Various bug fixes to address minor issues reported by the community.
-* Reliability improvements to keep your sessions running smoothly.
+* **Sandbox fixes:** Robust fixes for macOS/Linux pathing, symlink handling, and background processes.
+* **VS Code improvements:** Snappier edit performance and cleaner session history management.
+* **Git & Bash:** Better handling of complex commands and improved git operations in worktrees.
+* **Claude API:** Enhanced tracing support, including better OpenTelemetry integration.
+* **Reliability:** Fixed various UI flickers, connection drops in cloud sessions, and Slack integration edge cases.
 
-**Why you'll care** – You can spend less time troubleshooting the tool and more time actually building great software.
+**Why you'll care**
+Your coding sessions will feel more consistent, with fewer permission hiccups and a faster, more responsive chat panel in VS Code.
 
-Happy coding, and see you in the terminal!
+Happy coding!
 
 <!-- LATEST:END -->
 
