@@ -23,45 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.309: stabilita a lepší správa souborů 🛠️ | Claude Code 2.1.309: stability and polish 🛠️
+### Claude Code 2.1.310: Vylepšené cloudové relace a stabilita 🚀 | Claude Code 2.1.310: Better cloud sessions and stability 🚀
 
-_Claude Code v2.1.309 — 2026-10-23_
+_Claude Code v2.1.310 — 2026-10-24_
 
-## Claude Code 2.1.309: stabilita a lepší správa souborů 🛠️
+## Claude Code 2.1.310: Vylepšené cloudové relace a stabilita 🚀
 
-**TL;DR** — Tato aktualizace opravuje desítky chyb v sandboxu, vylepšuje práci se soubory a zpřesňuje chování v prostředí VS Code.
+**TL;DR** — Tato aktualizace přináší lepší správu cloudových relací, opravy stability a přehlednější ovládání pro uživatele VS Code.
 
-**⭐ Highlight of the release** — Kompletní revize zabezpečení sandboxu a Bash příkazů, která zajišťuje, že Claude Code vždy dodržuje nastavená omezení přístupu k souborům.
+**⭐ Hlavní novinka** — Rozšířená správa přístupů: majitelé Enterprise účtů nyní mohou ovládat cloudové relace a vzdálené ovládání pomocí vlastních rolí.
 
-**What's new**
-* **Opravy sandboxu:** Lepší izolace na macOS a Linuxu a oprava problémů se symbolickými odkazy.
-* **Vylepšení VS Code:** Rychlejší úpravy kódu a lepší správa historie relací.
-* **Git & Bash:** Chytřejší práce s repozitáři a oprava chybných oprávnění u složitých příkazů.
-* **Claude API:** Rozšířené možnosti sledování (tracing) a lepší podpora pro OpenTelemetry.
-* **Slack & Cloud:** Stabilnější propojení a oprava chyb při odesílání zpráv.
+**Co je nového**
+* **Cloudové relace:** Snadnější načítání skriptů, přehlednější nastavení a lepší správa chybových hlášení.
+* **Stabilita:** Claude Code je nyní chytřejší při komunikaci přes brány, které odmítají určité beta parametry.
+* **Vylepšení pro VS Code:** Opraveny chyby v rozhraní pro zpětnou vazbu a přepínání větví.
+* **Linux a Windows:** Lepší diagnostika omezení systému (AppArmor) a oprava oprávnění v Git Bash.
+* **Claude Tag:** Oprava zpracování příkazů, které byly formátovány tučně nebo kurzívou.
 
-**Why you'll care**
-Claude Code je nyní předvídatelnější, bezpečnější a v editoru VS Code mnohem svižnější. 
+**Proč na tom záleží** — Vaše pracovní prostředí bude spolehlivější a bezpečnější, a to zejména v týmových a cloudových scénářích.
 
 Užívejte si kódování s novou verzí!
 
 ---
 
-## Claude Code 2.1.309: stability and polish 🛠️
+## Claude Code 2.1.310: Better cloud sessions and stability 🚀
 
-**TL;DR** — This release squashes dozens of bugs across the sandbox, git operations, and VS Code extension to make your workflow smoother and more reliable.
+**TL;DR** — This update brings robust improvements to cloud session management, better system compatibility, and smoother VS Code integration.
 
-**⭐ Highlight of the release** — A comprehensive hardening of sandbox and Bash command security, ensuring your file permissions and isolation rules are strictly enforced.
+**⭐ Highlight of the release** — Enhanced Enterprise control: Owners can now assign granular permissions for cloud sessions and remote control to specific custom roles.
 
 **What's new**
-* **Sandbox fixes:** Robust fixes for macOS/Linux pathing, symlink handling, and background processes.
-* **VS Code improvements:** Snappier edit performance and cleaner session history management.
-* **Git & Bash:** Better handling of complex commands and improved git operations in worktrees.
-* **Claude API:** Enhanced tracing support, including better OpenTelemetry integration.
-* **Reliability:** Fixed various UI flickers, connection drops in cloud sessions, and Slack integration edge cases.
+* **Cloud Sessions:** Simplified environment setup with file uploads for scripts and a cleaner UI for managing network and variable settings.
+* **Reliability:** Improved handling of network gateways that reject specific beta parameters, preventing unnecessary request failures.
+* **VS Code:** Fixed UI bugs in the feedback loop and branch switching workflows.
+* **OS Fixes:** Better diagnostic messages for Linux sandbox issues and resolved permission hook bugs on Windows.
+* **Claude Tag:** Fixed formatting issues where command triggers were being ignored when styled with bold or italics.
 
-**Why you'll care**
-Your coding sessions will feel more consistent, with fewer permission hiccups and a faster, more responsive chat panel in VS Code.
+**Why you'll care** — You’ll spend less time troubleshooting environment quirks and more time building with a more stable, enterprise-ready tool.
 
 Happy coding!
 
