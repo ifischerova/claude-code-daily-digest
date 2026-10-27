@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.310: Vylepšené cloudové relace a stabilita 🚀 | Claude Code 2.1.310: Better cloud sessions and stability 🚀
+### Claude Code 2.1.311: Rychlejší, stabilnější a chytřejší 🚀 | Claude Code 2.1.311: Faster, smoother, and more reliable 🚀
 
-_Claude Code v2.1.310 — 2026-10-24_
+_Claude Code v2.1.311 — 2026-10-27_
 
-## Claude Code 2.1.310: Vylepšené cloudové relace a stabilita 🚀
+## Claude Code 2.1.311: Rychlejší, stabilnější a chytřejší 🚀
 
-**TL;DR** — Tato aktualizace přináší lepší správu cloudových relací, opravy stability a přehlednější ovládání pro uživatele VS Code.
+**TL;DR** — Tato aktualizace přináší opravy desítek drobných chyb, zrychlení spouštění a lepší stabilitu při práci s velkými soubory či dlouhými konverzacemi.
 
-**⭐ Hlavní novinka** — Rozšířená správa přístupů: majitelé Enterprise účtů nyní mohou ovládat cloudové relace a vzdálené ovládání pomocí vlastních rolí.
+**⭐ Hlavní novinka** — Claude nyní automaticky komprimuje konverzaci při překročení limitu 200 tisíc tokenů, takže vaše relace nebudou končit chybou kvůli nedostatku kreditu.
 
 **Co je nového**
-* **Cloudové relace:** Snadnější načítání skriptů, přehlednější nastavení a lepší správa chybových hlášení.
-* **Stabilita:** Claude Code je nyní chytřejší při komunikaci přes brány, které odmítají určité beta parametry.
-* **Vylepšení pro VS Code:** Opraveny chyby v rozhraní pro zpětnou vazbu a přepínání větví.
-* **Linux a Windows:** Lepší diagnostika omezení systému (AppArmor) a oprava oprávnění v Git Bash.
-* **Claude Tag:** Oprava zpracování příkazů, které byly formátovány tučně nebo kurzívou.
+* **Vyšší rychlost:** Zkrátili jsme dobu startu aplikace a opravili zasekávání při úpravách velkých souborů.
+* **Stabilita:** Opravili jsme chyby, které způsobovaly nechtěné ukončování agentů nebo zpoždění při přerušení práce.
+* **Chytřejší nápověda:** Claude nyní lépe vysvětluje své kroky a lépe pracuje s nastavením `.ignore`.
+* **Lepší IDE integrace:** Vylepšili jsme zobrazení kódu ve VS Code a opravili problémy s hlasovým diktováním.
 
-**Proč na tom záleží** — Vaše pracovní prostředí bude spolehlivější a bezpečnější, a to zejména v týmových a cloudových scénářích.
+**Proč by vás to mělo zajímat**
+Claude Code je nyní mnohem spolehlivější parťák, který vás nezastaví uprostřed rozdělané práce ani u extrémně rozsáhlých projektů.
 
 Užívejte si kódování s novou verzí!
 
 ---
 
-## Claude Code 2.1.310: Better cloud sessions and stability 🚀
+## Claude Code 2.1.311: Faster, smoother, and more reliable 🚀
 
-**TL;DR** — This update brings robust improvements to cloud session management, better system compatibility, and smoother VS Code integration.
+**TL;DR** — This release squashes dozens of bugs and improves performance, ensuring Claude Code stays responsive even in your most complex projects.
 
-**⭐ Highlight of the release** — Enhanced Enterprise control: Owners can now assign granular permissions for cloud sessions and remote control to specific custom roles.
+**⭐ Highlight of the release** — Claude now automatically compacts conversations when they exceed 200K tokens, preventing session interruptions due to context limits.
 
 **What's new**
-* **Cloud Sessions:** Simplified environment setup with file uploads for scripts and a cleaner UI for managing network and variable settings.
-* **Reliability:** Improved handling of network gateways that reject specific beta parameters, preventing unnecessary request failures.
-* **VS Code:** Fixed UI bugs in the feedback loop and branch switching workflows.
-* **OS Fixes:** Better diagnostic messages for Linux sandbox issues and resolved permission hook bugs on Windows.
-* **Claude Tag:** Fixed formatting issues where command triggers were being ignored when styled with bold or italics.
+* **Snappier performance:** Faster startup times and fixes for lag during edits of large files.
+* **Improved stability:** Resolved issues where background agents would stall or fail to restart properly.
+* **Smarter file handling:** Fixed bugs with `.ignore` rules and improved how Claude handles large list items in documentation.
+* **VS Code refinements:** Better syntax highlighting, smoother dictation, and fewer UI freezes.
 
-**Why you'll care** — You’ll spend less time troubleshooting environment quirks and more time building with a more stable, enterprise-ready tool.
+**Why you'll care**
+Your workflow will feel much more fluid, especially in long sessions where you previously hit context or performance bottlenecks.
 
-Happy coding!
+Happy coding with the latest version!
 
 <!-- LATEST:END -->
 
