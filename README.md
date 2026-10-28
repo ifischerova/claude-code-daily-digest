@@ -23,45 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.311: Rychlejší, stabilnější a chytřejší 🚀 | Claude Code 2.1.311: Faster, smoother, and more reliable 🚀
+### Claude Code 2.1.312: Pohodlnější ovládání a opravené chyby 🚀 | Claude Code 2.1.312: Smoother workflows and fixes 🚀
 
-_Claude Code v2.1.311 — 2026-10-27_
+_Claude Code v2.1.312 — 2026-10-28_
 
-## Claude Code 2.1.311: Rychlejší, stabilnější a chytřejší 🚀
+## Claude Code 2.1.312: Pohodlnější ovládání a opravené chyby 🚀
 
-**TL;DR** — Tato aktualizace přináší opravy desítek drobných chyb, zrychlení spouštění a lepší stabilitu při práci s velkými soubory či dlouhými konverzacemi.
+**TL;DR** — Nejnovější aktualizace přináší rychlejší odesílání zpráv, lepší stabilitu při úpravách velkých souborů a opravy mnoha nepříjemných chyb.
 
-**⭐ Hlavní novinka** — Claude nyní automaticky komprimuje konverzaci při překročení limitu 200 tisíc tokenů, takže vaše relace nebudou končit chybou kvůli nedostatku kreditu.
+**⭐ Highlight of the release** — Nyní můžete odeslat zprávu okamžitě kliknutím na nápovědu „to send now“ přímo v rozhraní, což vám ušetří drahocenné sekundy.
 
 **Co je nového**
-* **Vyšší rychlost:** Zkrátili jsme dobu startu aplikace a opravili zasekávání při úpravách velkých souborů.
-* **Stabilita:** Opravili jsme chyby, které způsobovaly nechtěné ukončování agentů nebo zpoždění při přerušení práce.
-* **Chytřejší nápověda:** Claude nyní lépe vysvětluje své kroky a lépe pracuje s nastavením `.ignore`.
-* **Lepší IDE integrace:** Vylepšili jsme zobrazení kódu ve VS Code a opravili problémy s hlasovým diktováním.
+* **Chytřejší úpravy:** Claude už nepřepisuje velké soubory, které celé neviděl – nyní si je raději celé načte.
+* **Lepší přehled:** V cloudových relacích uvidíte jasnější přehled o tom, co se stalo při přidávání repozitářů, místo surových dat.
+* **Stabilita:** Opravili jsme chyby při navigaci v terminálu, zobrazení stavu relací a náhodné pády při čtení PDF.
+* **Vylepšení pro VS Code:** Jasnější informace o limitech využití a přehlednější chybové hlášky při přihlašování.
 
-**Proč by vás to mělo zajímat**
-Claude Code je nyní mnohem spolehlivější parťák, který vás nezastaví uprostřed rozdělané práce ani u extrémně rozsáhlých projektů.
+**Proč vás to bude zajímat** — Tato verze dělá z Claude Code spolehlivějšího parťáka, který vás nebude vyrušovat chybami a lépe rozumí vašim souborům i limitům.
 
-Užívejte si kódování s novou verzí!
+Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.311: Faster, smoother, and more reliable 🚀
+## Claude Code 2.1.312: Smoother workflows and fixes 🚀
 
-**TL;DR** — This release squashes dozens of bugs and improves performance, ensuring Claude Code stays responsive even in your most complex projects.
+**TL;DR** — This release introduces instant message sending, smarter file handling, and a suite of stability improvements for your daily workflow.
 
-**⭐ Highlight of the release** — Claude now automatically compacts conversations when they exceed 200K tokens, preventing session interruptions due to context limits.
+**⭐ Highlight of the release** — You can now send queued messages instantly by clicking the "to send now" hint, making your interaction feel much snappier.
 
 **What's new**
-* **Snappier performance:** Faster startup times and fixes for lag during edits of large files.
-* **Improved stability:** Resolved issues where background agents would stall or fail to restart properly.
-* **Smarter file handling:** Fixed bugs with `.ignore` rules and improved how Claude handles large list items in documentation.
-* **VS Code refinements:** Better syntax highlighting, smoother dictation, and fewer UI freezes.
+* **Smarter file editing:** Claude now avoids overwriting large files it hasn't fully read, opting to read the whole file or edit in place instead.
+* **Better cloud visibility:** Repository setup steps in cloud sessions now show a clean table instead of raw JSON data.
+* **Stability fixes:** Resolved issues with directory navigation in Git, PDF reading failures, and session state persistence.
+* **VS Code & UI polish:** Clearer "5-hour limit" messaging, better error handling for organization settings, and more helpful retry prompts.
 
-**Why you'll care**
-Your workflow will feel much more fluid, especially in long sessions where you previously hit context or performance bottlenecks.
+**Why you'll care** — We’ve ironed out the friction points that get in your way, ensuring Claude stays focused on your code rather than struggling with file size or session state.
 
-Happy coding with the latest version!
+Happy coding!
 
 <!-- LATEST:END -->
 
