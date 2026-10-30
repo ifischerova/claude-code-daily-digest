@@ -23,41 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.312: Pohodlnější ovládání a opravené chyby 🚀 | Claude Code 2.1.312: Smoother workflows and fixes 🚀
+### Claude Code 2.1.314: Chytřejší paměť a lepší zabezpečení 🚀 | Claude Code 2.1.314: Smarter memory and tighter security 🚀
 
-_Claude Code v2.1.312 — 2026-10-28_
+_Claude Code v2.1.314 — 2026-10-30_
 
-## Claude Code 2.1.312: Pohodlnější ovládání a opravené chyby 🚀
+## Claude Code 2.1.314: Chytřejší paměť a lepší zabezpečení 🚀
 
-**TL;DR** — Nejnovější aktualizace přináší rychlejší odesílání zpráv, lepší stabilitu při úpravách velkých souborů a opravy mnoha nepříjemných chyb.
+**TL;DR** — Nejnovější verze přináší automatickou kompresi dlouhých konverzací a vylepšené zabezpečení souborů.
 
-**⭐ Highlight of the release** — Nyní můžete odeslat zprávu okamžitě kliknutím na nápovědu „to send now“ přímo v rozhraní, což vám ušetří drahocenné sekundy.
+**⭐ Hlavní novinka**
+Claude nyní automaticky „komprimuje“ dlouhé konverzace (nad 200 tisíc tokenů) v době nečinnosti. Když se ke konverzaci vrátíte, Claude využije její shrnutí, což výrazně zrychluje reakce a šetří místo v paměti.
 
 **Co je nového**
-* **Chytřejší úpravy:** Claude už nepřepisuje velké soubory, které celé neviděl – nyní si je raději celé načte.
-* **Lepší přehled:** V cloudových relacích uvidíte jasnější přehled o tom, co se stalo při přidávání repozitářů, místo surových dat.
-* **Stabilita:** Opravili jsme chyby při navigaci v terminálu, zobrazení stavu relací a náhodné pády při čtení PDF.
-* **Vylepšení pro VS Code:** Jasnější informace o limitech využití a přehlednější chybové hlášky při přihlašování.
+*   **Lepší zabezpečení:** Claude nyní striktně odmítá zápis mimo pracovní adresáře a bezpečněji pracuje s oprávněními v CI/CD úlohách.
+*   **Chytřejší řešení chyb:** Pokud narazíte na limit modelu, Claude se nyní automaticky pokusí přepnout na nižší úroveň náročnosti, místo aby prostě přestal fungovat.
+*   **Opravy pro VS Code a Desktop:** Vylepšili jsme stabilitu, opravili chyby v zobrazení tabulek a vyřešili problémy s přihlašováním k MCP serverům.
+*   **Čistší prostředí:** Automaticky čistíme staré soubory v koši pluginů a skriptů, aby vám nezabíraly místo.
 
-**Proč vás to bude zajímat** — Tato verze dělá z Claude Code spolehlivějšího parťáka, který vás nebude vyrušovat chybami a lépe rozumí vašim souborům i limitům.
+**Proč vás to zajímá**
+Práce s dlouhými projekty bude plynulejší a Claude se bude chovat předvídatelněji, i když narazí na složitější bezpečnostní pravidla nebo limity modelu.
 
-Ať se vám dnes skvěle kóduje!
+Užívejte si kódování s novým Claude!
 
 ---
 
-## Claude Code 2.1.312: Smoother workflows and fixes 🚀
+## Claude Code 2.1.314: Smarter memory and tighter security 🚀
 
-**TL;DR** — This release introduces instant message sending, smarter file handling, and a suite of stability improvements for your daily workflow.
+**TL;DR** — This release introduces automatic conversation compaction and improved security guardrails for your workflow.
 
-**⭐ Highlight of the release** — You can now send queued messages instantly by clicking the "to send now" hint, making your interaction feel much snappier.
+**⭐ Highlight of the release**
+Claude now performs "idle compaction" on long conversations (200K+ tokens). When you leave a session idle, it summarizes the history so your next interaction is snappy and efficient, even if your prompt cache has expired.
 
 **What's new**
-* **Smarter file editing:** Claude now avoids overwriting large files it hasn't fully read, opting to read the whole file or edit in place instead.
-* **Better cloud visibility:** Repository setup steps in cloud sessions now show a clean table instead of raw JSON data.
-* **Stability fixes:** Resolved issues with directory navigation in Git, PDF reading failures, and session state persistence.
-* **VS Code & UI polish:** Clearer "5-hour limit" messaging, better error handling for organization settings, and more helpful retry prompts.
+*   **Strict Security:** Write and edit operations are now strictly blocked outside of your working directories.
+*   **Smarter Retries:** If an organization's admin caps your model's effort, Claude Code now automatically lowers the effort level and continues without failing.
+*   **Stability Fixes:** Dozens of fixes for VS Code, Claude Desktop, and Remote Control, including better handling of TLS certificates, image pastes, and plugin manifests.
+*   **Cleaner Housekeeping:** We now automatically limit the size of plugin and skill trash folders to keep your filesystem tidy.
 
-**Why you'll care** — We’ve ironed out the friction points that get in your way, ensuring Claude stays focused on your code rather than struggling with file size or session state.
+**Why you'll care**
+Your long-running coding sessions will feel much lighter, and you’ll spend less time troubleshooting environment or permission errors.
 
 Happy coding!
 
