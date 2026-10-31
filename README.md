@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.314: Chytřejší paměť a lepší zabezpečení 🚀 | Claude Code 2.1.314: Smarter memory and tighter security 🚀
+### Novinky v Claude Code: vylepšené řízení rozpočtů a opravy chyb 🛠️ | Claude Code updates: Team budgets and stability improvements 🛠️
 
-_Claude Code v2.1.314 — 2026-10-30_
+_Claude Code v2.1.316 — 2026-10-31_
 
-## Claude Code 2.1.314: Chytřejší paměť a lepší zabezpečení 🚀
+## Novinky v Claude Code: vylepšené řízení rozpočtů a opravy chyb 🛠️
 
-**TL;DR** — Nejnovější verze přináší automatickou kompresi dlouhých konverzací a vylepšené zabezpečení souborů.
+**TL;DR** — Tato aktualizace přináší flexibilnější správu rozpočtů pro týmy, vylepšení pro VS Code a řadu oprav, které zvyšují stabilitu a spolehlivost nástroje.
 
 **⭐ Hlavní novinka**
-Claude nyní automaticky „komprimuje“ dlouhé konverzace (nad 200 tisíc tokenů) v době nečinnosti. Když se ke konverzaci vrátíte, Claude využije její shrnutí, což výrazně zrychluje reakce a šetří místo v paměti.
+Nyní můžete využívat sdílené rozpočty pro celé skupiny v rámci brány Claude apps, což usnadňuje správu nákladů na úrovni týmů vedle individuálních limitů.
 
 **Co je nového**
-*   **Lepší zabezpečení:** Claude nyní striktně odmítá zápis mimo pracovní adresáře a bezpečněji pracuje s oprávněními v CI/CD úlohách.
-*   **Chytřejší řešení chyb:** Pokud narazíte na limit modelu, Claude se nyní automaticky pokusí přepnout na nižší úroveň náročnosti, místo aby prostě přestal fungovat.
-*   **Opravy pro VS Code a Desktop:** Vylepšili jsme stabilitu, opravili chyby v zobrazení tabulek a vyřešili problémy s přihlašováním k MCP serverům.
-*   **Čistší prostředí:** Automaticky čistíme staré soubory v koši pluginů a skriptů, aby vám nezabíraly místo.
+*   **Správa a bezpečnost:** Přidána podpora pro vrstvené zásady (layered policies) a lepší integrace s bezpečnostními filtry Amazon Bedrock.
+*   **VS Code:** Přihlašování k bráně Claude apps nyní funguje přímo z chatovacího panelu a vylepšili jsme zobrazení „ultrathink“.
+*   **Stabilita:** Opravili jsme chyby, kdy procesy zůstávaly běžet na pozadí, vylepšili práci s aliasy v Bash a vyřešili zasekávání síťových požadavků.
+*   **Cloudové relace:** Přidána přehlednější správa formulářů a indikátor „Dohánění...“ (Catching up) při načítání historie konverzace.
 
-**Proč vás to zajímá**
-Práce s dlouhými projekty bude plynulejší a Claude se bude chovat předvídatelněji, i když narazí na složitější bezpečnostní pravidla nebo limity modelu.
+**Proč by vás to mělo zajímat**
+Pokud pracujete v týmu nebo využíváte cloudové relace, tyto změny vám ušetří čas při nastavování a zajistí, že Claude poběží plynuleji i při náročnějších úkolech.
 
-Užívejte si kódování s novým Claude!
+Šťastné kódování!
 
 ---
 
-## Claude Code 2.1.314: Smarter memory and tighter security 🚀
+## Claude Code updates: Team budgets and stability improvements 🛠️
 
-**TL;DR** — This release introduces automatic conversation compaction and improved security guardrails for your workflow.
+**TL;DR** — This release introduces pooled team budgets, better VS Code integration, and a long list of stability fixes for a smoother experience.
 
 **⭐ Highlight of the release**
-Claude now performs "idle compaction" on long conversations (200K+ tokens). When you leave a session idle, it summarizes the history so your next interaction is snappy and efficient, even if your prompt cache has expired.
+We’ve added pooled group budgets for the Claude apps gateway, allowing teams to share a monthly budget on top of individual user limits.
 
 **What's new**
-*   **Strict Security:** Write and edit operations are now strictly blocked outside of your working directories.
-*   **Smarter Retries:** If an organization's admin caps your model's effort, Claude Code now automatically lowers the effort level and continues without failing.
-*   **Stability Fixes:** Dozens of fixes for VS Code, Claude Desktop, and Remote Control, including better handling of TLS certificates, image pastes, and plugin manifests.
-*   **Cleaner Housekeeping:** We now automatically limit the size of plugin and skill trash folders to keep your filesystem tidy.
+*   **Administration:** Added layered policy support and input tagging for Bedrock guardrails to improve security controls.
+*   **VS Code:** You can now sign in to a Claude apps gateway directly from the chat panel, and the "ultrathink" feature now matches the terminal’s rainbow UI.
+*   **Reliability:** Fixed issues where shell processes would hang after exit, resolved Bash alias conflicts, and improved network request handling.
+*   **Cloud sessions:** Added a "Catching up..." indicator for smoother session switching and better form handling for MCP servers.
 
 **Why you'll care**
-Your long-running coding sessions will feel much lighter, and you’ll spend less time troubleshooting environment or permission errors.
+Whether you're managing team costs or just want your terminal tools to be more reliable, these updates make Claude Code feel more robust and easier to manage in professional environments.
 
 Happy coding!
 
