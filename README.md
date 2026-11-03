@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Novinky v Claude Code: vylepšené řízení rozpočtů a opravy chyb 🛠️ | Claude Code updates: Team budgets and stability improvements 🛠️
+### Claude Code 2.1.317: Lepší zabezpečení a hladší správa úloh 🚀 | Claude Code 2.1.317: Enhanced security and smoother workflows 🚀
 
-_Claude Code v2.1.316 — 2026-10-31_
+_Claude Code v2.1.317 — 2026-11-03_
 
-## Novinky v Claude Code: vylepšené řízení rozpočtů a opravy chyb 🛠️
+## Claude Code 2.1.317: Lepší zabezpečení a hladší správa úloh 🚀
 
-**TL;DR** — Tato aktualizace přináší flexibilnější správu rozpočtů pro týmy, vylepšení pro VS Code a řadu oprav, které zvyšují stabilitu a spolehlivost nástroje.
+**TL;DR** — Tato aktualizace přináší důležitá vylepšení zabezpečení, přesnější správu nákladů pro týmy a opravu desítek drobných chyb pro stabilnější chod.
 
 **⭐ Hlavní novinka**
-Nyní můžete využívat sdílené rozpočty pro celé skupiny v rámci brány Claude apps, což usnadňuje správu nákladů na úrovni týmů vedle individuálních limitů.
+Nyní vás Claude Code vždy upozorní, pokud se nějaký nástroj (webový nebo shell) pokusí odeslat vaši e-mailovou adresu do sítě, a přidali jsme přehledné reporty nákladů pro správce přímo v API.
 
 **Co je nového**
-*   **Správa a bezpečnost:** Přidána podpora pro vrstvené zásady (layered policies) a lepší integrace s bezpečnostními filtry Amazon Bedrock.
-*   **VS Code:** Přihlašování k bráně Claude apps nyní funguje přímo z chatovacího panelu a vylepšili jsme zobrazení „ultrathink“.
-*   **Stabilita:** Opravili jsme chyby, kdy procesy zůstávaly běžet na pozadí, vylepšili práci s aliasy v Bash a vyřešili zasekávání síťových požadavků.
-*   **Cloudové relace:** Přidána přehlednější správa formulářů a indikátor „Dohánění...“ (Catching up) při načítání historie konverzace.
+* **Bezpečí na prvním místě:** Lepší kontrola nad připojenými úlohami a jasnější varování při sdílení citlivých údajů.
+* **Správa týmu:** Správci mají nyní detailní přehled o útratě (podle vývojářů nebo skupin) a lepší nástroje pro práci s identitou.
+* **Stabilita:** Opravili jsme desítky chyb, včetně problémů s odpojováním MCP serverů, zasekáváním v režimu „auto“ a problémů s dlouhými konverzacemi.
+* **Vylepšení pro VS Code:** Soubory se nyní otevírají v novém okně místo překrývání chatu a rozhraní lépe reaguje na změnu velikosti písma.
 
-**Proč by vás to mělo zajímat**
-Pokud pracujete v týmu nebo využíváte cloudové relace, tyto změny vám ušetří čas při nastavování a zajistí, že Claude poběží plynuleji i při náročnějších úkolech.
+**Proč vás to zajímá**
+Claude Code je díky těmto změnám bezpečnější pro firemní nasazení a mnohem spolehlivější při každodenním programování bez zbytečných přerušení.
 
-Šťastné kódování!
+Ať se vám dnes kód píše jedna báseň!
 
 ---
 
-## Claude Code updates: Team budgets and stability improvements 🛠️
+## Claude Code 2.1.317: Enhanced security and smoother workflows 🚀
 
-**TL;DR** — This release introduces pooled team budgets, better VS Code integration, and a long list of stability fixes for a smoother experience.
+**TL;DR** — This update introduces vital security checks, better cost transparency for teams, and dozens of fixes to make your development sessions more stable.
 
 **⭐ Highlight of the release**
-We’ve added pooled group budgets for the Claude apps gateway, allowing teams to share a monthly budget on top of individual user limits.
+We’ve added proactive security prompts that ask for permission before any web or shell tool sends your email address across the network, keeping your data strictly under your control.
 
 **What's new**
-*   **Administration:** Added layered policy support and input tagging for Bedrock guardrails to improve security controls.
-*   **VS Code:** You can now sign in to a Claude apps gateway directly from the chat panel, and the "ultrathink" feature now matches the terminal’s rainbow UI.
-*   **Reliability:** Fixed issues where shell processes would hang after exit, resolved Bash alias conflicts, and improved network request handling.
-*   **Cloud sessions:** Added a "Catching up..." indicator for smoother session switching and better form handling for MCP servers.
+* **Security & Privacy:** New warnings for scheduled tasks and clearer handling of network-blocked regions.
+* **Admin Insights:** A new cost reporting API allows admins to track spend by developer, day, or group with ease.
+* **Stability:** Squashed dozens of bugs, including MCP server disconnects, auto-mode failures, and issues with long-running sessions.
+* **VS Code Polish:** File links now open in their own editor groups, and the UI handles custom font sizes much more gracefully.
 
 **Why you'll care**
-Whether you're managing team costs or just want your terminal tools to be more reliable, these updates make Claude Code feel more robust and easier to manage in professional environments.
+These updates make Claude Code significantly more robust for team environments and ensure your long coding sessions stay uninterrupted and secure.
 
 Happy coding!
 
