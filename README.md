@@ -23,45 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.317: Lepší zabezpečení a hladší správa úloh 🚀 | Claude Code 2.1.317: Enhanced security and smoother workflows 🚀
+### Claude Code 2.1.318: Větší stabilita a lepší správa přihlášení 🚀 | Claude Code 2.1.318: Stability and authentication improvements 🚀
 
-_Claude Code v2.1.317 — 2026-11-03_
+_Claude Code v2.1.318 — 2026-11-04_
 
-## Claude Code 2.1.317: Lepší zabezpečení a hladší správa úloh 🚀
+## Claude Code 2.1.318: Větší stabilita a lepší správa přihlášení 🚀
 
-**TL;DR** — Tato aktualizace přináší důležitá vylepšení zabezpečení, přesnější správu nákladů pro týmy a opravu desítek drobných chyb pro stabilnější chod.
+**TL;DR** — Tato aktualizace přináší desítky oprav stability, lepší správu přihlášení a plynulejší práci v síťových prostředích.
 
-**⭐ Hlavní novinka**
-Nyní vás Claude Code vždy upozorní, pokud se nějaký nástroj (webový nebo shell) pokusí odeslat vaši e-mailovou adresu do sítě, a přidali jsme přehledné reporty nákladů pro správce přímo v API.
+**⭐ Highlight of the release** — Výrazně jsme zlepšili odolnost konfigurace při práci na sdílených síťových discích, takže se vám už nestane, že by Claude Code „zapomněl“ vaše nastavení nebo MCP servery.
 
-**Co je nového**
-* **Bezpečí na prvním místě:** Lepší kontrola nad připojenými úlohami a jasnější varování při sdílení citlivých údajů.
-* **Správa týmu:** Správci mají nyní detailní přehled o útratě (podle vývojářů nebo skupin) a lepší nástroje pro práci s identitou.
-* **Stabilita:** Opravili jsme desítky chyb, včetně problémů s odpojováním MCP serverů, zasekáváním v režimu „auto“ a problémů s dlouhými konverzacemi.
-* **Vylepšení pro VS Code:** Soubory se nyní otevírají v novém okně místo překrývání chatu a rozhraní lépe reaguje na změnu velikosti písma.
+**What's new**
+* **Lepší přehled o přihlášení:** Claude vás nyní včas upozorní, když bude potřeba se znovu přihlásit ke claude.ai.
+* **Flexibilnější modely:** Přidali jsme možnost nastavit úroveň úsilí (`effort`) pro rychlé dílčí úlohy.
+* **Bezpečnější oprávnění:** Správa oprávnění pro nové agenty je nyní standardizovaná a předvídatelnější.
+* **Stabilita:** Opravili jsme desítky chyb, včetně pádů při práci s pamětí na macOS a problémů s obnovením relací po výpadcích.
 
-**Proč vás to zajímá**
-Claude Code je díky těmto změnám bezpečnější pro firemní nasazení a mnohem spolehlivější při každodenním programování bez zbytečných přerušení.
+**Why you'll care**
+Claude Code je díky této verzi spolehlivější parťák, který vás nenechá ve štychu ani při komplikovanějších síťových operacích či dlouhých relacích.
 
-Ať se vám dnes kód píše jedna báseň!
+Užívejte si kódování!
 
 ---
 
-## Claude Code 2.1.317: Enhanced security and smoother workflows 🚀
+## Claude Code 2.1.318: Stability and authentication improvements 🚀
 
-**TL;DR** — This update introduces vital security checks, better cost transparency for teams, and dozens of fixes to make your development sessions more stable.
+**TL;DR** — This release focuses on rock-solid stability, clearer authentication status, and smoother performance across shared network environments.
 
-**⭐ Highlight of the release**
-We’ve added proactive security prompts that ask for permission before any web or shell tool sends your email address across the network, keeping your data strictly under your control.
+**⭐ Highlight of the release** — We’ve significantly improved how configuration files are handled on shared network drives, ensuring your settings and MCP servers stay synced and safe.
 
 **What's new**
-* **Security & Privacy:** New warnings for scheduled tasks and clearer handling of network-blocked regions.
-* **Admin Insights:** A new cost reporting API allows admins to track spend by developer, day, or group with ease.
-* **Stability:** Squashed dozens of bugs, including MCP server disconnects, auto-mode failures, and issues with long-running sessions.
-* **VS Code Polish:** File links now open in their own editor groups, and the UI handles custom font sizes much more gracefully.
+* **Auth clarity:** You’ll now get a heads-up warning when your claude.ai session is about to expire.
+* **Effort control:** Added an `effort` option to fork tasks, allowing you to run quick side jobs with `low` effort.
+* **Permission polish:** Agent permission policies are now more consistent, matching the behavior you expect from the Claude Console.
+* **Bug squashing:** Resolved numerous issues, including memory stalls on macOS and session restoration bugs during cloud or remote connections.
 
 **Why you'll care**
-These updates make Claude Code significantly more robust for team environments and ensure your long coding sessions stay uninterrupted and secure.
+These fixes make Claude Code a much more dependable tool, especially if you work in complex environments, on network drives, or across multiple remote sessions.
 
 Happy coding!
 
