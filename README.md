@@ -23,43 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.318: Větší stabilita a lepší správa přihlášení 🚀 | Claude Code 2.1.318: Stability and authentication improvements 🚀
+### Claude Code 2.1.319: Vylepšené úkoly na pozadí a správa oprávnění 🚀 | Claude Code 2.1.319: Background tasks and permission controls 🚀
 
-_Claude Code v2.1.318 — 2026-11-04_
+_Claude Code v2.1.319 — 2026-11-07_
 
-## Claude Code 2.1.318: Větší stabilita a lepší správa přihlášení 🚀
+## Claude Code 2.1.319: Vylepšené úkoly na pozadí a správa oprávnění 🚀
 
-**TL;DR** — Tato aktualizace přináší desítky oprav stability, lepší správu přihlášení a plynulejší práci v síťových prostředích.
+**TL;DR** — Tato aktualizace přináší lepší podporu pro MCP úkoly na pozadí, pokročilé možnosti správy oprávnění a řadu oprav pro hladší chod v terminálu.
 
-**⭐ Highlight of the release** — Výrazně jsme zlepšili odolnost konfigurace při práci na sdílených síťových discích, takže se vám už nestane, že by Claude Code „zapomněl“ vaše nastavení nebo MCP servery.
+**⭐ Highlight of the release** — Claude Code nyní umí přesunout MCP úkoly běžící v terminálu na pozadí a automaticky zpracovat výsledek, jakmile jsou hotové, což vám uvolní ruce pro další práci.
 
 **What's new**
-* **Lepší přehled o přihlášení:** Claude vás nyní včas upozorní, když bude potřeba se znovu přihlásit ke claude.ai.
-* **Flexibilnější modely:** Přidali jsme možnost nastavit úroveň úsilí (`effort`) pro rychlé dílčí úlohy.
-* **Bezpečnější oprávnění:** Správa oprávnění pro nové agenty je nyní standardizovaná a předvídatelnější.
-* **Stabilita:** Opravili jsme desítky chyb, včetně pádů při práci s pamětí na macOS a problémů s obnovením relací po výpadcích.
+- **Lepší kontrola:** Nové nastavení `permissions.denyInsteadOfPrompting` automaticky zamítne akce vyžadující povolení, místo aby na vás čekalo v terminálu.
+- **Optimalizace API:** Příkaz `/claude-api latency-optimize` vám pomůže najít místa, kde vaše implementace zbytečně čeká.
+- **Přehled nákladů:** Příkaz `/usage` nyní zobrazuje aktuální útratu za den, týden i měsíc (pro uživatele za bránou Claude).
+- **Stabilita:** Opraveno mnoho chyb, včetně problémů s načítáním diffů u souborů pojmenovaných `HEAD` a pádů při plném disku.
 
 **Why you'll care**
-Claude Code je díky této verzi spolehlivější parťák, který vás nenechá ve štychu ani při komplikovanějších síťových operacích či dlouhých relacích.
+Claude Code je nyní mnohem méně rušivý – díky úkolům na pozadí a automatickému zamítání nevyžádaných akcí se můžete lépe soustředit na kód.
 
-Užívejte si kódování!
+Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.318: Stability and authentication improvements 🚀
+## Claude Code 2.1.319: Background tasks and permission controls 🚀
 
-**TL;DR** — This release focuses on rock-solid stability, clearer authentication status, and smoother performance across shared network environments.
+**TL;DR** — This release introduces background MCP tasks, smarter permission handling, and a host of stability fixes to keep your workflow fluid.
 
-**⭐ Highlight of the release** — We’ve significantly improved how configuration files are handled on shared network drives, ensuring your settings and MCP servers stay synced and safe.
+**⭐ Highlight of the release** — Claude Code can now move MCP tasks in the terminal to the background automatically, reporting the results to Claude once they finish so you don't have to wait.
 
 **What's new**
-* **Auth clarity:** You’ll now get a heads-up warning when your claude.ai session is about to expire.
-* **Effort control:** Added an `effort` option to fork tasks, allowing you to run quick side jobs with `low` effort.
-* **Permission polish:** Agent permission policies are now more consistent, matching the behavior you expect from the Claude Console.
-* **Bug squashing:** Resolved numerous issues, including memory stalls on macOS and session restoration bugs during cloud or remote connections.
+- **Advanced permissions:** Added `permissions.denyInsteadOfPrompting` to automatically block actions that would normally trigger a prompt, keeping your terminal flow uninterrupted.
+- **Latency optimization:** Use `/claude-api latency-optimize` to identify bottlenecks in your API usage and test faster configurations.
+- **Spend visibility:** `/usage` now shows your spend for today, this week, and this month for developers behind a Claude apps gateway.
+- **Reliability:** Fixed numerous bugs, including issues where folders named `HEAD` broke diff views and cases where disk space errors caused data loss.
 
 **Why you'll care**
-These fixes make Claude Code a much more dependable tool, especially if you work in complex environments, on network drives, or across multiple remote sessions.
+These changes make Claude Code feel more like a background companion and less like a blocker, letting you stay in the zone while it handles the heavy lifting.
 
 Happy coding!
 
