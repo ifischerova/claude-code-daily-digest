@@ -23,43 +23,41 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.319: Vylepšené úkoly na pozadí a správa oprávnění 🚀 | Claude Code 2.1.319: Background tasks and permission controls 🚀
+### Claude Code je nyní na Vertexu svižnější 🚀 | Claude Code is now faster on Vertex 🚀
 
-_Claude Code v2.1.319 — 2026-11-07_
+_Claude Code v2.1.322 — 2026-11-10_
 
-## Claude Code 2.1.319: Vylepšené úkoly na pozadí a správa oprávnění 🚀
+## Claude Code je nyní na Vertexu svižnější 🚀
 
-**TL;DR** — Tato aktualizace přináší lepší podporu pro MCP úkoly na pozadí, pokročilé možnosti správy oprávnění a řadu oprav pro hladší chod v terminálu.
+**TL;DR** — Claude Code nyní využívá režim „fast“ na platformě Vertex AI pro rychlejší odezvu.
 
-**⭐ Highlight of the release** — Claude Code nyní umí přesunout MCP úkoly běžící v terminálu na pozadí a automaticky zpracovat výsledek, jakmile jsou hotové, což vám uvolní ruce pro další práci.
+**⭐ Hlavní novinka**
+Do globální, americké i evropské oblasti jsme přidali podporu režimu „fast“ (rychlý režim) pro Vertex. Pokud by však systém zrovna neměl kapacitu, automaticky se přepne na standardní rychlost, abyste nikdy nečekali zbytečně dlouho.
 
-**What's new**
-- **Lepší kontrola:** Nové nastavení `permissions.denyInsteadOfPrompting` automaticky zamítne akce vyžadující povolení, místo aby na vás čekalo v terminálu.
-- **Optimalizace API:** Příkaz `/claude-api latency-optimize` vám pomůže najít místa, kde vaše implementace zbytečně čeká.
-- **Přehled nákladů:** Příkaz `/usage` nyní zobrazuje aktuální útratu za den, týden i měsíc (pro uživatele za bránou Claude).
-- **Stabilita:** Opraveno mnoho chyb, včetně problémů s načítáním diffů u souborů pojmenovaných `HEAD` a pádů při plném disku.
+**Co je nového**
+* Rychlejší odezva při používání Claude Code na infrastruktuře Vertex.
+* Inteligentní záloha: pokud „fast“ režim není dostupný, plynule přejdeme na standardní rychlost.
 
-**Why you'll care**
-Claude Code je nyní mnohem méně rušivý – díky úkolům na pozadí a automatickému zamítání nevyžádaných akcí se můžete lépe soustředit na kód.
+**Proč vás to zajímá**
+Vaše práce bude díky kratším prodlevám při dotazech na Claude plynulejší a efektivnější.
 
 Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.319: Background tasks and permission controls 🚀
+## Claude Code is now faster on Vertex 🚀
 
-**TL;DR** — This release introduces background MCP tasks, smarter permission handling, and a host of stability fixes to keep your workflow fluid.
+**TL;DR** — Claude Code now supports "fast" mode on Vertex AI for snappier performance.
 
-**⭐ Highlight of the release** — Claude Code can now move MCP tasks in the terminal to the background automatically, reporting the results to Claude once they finish so you don't have to wait.
+**⭐ Highlight of the release**
+We’ve enabled "fast" mode for the global, US, and EU regions on Vertex. If the fast mode isn't available, the system will now gracefully fall back to standard speed so you never hit a wall.
 
 **What's new**
-- **Advanced permissions:** Added `permissions.denyInsteadOfPrompting` to automatically block actions that would normally trigger a prompt, keeping your terminal flow uninterrupted.
-- **Latency optimization:** Use `/claude-api latency-optimize` to identify bottlenecks in your API usage and test faster configurations.
-- **Spend visibility:** `/usage` now shows your spend for today, this week, and this month for developers behind a Claude apps gateway.
-- **Reliability:** Fixed numerous bugs, including issues where folders named `HEAD` broke diff views and cases where disk space errors caused data loss.
+* Faster response times when running Claude Code via Vertex infrastructure.
+* Smart fallback: if the fast lane is busy, we automatically switch to standard speed to keep you moving.
 
 **Why you'll care**
-These changes make Claude Code feel more like a background companion and less like a blocker, letting you stay in the zone while it handles the heavy lifting.
+Less waiting for your AI assistant means more time spent actually building and shipping your projects.
 
 Happy coding!
 
