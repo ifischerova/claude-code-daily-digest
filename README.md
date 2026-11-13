@@ -23,41 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code je nyní na Vertexu svižnější 🚀 | Claude Code is now faster on Vertex 🚀
+### Claude Code 2.1.323: Nový Code Mode a vylepšení stability 🚀 | Claude Code 2.1.323: Introducing Code Mode and major polish 🚀
 
-_Claude Code v2.1.322 — 2026-11-10_
+_Claude Code v2.1.323 — 2026-11-13_
 
-## Claude Code je nyní na Vertexu svižnější 🚀
+## Claude Code 2.1.323: Nový Code Mode a vylepšení stability 🚀
 
-**TL;DR** — Claude Code nyní využívá režim „fast“ na platformě Vertex AI pro rychlejší odezvu.
+**TL;DR** — Tato verze přináší experimentální "Code Mode", lepší správu pluginů a rozsáhlou řadu oprav pro hladší zážitek v terminálu i v cloudu.
 
-**⭐ Hlavní novinka**
-Do globální, americké i evropské oblasti jsme přidali podporu režimu „fast“ (rychlý režim) pro Vertex. Pokud by však systém zrovna neměl kapacitu, automaticky se přepne na standardní rychlost, abyste nikdy nečekali zbytečně dlouho.
+**⭐ Highlight of the release**
+Představujeme **Code Mode** (experimentální funkce). Claude nyní může psát vlastní JavaScript pro volání svých nástrojů, což mu otevírá nové možnosti v tom, jak efektivně interaguje s vaším prostředím.
 
-**Co je nového**
-* Rychlejší odezva při používání Claude Code na infrastruktuře Vertex.
-* Inteligentní záloha: pokud „fast“ režim není dostupný, plynule přejdeme na standardní rychlost.
+**What's new**
+*   **Chytřejší pluginy:** Přidána kontrola verzí a typů v `plugin.json` a `claude plugin validate` pro zajištění stability.
+*   **Lepší správa:** Nové menu možností při vyčerpání kreditů a lepší přehled v terminálu (např. `/diff` hinty).
+*   **Podpora souborů:** Nyní můžete do Artifactů nahrávat i `.docx` dokumenty.
+*   **Stabilita:** Desítky oprav chyb v Bash sandboxu, zrychlení odezvy v cloudu a vyřešení problémů s pamětí při práci s velkými soubory.
 
-**Proč vás to zajímá**
-Vaše práce bude díky kratším prodlevám při dotazech na Claude plynulejší a efektivnější.
+**Why you'll care**
+Claude Code je díky této aktualizaci výrazně odolnější vůči pádům a lépe komunikuje, když narazí na limity nebo chyby, což vám ušetří čas při řešení technických komplikací.
 
-Ať se vám dnes skvěle kóduje!
+Šťastné kódování!
 
 ---
 
-## Claude Code is now faster on Vertex 🚀
+## Claude Code 2.1.323: Introducing Code Mode and major polish 🚀
 
-**TL;DR** — Claude Code now supports "fast" mode on Vertex AI for snappier performance.
+**TL;DR** — This release brings an experimental "Code Mode," improved plugin management, and a massive set of stability fixes for a smoother terminal and cloud experience.
 
 **⭐ Highlight of the release**
-We’ve enabled "fast" mode for the global, US, and EU regions on Vertex. If the fast mode isn't available, the system will now gracefully fall back to standard speed so you never hit a wall.
+We’ve added **Code Mode** (experimental). Claude can now write its own JavaScript to invoke tools, significantly expanding how it interacts with your environment.
 
 **What's new**
-* Faster response times when running Claude Code via Vertex infrastructure.
-* Smart fallback: if the fast lane is busy, we automatically switch to standard speed to keep you moving.
+*   **Plugin reliability:** Added strict version ranges and type checking for hooks to ensure your plugins stay compatible.
+*   **Better flow:** A new options menu appears when you hit usage limits, and we’ve added handy UI hints like `/diff to close`.
+*   **File support:** Artifact tool asset uploads now support `.docx` files.
+*   **Stability:** Dozens of fixes for Bash sandbox permissions, memory usage during large file edits, and smoother cloud session handling.
 
 **Why you'll care**
-Less waiting for your AI assistant means more time spent actually building and shipping your projects.
+Claude Code is now much more robust, with better recovery from errors and clearer communication when configurations or permissions need your attention.
 
 Happy coding!
 
