@@ -23,45 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.323: Nový Code Mode a vylepšení stability 🚀 | Claude Code 2.1.323: Introducing Code Mode and major polish 🚀
+### Nová verze Claude Code 2.1.325 je tady! 🚀 | Claude Code 2.1.325 is here! 🚀
 
-_Claude Code v2.1.323 — 2026-11-13_
+_Claude Code v2.1.325 — 2026-11-14_
 
-## Claude Code 2.1.323: Nový Code Mode a vylepšení stability 🚀
+## Nová verze Claude Code 2.1.325 je tady! 🚀
 
-**TL;DR** — Tato verze přináší experimentální "Code Mode", lepší správu pluginů a rozsáhlou řadu oprav pro hladší zážitek v terminálu i v cloudu.
+**TL;DR** – Tato aktualizace přináší vylepšení bezpečnosti, hladší práci s Jupyter notebooky a lepší přehlednost v terminálu.
 
 **⭐ Highlight of the release**
-Představujeme **Code Mode** (experimentální funkce). Claude nyní může psát vlastní JavaScript pro volání svých nástrojů, což mu otevírá nové možnosti v tom, jak efektivně interaguje s vaším prostředím.
+Nyní vás Claude Code chytře navede, co dělat, když vaše organizace zablokuje požadavek – stačí použít `/rewind` pro změnu zprávy nebo `/clear` pro nový start.
 
 **What's new**
-*   **Chytřejší pluginy:** Přidána kontrola verzí a typů v `plugin.json` a `claude plugin validate` pro zajištění stability.
-*   **Lepší správa:** Nové menu možností při vyčerpání kreditů a lepší přehled v terminálu (např. `/diff` hinty).
-*   **Podpora souborů:** Nyní můžete do Artifactů nahrávat i `.docx` dokumenty.
-*   **Stabilita:** Desítky oprav chyb v Bash sandboxu, zrychlení odezvy v cloudu a vyřešení problémů s pamětí při práci s velkými soubory.
+* **Lepší terminál:** V VS Code uvidíte tipy pro opakování buněk v Jupyter noteboocích.
+* **Bezpečnost:** Oprava chyby při dekódování komprimovaných odpovědí a přísnější pravidla pro sandbox.
+* **Stabilita:** Opraveno mnoho chyb při obnovování relací, práci v repozitářích a spouštění na Windows/Linuxu.
+* **Chytřejší nápověda:** Claude nyní lépe vysvětluje, proč vyžaduje oprávnění nebo proč byla akce zamítnuta.
 
 **Why you'll care**
-Claude Code je díky této aktualizaci výrazně odolnější vůči pádům a lépe komunikuje, když narazí na limity nebo chyby, což vám ušetří čas při řešení technických komplikací.
+Claude Code je díky těmto opravám stabilnější, bezpečnější a méně vás bude zdržovat při řešení konfiguračních zádrhelů.
 
-Šťastné kódování!
+Ať se vám dnes skvěle kóduje!
 
 ---
 
-## Claude Code 2.1.323: Introducing Code Mode and major polish 🚀
+## Claude Code 2.1.325 is here! 🚀
 
-**TL;DR** — This release brings an experimental "Code Mode," improved plugin management, and a massive set of stability fixes for a smoother terminal and cloud experience.
+**TL;DR** – This update brings security fixes, smoother Jupyter notebook workflows, and better guidance when you hit policy roadblocks.
 
 **⭐ Highlight of the release**
-We’ve added **Code Mode** (experimental). Claude can now write its own JavaScript to invoke tools, significantly expanding how it interacts with your environment.
+When your organization's policy blocks a request, Claude Code now provides clear instructions: simply run `/rewind` to adjust your message or `/clear` to start fresh.
 
 **What's new**
-*   **Plugin reliability:** Added strict version ranges and type checking for hooks to ensure your plugins stay compatible.
-*   **Better flow:** A new options menu appears when you hit usage limits, and we’ve added handy UI hints like `/diff to close`.
-*   **File support:** Artifact tool asset uploads now support `.docx` files.
-*   **Stability:** Dozens of fixes for Bash sandbox permissions, memory usage during large file edits, and smoother cloud session handling.
+* **VS Code improvements:** New spinner tips for re-running Jupyter notebook cells after edits.
+* **Security:** Fixed a vulnerability in zstd-compressed response decoding and tightened sandbox protections.
+* **Stability:** Numerous fixes for session resumption, worktree git commands, and platform-specific issues on Windows and Linux.
+* **Better transparency:** Clearer explanations when Claude needs permission or when a tool call is restricted by policy.
 
 **Why you'll care**
-Claude Code is now much more robust, with better recovery from errors and clearer communication when configurations or permissions need your attention.
+This release focuses on removing friction, ensuring your sessions are more reliable, and helping you navigate permissions without the guesswork.
 
 Happy coding!
 
