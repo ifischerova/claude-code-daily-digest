@@ -23,45 +23,41 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Nová verze Claude Code 2.1.325 je tady! 🚀 | Claude Code 2.1.325 is here! 🚀
+### Claude Code 2.1.326: Vylepšená práce s agenty a stabilita 🚀 | Claude Code 2.1.326: Agent team improvements and stability 🚀
 
-_Claude Code v2.1.325 — 2026-11-14_
+_Claude Code v2.1.326 — 2026-11-17_
 
-## Nová verze Claude Code 2.1.325 je tady! 🚀
+## Claude Code 2.1.326: Vylepšená práce s agenty a stabilita 🚀
 
-**TL;DR** – Tato aktualizace přináší vylepšení bezpečnosti, hladší práci s Jupyter notebooky a lepší přehlednost v terminálu.
+**TL;DR** — Tato aktualizace přináší lepší podporu pro týmy agentů, vyšší bezpečnost v sandboxu a desítky oprav pro plynulejší zážitek v terminálu i VS Code.
 
-**⭐ Highlight of the release**
-Nyní vás Claude Code chytře navede, co dělat, když vaše organizace zablokuje požadavek – stačí použít `/rewind` pro změnu zprávy nebo `/clear` pro nový start.
+**⭐ Highlight of the release** — Nyní můžete aktivovat „Code Mode“ i při zapnutých týmech agentů, což umožňuje plynulejší přechod mezi psaním kódu a kooperací s ostatními agenty.
 
 **What's new**
-* **Lepší terminál:** V VS Code uvidíte tipy pro opakování buněk v Jupyter noteboocích.
-* **Bezpečnost:** Oprava chyby při dekódování komprimovaných odpovědí a přísnější pravidla pro sandbox.
-* **Stabilita:** Opraveno mnoho chyb při obnovování relací, práci v repozitářích a spouštění na Windows/Linuxu.
-* **Chytřejší nápověda:** Claude nyní lépe vysvětluje, proč vyžaduje oprávnění nebo proč byla akce zamítnuta.
+* **Chytřejší zabezpečení:** Přidali jsme varování při neúplných pravidlech nástrojů a vylepšili ochranu v Bash sandboxu.
+* **Lepší přehled:** Příkaz `/status` nyní jasně ukazuje, proč jsou některé funkce (např. telemetrie) vypnuté.
+* **Stabilita:** Opravili jsme desítky drobných chyb, od zasekávání obrazovky při dlouhých výstupech až po problémy s obnovou historie konverzace.
+* **VS Code:** Vylepšili jsme rychlost úprav kódu a opravili chyby v přihlašování a správě paměti.
 
-**Why you'll care**
-Claude Code je díky těmto opravám stabilnější, bezpečnější a méně vás bude zdržovat při řešení konfiguračních zádrhelů.
+**Why you'll care** — Váš pracovní postup bude méně přerušovaný díky spolehlivějšímu sandboxu a lepším informacím o tom, co se „pod kapotou“ právě děje.
 
-Ať se vám dnes skvěle kóduje!
+Ať se vám dnes dobře kóduje!
 
 ---
 
-## Claude Code 2.1.325 is here! 🚀
+## Claude Code 2.1.326: Agent team improvements and stability 🚀
 
-**TL;DR** – This update brings security fixes, smoother Jupyter notebook workflows, and better guidance when you hit policy roadblocks.
+**TL;DR** — This release brings better support for agent teams, strengthened sandbox security, and dozens of fixes for a smoother experience in the terminal and VS Code.
 
-**⭐ Highlight of the release**
-When your organization's policy blocks a request, Claude Code now provides clear instructions: simply run `/rewind` to adjust your message or `/clear` to start fresh.
+**⭐ Highlight of the release** — You can now enable "Code Mode" while agent teams are active, allowing for a more seamless transition between coding and multi-agent collaboration.
 
 **What's new**
-* **VS Code improvements:** New spinner tips for re-running Jupyter notebook cells after edits.
-* **Security:** Fixed a vulnerability in zstd-compressed response decoding and tightened sandbox protections.
-* **Stability:** Numerous fixes for session resumption, worktree git commands, and platform-specific issues on Windows and Linux.
-* **Better transparency:** Clearer explanations when Claude needs permission or when a tool call is restricted by policy.
+* **Smarter Security:** Added startup warnings for incomplete tool rules and improved Bash sandbox protections across all platforms.
+* **Better Visibility:** The `/status` command now explicitly explains why specific features (like telemetry) might be disabled.
+* **Stability:** Squashed dozens of bugs ranging from screen freezes during long outputs to history loss during session resumes.
+* **VS Code:** Improved Edit/Write performance and fixed recurring issues with sign-in flows and memory management.
 
-**Why you'll care**
-This release focuses on removing friction, ensuring your sessions are more reliable, and helping you navigate permissions without the guesswork.
+**Why you'll care** — Your workflow will be less interrupted thanks to a more robust sandbox and clearer feedback on what's happening under the hood.
 
 Happy coding!
 
