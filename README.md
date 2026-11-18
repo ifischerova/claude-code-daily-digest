@@ -23,41 +23,47 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.326: Vylepšená práce s agenty a stabilita 🚀 | Claude Code 2.1.326: Agent team improvements and stability 🚀
+### Claude Code 2.1.327: Stabilita a vylepšené ovládání 🚀 | Claude Code 2.1.327: Reliability and performance boosts 🚀
 
-_Claude Code v2.1.326 — 2026-11-17_
+_Claude Code v2.1.327 — 2026-11-18_
 
-## Claude Code 2.1.326: Vylepšená práce s agenty a stabilita 🚀
+## Claude Code 2.1.327: Stabilita a vylepšené ovládání 🚀
 
-**TL;DR** — Tato aktualizace přináší lepší podporu pro týmy agentů, vyšší bezpečnost v sandboxu a desítky oprav pro plynulejší zážitek v terminálu i VS Code.
+**TL;DR** — Tato aktualizace přináší desítky oprav stability, rychlejší start na Windows a lepší správu oprávnění.
 
-**⭐ Highlight of the release** — Nyní můžete aktivovat „Code Mode“ i při zapnutých týmech agentů, což umožňuje plynulejší přechod mezi psaním kódu a kooperací s ostatními agenty.
+**⭐ Hlavní novinka**
+Nyní můžete bezpečněji spravovat MCP servery pomocí `claude mcp add-json <název> -`, což umožňuje vložit konfiguraci ze standardního vstupu a udržet citlivé tokeny mimo historii příkazového řádku.
 
-**What's new**
-* **Chytřejší zabezpečení:** Přidali jsme varování při neúplných pravidlech nástrojů a vylepšili ochranu v Bash sandboxu.
-* **Lepší přehled:** Příkaz `/status` nyní jasně ukazuje, proč jsou některé funkce (např. telemetrie) vypnuté.
-* **Stabilita:** Opravili jsme desítky drobných chyb, od zasekávání obrazovky při dlouhých výstupech až po problémy s obnovou historie konverzace.
-* **VS Code:** Vylepšili jsme rychlost úprav kódu a opravili chyby v přihlašování a správě paměti.
+**Co je nového**
+* **Lepší přehled:** Příkaz `/status` nyní vypíše všechny chyby v konfiguraci, neplatné vazby kláves nebo nedostupné sandbox prostředí.
+* **Bezpečnější export:** Claude se vás nyní zeptá, než přepíše existující soubor při použití `/export`.
+* **Rychlejší Windows:** Zrychlili jsme start aplikace díky optimalizaci vyhledávání PowerShellu a Gitu.
+* **VS Code integrace:** Přidali jsme možnost „Claude Code: Add to Chat“ přímo do kontextové nabídky v průzkumníku souborů.
+* **Opravy:** Vyřešili jsme desítky drobných pádů, problémů se zobrazením v terminálu a nekonzistentního chování při obnovování relací.
 
-**Why you'll care** — Váš pracovní postup bude méně přerušovaný díky spolehlivějšímu sandboxu a lepším informacím o tom, co se „pod kapotou“ právě děje.
+**Proč vás to zajímá**
+Claude Code je nyní spolehlivější parťák, který vás méně vyrušuje technickými chybami a lépe spolupracuje s vaším prostředím.
 
 Ať se vám dnes dobře kóduje!
 
 ---
 
-## Claude Code 2.1.326: Agent team improvements and stability 🚀
+## Claude Code 2.1.327: Reliability and performance boosts 🚀
 
-**TL;DR** — This release brings better support for agent teams, strengthened sandbox security, and dozens of fixes for a smoother experience in the terminal and VS Code.
+**TL;DR** — This release focuses on stability, faster Windows startup, and smarter permission handling to keep your workflow smooth.
 
-**⭐ Highlight of the release** — You can now enable "Code Mode" while agent teams are active, allowing for a more seamless transition between coding and multi-agent collaboration.
+**⭐ Highlight of the release**
+You can now add MCP servers securely using `claude mcp add-json <name> -`, which reads configuration from stdin so your tokens never touch the command line history.
 
 **What's new**
-* **Smarter Security:** Added startup warnings for incomplete tool rules and improved Bash sandbox protections across all platforms.
-* **Better Visibility:** The `/status` command now explicitly explains why specific features (like telemetry) might be disabled.
-* **Stability:** Squashed dozens of bugs ranging from screen freezes during long outputs to history loss during session resumes.
-* **VS Code:** Improved Edit/Write performance and fixed recurring issues with sign-in flows and memory management.
+* **Diagnostic clarity:** The `/status` command now lists broken agents, command errors, and ignored permission settings in one place.
+* **Safer exports:** Claude will now ask for confirmation before overwriting an existing file during `/export`.
+* **Faster Windows:** Startup time is improved by optimizing how the app finds PowerShell and Git.
+* **VS Code love:** A new "Claude Code: Add to Chat" option in the Explorer context menu lets you quickly @-mention files and folders.
+* **Bug fixes:** Dozens of fixes for UI glitches, session resumption crashes, and shell display issues.
 
-**Why you'll care** — Your workflow will be less interrupted thanks to a more robust sandbox and clearer feedback on what's happening under the hood.
+**Why you'll care**
+Your coding sessions should feel snappier and more predictable, with fewer interruptions from configuration errors or lost states.
 
 Happy coding!
 
