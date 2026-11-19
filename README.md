@@ -23,47 +23,41 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.327: Stabilita a vylepšené ovládání 🚀 | Claude Code 2.1.327: Reliability and performance boosts 🚀
+### Claude Code 2.1.328: Chytřejší automatizace a lepší stabilita 🚀 | Claude Code 2.1.328: Smarter automation and improved stability 🚀
 
-_Claude Code v2.1.327 — 2026-11-18_
+_Claude Code v2.1.328 — 2026-11-19_
 
-## Claude Code 2.1.327: Stabilita a vylepšené ovládání 🚀
+## Claude Code 2.1.328: Chytřejší automatizace a lepší stabilita 🚀
 
-**TL;DR** — Tato aktualizace přináší desítky oprav stability, rychlejší start na Windows a lepší správu oprávnění.
+**TL;DR** — Tato aktualizace přináší režim "auto" pro modely na cloudu, vylepšení pro Code Mode a desítky oprav pro plynulejší vývoj.
 
-**⭐ Hlavní novinka**
-Nyní můžete bezpečněji spravovat MCP servery pomocí `claude mcp add-json <název> -`, což umožňuje vložit konfiguraci ze standardního vstupu a udržet citlivé tokeny mimo historii příkazového řádku.
+**⭐ Highlight of the release** — Nyní můžete využívat automatický režim (auto mode) pro modely Claude Opus a Sonnet 4.6 i na platformách jako Amazon Bedrock, Google Cloud nebo Microsoft Foundry.
 
-**Co je nového**
-* **Lepší přehled:** Příkaz `/status` nyní vypíše všechny chyby v konfiguraci, neplatné vazby kláves nebo nedostupné sandbox prostředí.
-* **Bezpečnější export:** Claude se vás nyní zeptá, než přepíše existující soubor při použití `/export`.
-* **Rychlejší Windows:** Zrychlili jsme start aplikace díky optimalizaci vyhledávání PowerShellu a Gitu.
-* **VS Code integrace:** Přidali jsme možnost „Claude Code: Add to Chat“ přímo do kontextové nabídky v průzkumníku souborů.
-* **Opravy:** Vyřešili jsme desítky drobných pádů, problémů se zobrazením v terminálu a nekonzistentního chování při obnovování relací.
+**What's new**
+- **Code Mode:** Rychlejší běh skriptů, lepší správa úloh na pozadí a oprava chyb při práci s příkazy.
+- **Spolehlivost:** Opraveny desítky drobných chyb v terminálu, zasekávání obrazovky a správa úloh.
+- **Self-hosted runner:** Nové metriky pro sledování fronty a lepší podpora pro repozitáře.
+- **Code Review:** Příkaz `/code-review` je nyní přehlednější a zaměřuje se primárně na chyby a pravidla v `CLAUDE.md`.
 
-**Proč vás to zajímá**
-Claude Code je nyní spolehlivější parťák, který vás méně vyrušuje technickými chybami a lépe spolupracuje s vaším prostředím.
+**Why you'll care** — Váš vývojářský workflow bude díky rychlejšímu Code Mode a širší podpoře cloudu méně přerušovaný a předvídatelnější.
 
-Ať se vám dnes dobře kóduje!
+Šťastné kódování!
 
 ---
 
-## Claude Code 2.1.327: Reliability and performance boosts 🚀
+## Claude Code 2.1.328: Smarter automation and improved stability 🚀
 
-**TL;DR** — This release focuses on stability, faster Windows startup, and smarter permission handling to keep your workflow smooth.
+**TL;DR** — This release brings auto mode to cloud-hosted models, significant Code Mode refinements, and dozens of stability fixes.
 
-**⭐ Highlight of the release**
-You can now add MCP servers securely using `claude mcp add-json <name> -`, which reads configuration from stdin so your tokens never touch the command line history.
+**⭐ Highlight of the release** — We’ve enabled auto mode for Claude Opus and Sonnet 4.6 across Amazon Bedrock, Google Cloud, Microsoft Foundry, and the Claude apps gateway.
 
 **What's new**
-* **Diagnostic clarity:** The `/status` command now lists broken agents, command errors, and ignored permission settings in one place.
-* **Safer exports:** Claude will now ask for confirmation before overwriting an existing file during `/export`.
-* **Faster Windows:** Startup time is improved by optimizing how the app finds PowerShell and Git.
-* **VS Code love:** A new "Claude Code: Add to Chat" option in the Explorer context menu lets you quickly @-mention files and folders.
-* **Bug fixes:** Dozens of fixes for UI glitches, session resumption crashes, and shell display issues.
+- **Code Mode:** Faster script execution, better background task handling, and improved command output visibility.
+- **Reliability:** Fixed various UI freezes, terminal input issues, and scheduled task management bugs.
+- **Self-hosted runner:** Added new metrics for session queuing and better repository configuration options.
+- **Code Review:** The `/code-review` command is now more focused, clearly highlighting bugs and `CLAUDE.md` violations with suggested fixes.
 
-**Why you'll care**
-Your coding sessions should feel snappier and more predictable, with fewer interruptions from configuration errors or lost states.
+**Why you'll care** — You’ll spend less time wrestling with configuration and interrupted scripts, letting you focus on building with a more responsive Claude.
 
 Happy coding!
 
