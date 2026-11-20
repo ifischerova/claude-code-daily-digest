@@ -23,41 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.328: Chytřejší automatizace a lepší stabilita 🚀 | Claude Code 2.1.328: Smarter automation and improved stability 🚀
+### Claude Code 2.1.329 je tady: stabilita a vylepšený Code Mode 🛠️ | Claude Code 2.1.329: Performance and stability boost 🛠️
 
-_Claude Code v2.1.328 — 2026-11-19_
+_Claude Code v2.1.329 — 2026-11-20_
 
-## Claude Code 2.1.328: Chytřejší automatizace a lepší stabilita 🚀
+## Claude Code 2.1.329 je tady: stabilita a vylepšený Code Mode 🛠️
 
-**TL;DR** — Tato aktualizace přináší režim "auto" pro modely na cloudu, vylepšení pro Code Mode a desítky oprav pro plynulejší vývoj.
+**TL;DR** — Tato aktualizace přináší zásadní opravy stability, lepší správu paměti v Code Mode a plynulejší práci v VS Code.
 
-**⭐ Highlight of the release** — Nyní můžete využívat automatický režim (auto mode) pro modely Claude Opus a Sonnet 4.6 i na platformách jako Amazon Bedrock, Google Cloud nebo Microsoft Foundry.
+**⭐ Highlight of the release** — Vylepšili jsme Code Mode, který je nyní mnohem odolnější: lépe zvládá velké objemy dat, efektivněji využívá paměť a skripty se díky novým limitům nezacyklí.
 
 **What's new**
-- **Code Mode:** Rychlejší běh skriptů, lepší správa úloh na pozadí a oprava chyb při práci s příkazy.
-- **Spolehlivost:** Opraveny desítky drobných chyb v terminálu, zasekávání obrazovky a správa úloh.
-- **Self-hosted runner:** Nové metriky pro sledování fronty a lepší podpora pro repozitáře.
-- **Code Review:** Příkaz `/code-review` je nyní přehlednější a zaměřuje se primárně na chyby a pravidla v `CLAUDE.md`.
+* **Lepší přehled o úkolech:** Příkaz `/tasks` nyní přehledně zobrazuje vše od naplánovaných úloh až po aktivní forky.
+* **Robustnější VS Code:** Opravili jsme zasekávání při psaní, problémy s klávesovými zkratkami a lepší práci s uživatelskými vstupy (IME).
+* **Vylepšená diagnostika:** Pokud se MCP server nepřipojí, uvidíte přímo konkrétní chybovou hlášku, místo aby se jen „nic nestalo“.
+* **Bezpečnější soubory:** Opravili jsme chybu, kdy se u některých souborů (PDF, obrázky) při přenosu přes MCP ztrácela jejich správná identifikace.
 
-**Why you'll care** — Váš vývojářský workflow bude díky rychlejšímu Code Mode a širší podpoře cloudu méně přerušovaný a předvídatelnější.
+**Why you'll care**
+Claude Code je nyní stabilnější, rychlejší a méně „hladový“ po paměti, což oceníte hlavně při dlouhých relacích a práci na složitějších projektech.
 
-Šťastné kódování!
+Užijte si kódování s Claude!
 
 ---
 
-## Claude Code 2.1.328: Smarter automation and improved stability 🚀
+## Claude Code 2.1.329: Performance and stability boost 🛠️
 
-**TL;DR** — This release brings auto mode to cloud-hosted models, significant Code Mode refinements, and dozens of stability fixes.
+**TL;DR** — This release focuses on rock-solid stability, major memory management improvements for Code Mode, and a smoother VS Code experience.
 
-**⭐ Highlight of the release** — We’ve enabled auto mode for Claude Opus and Sonnet 4.6 across Amazon Bedrock, Google Cloud, Microsoft Foundry, and the Claude apps gateway.
+**⭐ Highlight of the release** — Code Mode is now much more robust; it handles large file reads and script execution with better memory safety and smarter limits to prevent runaway loops.
 
 **What's new**
-- **Code Mode:** Faster script execution, better background task handling, and improved command output visibility.
-- **Reliability:** Fixed various UI freezes, terminal input issues, and scheduled task management bugs.
-- **Self-hosted runner:** Added new metrics for session queuing and better repository configuration options.
-- **Code Review:** The `/code-review` command is now more focused, clearly highlighting bugs and `CLAUDE.md` violations with suggested fixes.
+* **Task Clarity:** The `/tasks` command now gives you a unified view of scheduled tasks, active forks, and background loops.
+* **VS Code Polish:** Fixed annoying focus issues with input methods (IME), corrected keybinding glitches, and improved how permission prompts behave.
+* **Better MCP Debugging:** You’ll now see actual JSON-RPC error messages when an HTTP MCP server refuses a connection.
+* **File Integrity:** Fixed issues where certain file types (like PDFs or images) were mislabeled as binary data during MCP transfers.
 
-**Why you'll care** — You’ll spend less time wrestling with configuration and interrupted scripts, letting you focus on building with a more responsive Claude.
+**Why you'll care**
+Your sessions will feel snappier and more reliable, especially during long coding sessions where memory usage used to be a pain point.
 
 Happy coding!
 
