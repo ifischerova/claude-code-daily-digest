@@ -23,45 +23,47 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.329 je tady: stabilita a vylepšený Code Mode 🛠️ | Claude Code 2.1.329: Performance and stability boost 🛠️
+### Claude Code 2.1.330: Nástroj na kreslení grafů a lepší firemní správa 📈 | Claude Code 2.1.330: Built-in charts and enterprise polish 📈
 
-_Claude Code v2.1.329 — 2026-11-20_
+_Claude Code v2.1.330 — 2026-11-21_
 
-## Claude Code 2.1.329 je tady: stabilita a vylepšený Code Mode 🛠️
+## Claude Code 2.1.330: Nástroj na kreslení grafů a lepší firemní správa 📈
 
-**TL;DR** — Tato aktualizace přináší zásadní opravy stability, lepší správu paměti v Code Mode a plynulejší práci v VS Code.
+**TL;DR** — Tato aktualizace přináší vestavěné kreslení grafů, vylepšenou podporu firemních účtů a desítky oprav pro plynulejší práci.
 
-**⭐ Highlight of the release** — Vylepšili jsme Code Mode, který je nyní mnohem odolnější: lépe zvládá velké objemy dat, efektivněji využívá paměť a skripty se díky novým limitům nezacyklí.
+**⭐ Hlavní novinka**
+Nyní můžete Claude požádat o vizualizaci dat – vestavěný modul „easel“ automaticky vykreslí přehledné grafy přímo v terminálu nebo jako součást metrik MCP.
 
-**What's new**
-* **Lepší přehled o úkolech:** Příkaz `/tasks` nyní přehledně zobrazuje vše od naplánovaných úloh až po aktivní forky.
-* **Robustnější VS Code:** Opravili jsme zasekávání při psaní, problémy s klávesovými zkratkami a lepší práci s uživatelskými vstupy (IME).
-* **Vylepšená diagnostika:** Pokud se MCP server nepřipojí, uvidíte přímo konkrétní chybovou hlášku, místo aby se jen „nic nestalo“.
-* **Bezpečnější soubory:** Opravili jsme chybu, kdy se u některých souborů (PDF, obrázky) při přenosu přes MCP ztrácela jejich správná identifikace.
+**Co je nového**
+*   **Firemní správa:** Lepší integrace s podnikovými konzolemi Anthropicu a možnost správy nastavení na úrovni organizace.
+*   **Rychlost a stabilita:** Výrazné zrychlení práce se soubory, opravy zamrzání při dlouhých konverzacích a stabilnější práce s nástroji.
+*   **VS Code vylepšení:** Nové příkazy jako `/fork` nebo `/workflows`, lepší práce s klávesovými zkratkami a oprava problémů s kopírováním kódu.
+*   **Samostatné běžce (Self-hosted runners):** Lepší správa úloh, diagnostika a podrobnější metriky pro týmy provozující vlastní infrastrukturu.
 
-**Why you'll care**
-Claude Code je nyní stabilnější, rychlejší a méně „hladový“ po paměti, což oceníte hlavně při dlouhých relacích a práci na složitějších projektech.
+**Proč vás to bude zajímat**
+Claude Code je díky těmto změnám mnohem spolehlivější pro každodenní kódování a vizualizace dat vám pomůže rychleji pochopit složité metriky bez přepínání oken.
 
-Užijte si kódování s Claude!
+Užívejte si kódování a ať se vám daří!
 
 ---
 
-## Claude Code 2.1.329: Performance and stability boost 🛠️
+## Claude Code 2.1.330: Built-in charts and enterprise polish 📈
 
-**TL;DR** — This release focuses on rock-solid stability, major memory management improvements for Code Mode, and a smoother VS Code experience.
+**TL;DR** — This release adds a built-in charting tool, improved enterprise identity management, and a massive set of stability fixes.
 
-**⭐ Highlight of the release** — Code Mode is now much more robust; it handles large file reads and script execution with better memory safety and smarter limits to prevent runaway loops.
+**⭐ Highlight of the release**
+Meet "easel," a built-in tool that automatically draws charts when you ask for them or when viewing MCP metrics, making your data much easier to visualize.
 
 **What's new**
-* **Task Clarity:** The `/tasks` command now gives you a unified view of scheduled tasks, active forks, and background loops.
-* **VS Code Polish:** Fixed annoying focus issues with input methods (IME), corrected keybinding glitches, and improved how permission prompts behave.
-* **Better MCP Debugging:** You’ll now see actual JSON-RPC error messages when an HTTP MCP server refuses a connection.
-* **File Integrity:** Fixed issues where certain file types (like PDFs or images) were mislabeled as binary data during MCP transfers.
+*   **Enterprise support:** Better sign-in flows for organizations managed via Anthropic’s Admin Console.
+*   **Performance:** Faster file diffs, fixes for session freezes during long conversations, and improved responsiveness in Code Mode.
+*   **VS Code enhancements:** Added `/fork` and `/workflows` commands, plus better handling of keyboard shortcuts and terminal focus.
+*   **Self-hosted runner updates:** Improved error reporting, smarter resource management, and new metrics for tracking job execution times.
 
 **Why you'll care**
-Your sessions will feel snappier and more reliable, especially during long coding sessions where memory usage used to be a pain point.
+This update removes many of the small "papercuts" that disrupt your flow, making Claude Code faster, smarter, and much more capable for complex development tasks.
 
-Happy coding!
+Happy coding, and enjoy the new charts!
 
 <!-- LATEST:END -->
 
