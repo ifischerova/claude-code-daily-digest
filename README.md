@@ -23,47 +23,45 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Claude Code 2.1.330: Nástroj na kreslení grafů a lepší firemní správa 📈 | Claude Code 2.1.330: Built-in charts and enterprise polish 📈
+### Nová verze Claude Code 2.1.331 je tady! 🚀 | Claude Code 2.1.331 is here! 🚀
 
-_Claude Code v2.1.330 — 2026-11-21_
+_Claude Code v2.1.331 — 2026-11-24_
 
-## Claude Code 2.1.330: Nástroj na kreslení grafů a lepší firemní správa 📈
+## Nová verze Claude Code 2.1.331 je tady! 🚀
 
-**TL;DR** — Tato aktualizace přináší vestavěné kreslení grafů, vylepšenou podporu firemních účtů a desítky oprav pro plynulejší práci.
+**TL;DR** — Tato aktualizace přináší podporu Code Mode pro více cloudových platforem, rychlejší starty a desítky oprav pro plynulejší práci v terminálu i VS Code.
 
-**⭐ Hlavní novinka**
-Nyní můžete Claude požádat o vizualizaci dat – vestavěný modul „easel“ automaticky vykreslí přehledné grafy přímo v terminálu nebo jako součást metrik MCP.
+**⭐ Highlight of the release** — Claude Code nyní nativně podporuje Code Mode v terminálových relacích na platformách Amazon Bedrock, Google Cloud, Microsoft Foundry a Claude Platform na AWS.
 
 **Co je nového**
-*   **Firemní správa:** Lepší integrace s podnikovými konzolemi Anthropicu a možnost správy nastavení na úrovni organizace.
-*   **Rychlost a stabilita:** Výrazné zrychlení práce se soubory, opravy zamrzání při dlouhých konverzacích a stabilnější práce s nástroji.
-*   **VS Code vylepšení:** Nové příkazy jako `/fork` nebo `/workflows`, lepší práce s klávesovými zkratkami a oprava problémů s kopírováním kódu.
-*   **Samostatné běžce (Self-hosted runners):** Lepší správa úloh, diagnostika a podrobnější metriky pro týmy provozující vlastní infrastrukturu.
+* **Lepší diagnostika:** Příkaz `claude doctor` nyní prověří připojení k API a vypíše podrobnosti o případných chybách.
+* **Vylepšení pro VS Code:** Přidány rychlé akce pro řešení konfliktů při slučování (merge) a možnost přidat buňky z poznámkových bloků přímo do chatu.
+* **Rychlejší start:** Snížili jsme čekací dobu při spouštění, zejména pokud nepracujete v Git repozitáři.
+* **Opravy chyb:** Vyřešili jsme desítky problémů, včetně zamrzání při volání MCP nástrojů a nechtěného zkracování textů v úzkých oknech.
 
 **Proč vás to bude zajímat**
-Claude Code je díky těmto změnám mnohem spolehlivější pro každodenní kódování a vizualizace dat vám pomůže rychleji pochopit složité metriky bez přepínání oken.
+Vaše vývojářské prostředí bude díky těmto optimalizacím stabilnější a rychlejší, ať už pracujete lokálně nebo v cloudu.
 
-Užívejte si kódování a ať se vám daří!
+Šťastné kódování!
 
 ---
 
-## Claude Code 2.1.330: Built-in charts and enterprise polish 📈
+## Claude Code 2.1.331 is here! 🚀
 
-**TL;DR** — This release adds a built-in charting tool, improved enterprise identity management, and a massive set of stability fixes.
+**TL;DR** — This update brings Code Mode support to major cloud platforms, faster startup times, and dozens of fixes to make your workflow smoother in both the terminal and VS Code.
 
-**⭐ Highlight of the release**
-Meet "easel," a built-in tool that automatically draws charts when you ask for them or when viewing MCP metrics, making your data much easier to visualize.
+**⭐ Highlight of the release** — We’ve added Code Mode support for terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, and the Claude Platform on AWS.
 
 **What's new**
-*   **Enterprise support:** Better sign-in flows for organizations managed via Anthropic’s Admin Console.
-*   **Performance:** Faster file diffs, fixes for session freezes during long conversations, and improved responsiveness in Code Mode.
-*   **VS Code enhancements:** Added `/fork` and `/workflows` commands, plus better handling of keyboard shortcuts and terminal focus.
-*   **Self-hosted runner updates:** Improved error reporting, smarter resource management, and new metrics for tracking job execution times.
+* **Better diagnostics:** The `claude doctor` command now checks API connectivity and reports specific HTTP status codes or errors.
+* **VS Code improvements:** New quick-fix actions for merge conflicts and the ability to add notebook cells directly into your chat.
+* **Faster startup:** We’ve reduced wait times when starting sessions, especially for non-Git projects.
+* **Bug fixes:** We’ve squashed dozens of issues, including hangs during MCP tool calls and text truncation in narrow terminal windows.
 
 **Why you'll care**
-This update removes many of the small "papercuts" that disrupt your flow, making Claude Code faster, smarter, and much more capable for complex development tasks.
+These optimizations make your development environment more stable and responsive, whether you're working locally or in the cloud.
 
-Happy coding, and enjoy the new charts!
+Happy coding!
 
 <!-- LATEST:END -->
 
