@@ -23,43 +23,43 @@ GitHub Action (daily cron)
 
 <!-- LATEST:START -->
 
-### Nová verze Claude Code 2.1.331 je tady! 🚀 | Claude Code 2.1.331 is here! 🚀
+### Claude Code 2.1.332: Vylepšené MCP a stabilnější práce 🚀 | Claude Code 2.1.332: Better MCP support and rock-solid stability 🚀
 
-_Claude Code v2.1.331 — 2026-11-24_
+_Claude Code v2.1.332 — 2026-11-25_
 
-## Nová verze Claude Code 2.1.331 je tady! 🚀
+## Claude Code 2.1.332: Vylepšené MCP a stabilnější práce 🚀
 
-**TL;DR** — Tato aktualizace přináší podporu Code Mode pro více cloudových platforem, rychlejší starty a desítky oprav pro plynulejší práci v terminálu i VS Code.
+**TL;DR** — Tato aktualizace přináší podporu pro MCP servery, chytřejší správu paměti a desítky oprav pro plynulejší vývoj.
 
-**⭐ Highlight of the release** — Claude Code nyní nativně podporuje Code Mode v terminálových relacích na platformách Amazon Bedrock, Google Cloud, Microsoft Foundry a Claude Platform na AWS.
+**⭐ Highlight of the release** — Nyní můžete přímo v menu `/` využívat schopnosti (skills) z připojených MCP serverů, což výrazně rozšiřuje možnosti Claude Code.
 
-**Co je nového**
-* **Lepší diagnostika:** Příkaz `claude doctor` nyní prověří připojení k API a vypíše podrobnosti o případných chybách.
-* **Vylepšení pro VS Code:** Přidány rychlé akce pro řešení konfliktů při slučování (merge) a možnost přidat buňky z poznámkových bloků přímo do chatu.
-* **Rychlejší start:** Snížili jsme čekací dobu při spouštění, zejména pokud nepracujete v Git repozitáři.
-* **Opravy chyb:** Vyřešili jsme desítky problémů, včetně zamrzání při volání MCP nástrojů a nechtěného zkracování textů v úzkých oknech.
+**What's new**
+* **MCP integrace:** Schopnosti z MCP serverů se zobrazují jako `server:skill`.
+* **Lepší stabilita:** Opravili jsme desítky příčin zamrzání terminálu a nadměrného využívání paměti.
+* **Chytřejší modely:** Vylepšené přepínání mezi modely a lepší podpora pro nejnovější verze (např. Sonnet 5.5).
+* **Vylepšené VS Code:** Hladší práce s historií, lepší zobrazení diffů a oprava drobných chyb v UI.
+* **Spolehlivější autentizace:** Jasnější chybové hlášky při problémech s přihlášením.
 
-**Proč vás to bude zajímat**
-Vaše vývojářské prostředí bude díky těmto optimalizacím stabilnější a rychlejší, ať už pracujete lokálně nebo v cloudu.
+**Why you'll care** — Váš Claude Code bude konečně méně „zamrzat“ při složitějších úkolech a díky podpoře MCP serverů získáte mnohem výkonnějšího pomocníka pro své projekty.
 
-Šťastné kódování!
+Ať se vám dnes kódování daří!
 
 ---
 
-## Claude Code 2.1.331 is here! 🚀
+## Claude Code 2.1.332: Better MCP support and rock-solid stability 🚀
 
-**TL;DR** — This update brings Code Mode support to major cloud platforms, faster startup times, and dozens of fixes to make your workflow smoother in both the terminal and VS Code.
+**TL;DR** — This release brings beta MCP server support, significant performance improvements, and dozens of fixes to keep your workflow smooth.
 
-**⭐ Highlight of the release** — We’ve added Code Mode support for terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, and the Claude Platform on AWS.
+**⭐ Highlight of the release** — You can now access skills from MCP servers directly via the `/` menu, labeled as `server:skill` for easy discovery.
 
 **What's new**
-* **Better diagnostics:** The `claude doctor` command now checks API connectivity and reports specific HTTP status codes or errors.
-* **VS Code improvements:** New quick-fix actions for merge conflicts and the ability to add notebook cells directly into your chat.
-* **Faster startup:** We’ve reduced wait times when starting sessions, especially for non-Git projects.
-* **Bug fixes:** We’ve squashed dozens of issues, including hangs during MCP tool calls and text truncation in narrow terminal windows.
+* **MCP Integration:** Beta support for using external server skills directly in your chat.
+* **Performance Boosts:** Dozens of fixes for terminal freezes, memory leaks, and unresponsive sessions.
+* **Smarter Model Logic:** Improved fallback behavior and better support for the latest model versions like Sonnet 5.5.
+* **VS Code Refinements:** Smoother diff handling, better history navigation, and UI polish for a less cluttered experience.
+* **Clearer Feedback:** Better error reporting for login issues and saved-session status.
 
-**Why you'll care**
-These optimizations make your development environment more stable and responsive, whether you're working locally or in the cloud.
+**Why you'll care** — You’ll spend less time troubleshooting the tool and more time building, thanks to improved stability and deeper integration with your custom MCP tools.
 
 Happy coding!
 
